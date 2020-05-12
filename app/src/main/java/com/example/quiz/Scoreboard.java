@@ -1,4 +1,17 @@
 package com.example.quiz;
 
-public class Scoreboard {
+import android.widget.Button;
+
+public class Scoreboard extends Activity implements View.OnClickListener {
+
+    Button tryAgain, mainMenu;
+
+
+
+
+
+
+
+
+
 }

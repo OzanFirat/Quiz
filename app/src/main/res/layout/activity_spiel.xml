@@ -98,4 +98,14 @@
         android:src="@drawable/ic_launcher_foreground"
         tools:layout_editor_absoluteX="18dp"
         tools:layout_editor_absoluteY="145dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="162dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
