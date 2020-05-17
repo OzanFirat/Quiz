@@ -2,10 +2,11 @@ package com.example.quiz;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 
-public class loss_Scoreboard extends AppCompatActivity implements View.OnClickListener {
+public class loss_Scoreboard extends Activity {
 
 
     @Override

@@ -6,6 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".Spiel">
 
+    <Button
+        android:id="@+id/btnAnswer6"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="230dp"
+        android:text="Berlin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnAnswer2"
+        app:layout_constraintStart_toStartOf="@+id/btnAnswer2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnAnswer5"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="101dp"
+        android:text="Berlin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnAnswer"
+        app:layout_constraintStart_toStartOf="@+id/btnAnswer"
+        tools:ignore="MissingConstraints" />
+
     <TextView
         android:id="@+id/textVFrage"
         android:layout_width="0dp"
@@ -15,97 +41,80 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="6dp"
         android:layout_marginRight="6dp"
-        android:layout_marginBottom="168dp"
+        android:layout_marginBottom="20dp"
         android:fontFamily="casual"
         android:text="Wie heisst die Hauptstadt von Frankreich?"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnAnswer1"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/btnAnswer1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginRight="14dp"
-        android:layout_marginBottom="20dp"
-        android:text="Paris"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnAnswer3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnAnswer"
-        app:layout_constraintTop_toBottomOf="@+id/textVFrage"
-        tools:ignore="MissingConstraints" />
-
-    <Button
         android:id="@+id/btnAnswer"
-        android:layout_width="0dp"
+        android:layout_width="180dp"
         android:layout_height="100dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginLeft="6dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginRight="31dp"
+        android:layout_marginStart="215dp"
+        android:layout_marginLeft="215dp"
         android:text="Berlin"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="36sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btnAnswer1"
-        app:layout_constraintEnd_toStartOf="@+id/btnAnswer1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnAnswer6"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btnAnswer2"
-        android:layout_width="0dp"
+        android:layout_width="180dp"
         android:layout_height="100dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginLeft="6dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginRight="31dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="101dp"
         android:text="Bern"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="36sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btnAnswer3"
-        app:layout_constraintEnd_toStartOf="@+id/btnAnswer3"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/btnAnswer3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginRight="14dp"
-        android:layout_marginBottom="196dp"
-        android:text="Paris"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnAnswer2"
-        app:layout_constraintTop_toBottomOf="@+id/btnAnswer1"
+        app:layout_constraintEnd_toStartOf="@+id/btnAnswer5"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="146dp"
+        android:layout_marginBottom="147dp"
         android:src="@drawable/ic_launcher_foreground"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="145dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnAnswer6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
         android:ems="10"
         android:inputType="date"
-        tools:layout_editor_absoluteX="195dp"
-        tools:layout_editor_absoluteY="162dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textVFrage" />
+
+    <TextView
+        android:id="@+id/txtVTimer"
+        android:layout_width="54dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginBottom="52dp"
+        android:text="60"
+        app:autoSizeMinTextSize="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAnswer"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

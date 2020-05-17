@@ -13,13 +13,14 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 
+@SuppressWarnings("ALL")
 public class Spiel extends Activity implements View.OnClickListener {
     Button btnAnswer,btnAnswer1,btnAnswer2,btnAnswer3;
 
 TextView textVFrage;
 
     int aktuelleFrage = 0, level = 0;
-    boolean win = false
+    boolean win = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,8 @@ TextView textVFrage;
         btnAnswer1.setOnClickListener(this);
         btnAnswer2.setOnClickListener(this);
         btnAnswer3.setOnClickListener(this);
+
+        fragenLaden();
 
     }
 
@@ -83,56 +86,39 @@ TextView textVFrage;
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btnAnswer:
-                if(antwortAuswerten(btnAnswer.getText().toString())){
+                win = antwortAuswerten(btnAnswer.getText().toString());
+                setTheScore(win);
+              /*  if(antwortAuswerten(btnAnswer.getText().toString())){
+                    checkTheAnswer();
                     level++;
                     win = true;
 
                     Intent intent = new Intent(this, Ende.class);
                     startActivity(intent);
-                    this.finish;
+                    this.finish();
 
                 } else {
 
                     win = false;
 
                 }
+
+               */
+
                 break;
             case R.id.btnAnswer1:
 
-                if(antwortAuswerten(btnAnswer1.getText().toString())){
-                    level++;
-                    win = true;
-
-                } else {
-
-                    win = false;
-                }
+                win = antwortAuswerten(btnAnswer1.getText().toString());
+                setTheScore(win);
                     break;
             case R.id.btnAnswer2:
-                if(antwortAuswerten(btnAnswer2.getText().toString())){
-                    level++;
-                    win = true;
-                    Intent intent = new Intent(this, Ende.class);
-                    startActivity(intent);
-                    this.finish;
-
-                } else {
-
-                    win = false;
-                }
-
-
+                win = antwortAuswerten(btnAnswer2.getText().toString());
+                setTheScore(win);
                 break;
             case R.id.btnAnswer3:
 
-                if(antwortAuswerten(btnAnswer3.getText().toString())){
-                    level++;
-                    win = true;
-
-                } else {
-
-                    win = false;
-                }
+                win = antwortAuswerten(btnAnswer3.getText().toString());
+                setTheScore(win);
                 break;
         }
     }
@@ -142,9 +128,23 @@ TextView textVFrage;
         Fragen fragenC = new Fragen();
        ArrayList fragen = fragenC.getFragen();
        String[] speicher = (String[]) fragen.get(aktuelleFrage);
-       if (Speicher[1].equals(btnText)){
+       if (speicher[1].equals(btnText)){
            frage=true;
        }
         return frage;
+    }
+
+    private void setTheScore(boolean winORLoss){
+        if (winORLoss==true){
+            Intent intent = new Intent(this, Ende.class);
+            startActivity(intent);
+            this.finish();
+        } else {
+            Intent intent = new Intent(this, loss_Scoreboard.class);
+            startActivity(intent);
+            this.finish();
+
+        }
+
     }
 }

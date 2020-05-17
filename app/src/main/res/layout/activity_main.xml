@@ -30,6 +30,6 @@
             android:textColor="#2A137C"
             android:textSize="36sp"
             tools:layout_editor_absoluteX="103dp"
-            tools:layout_editor_absoluteY="471dp" />
+            tools:layout_editor_absoluteY="187dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
