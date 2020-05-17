@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".loss_Scoreboard"></activity>
+        <activity android:name=".Ende"></activity>
+        <activity
+            android:name=".ui.login.login"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".loss_Scoreboard" />
         <activity android:name=".Spiel" />
         <activity android:name=".MainActivity">
             <intent-filter>
