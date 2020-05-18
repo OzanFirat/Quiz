@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LvlOverview">
+
+    <RadioGroup
+        android:id="@+id/Levels"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLandOverview">
+
+        <RadioButton
+            android:id="@+id/lvl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 1" />
+
+        <RadioButton
+            android:id="@+id/lvl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 2" />
+
+        <RadioButton
+            android:id="@+id/lvl3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 3" />
+
+        <RadioButton
+            android:id="@+id/lvl4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 4" />
+
+        <RadioButton
+            android:id="@+id/lvl5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 5" />
+
+        <RadioButton
+            android:id="@+id/Lvl6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 6" />
+
+        <RadioButton
+            android:id="@+id/lvl7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 7" />
+
+        <RadioButton
+            android:id="@+id/lvl8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 8" />
+
+        <RadioButton
+            android:id="@+id/lvl9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 9" />
+
+        <RadioButton
+            android:id="@+id/lvl10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 10" />
+
+        <RadioButton
+            android:id="@+id/lvl11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 11" />
+
+        <RadioButton
+            android:id="@+id/lvl12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 12" />
+
+        <RadioButton
+            android:id="@+id/lvl13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 13" />
+
+        <RadioButton
+            android:id="@+id/lvl14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 14" />
+
+        <RadioButton
+            android:id="@+id/lvl15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 15" />
+
+        <RadioButton
+            android:id="@+id/lvl16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 16" />
+
+        <RadioButton
+            android:id="@+id/lvl17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 17" />
+
+        <RadioButton
+            android:id="@+id/lvl18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 18" />
+
+        <RadioButton
+            android:id="@+id/lvl19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 19" />
+
+        <RadioButton
+            android:id="@+id/lvl20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 20" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewLandOverview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Levelstatus"
+        app:layout_constraintBottom_toTopOf="@+id/Levels"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

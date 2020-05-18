@@ -2,13 +2,10 @@ package com.example.quiz;
 
 import android.provider.BaseColumns;
 
-public final class FragenContract {
-    private FragenContract() {
-    }
+public final class QuizContract {
 
-    public static class CategoriesTable implements BaseColumns {
-        public static final String TABLE_NAME = "quiz_categories";
-        public static final String COLUMN_NAME = "name";
+    private QuizContract(){
+
     }
 
     public static class QuestionsTable implements BaseColumns {
@@ -22,4 +19,6 @@ public final class FragenContract {
         public static final String COLUMN_DIFFICULTY = "difficulty";
         public static final String COLUMN_CATEGORY_ID = "category_id";
     }
+
+
 }
