@@ -25,7 +25,8 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         this.db = db;
         final String SQL_CREATE_QUESTIONS_TABLE = "CREATE TABLE "+
                 QuizContract.QuestionsTable.TABLE_NAME+" ( "+
-                QuizContract.QuestionsTable.COLUMN_CATEGORY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "+
+                QuizContract.QuestionsTable._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "+
+                QuizContract.QuestionsTable.COLUMN_QUESTION + "TEXT, "+
                 QuizContract.QuestionsTable.COLUMN_OPTION1+ " TEXT, "+
                 QuizContract.QuestionsTable.COLUMN_OPTION2+ " TEXT, "+
                 QuizContract.QuestionsTable.COLUMN_OPTION3+ " TEXT, "+
@@ -42,13 +43,18 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    private void fillQustionTable(){
+    private void fillQuestionTable(){
         Question q1 = new Question("A is correct", "A", "B", "C", "D", 1);
         Question q2 = new Question("B is correct", "A", "B", "C", "D", 2);
         Question q3 = new Question("C is correct", "A", "B", "C", "D", 3);
         Question q4 = new Question("D is correct", "A", "B", "C", "D", 4);
         Question q5 = new Question("A is correct", "A", "B", "C", "D", 1);
         addQestion(q1);
+        addQestion(q2);
+        addQestion(q3);
+        addQestion(q4);
+        addQestion(q5);
+
     }
 
     private void addQestion (Question question){
@@ -82,6 +88,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
 
             } while (c.moveToNext());
         }
+        c.close();
         return questionList;
     }
 

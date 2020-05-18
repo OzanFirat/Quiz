@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -17,7 +19,7 @@ import java.util.Locale;
 
 
 @SuppressWarnings("ALL")
-public class Spiel extends Activity implements View.OnClickListener {
+public class Spiel extends AppCompatActivity implements View.OnClickListener {
     private Button btnAnswer,btnAnswer1,btnAnswer2,btnAnswer3;
     private List<Question> questionList;
     private ColorStateList textColorDefaultRb;
@@ -68,8 +70,8 @@ public class Spiel extends Activity implements View.OnClickListener {
 
 
 
-
-        fragenLaden();
+        showNextQuestion();
+       // fragenLaden();
 
         btnAnswer.setOnClickListener(this);
         btnAnswer1.setOnClickListener(this);
@@ -203,6 +205,15 @@ public class Spiel extends Activity implements View.OnClickListener {
         btnAnswer1.setTextColor(textColorDefaultRb);
         btnAnswer2.setTextColor(textColorDefaultRb);
         btnAnswer3.setTextColor(textColorDefaultRb);
+
+    currentQuestion = questionList.get(1);
+    btnAnswer.setText(currentQuestion.getOpt1());
+        btnAnswer1.setText(currentQuestion.getOpt2());
+        btnAnswer2.setText(currentQuestion.getOpt3());
+        btnAnswer3.setText(currentQuestion.getOpt4());
+
+
+
 
 
 
