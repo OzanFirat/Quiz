@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Ende extends Activity implements View.OnClickListener{
+public class End extends Activity implements View.OnClickListener{
 
     private Button btnStartMenu, btnNextLvl;
     private SharedPreferences preferences;
@@ -17,7 +17,6 @@ public class Ende extends Activity implements View.OnClickListener{
 
     private int erreichtePunkte;
     private final String KEY = "speicherPreferences";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,11 +34,11 @@ public class Ende extends Activity implements View.OnClickListener{
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.btnmainMenu:
-                Intent intent = new Intent(this, MainActivity.class);
-                startActivity(intent);
-                this.finish();
-                break;
-        }
+        case R.id.btnmainMenu:
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+            this.finish();
+            break;
     }
+}
 }

@@ -1,6 +1,5 @@
 package com.example.quiz;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
@@ -32,9 +31,11 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
     private ColorStateList textColorDefaultCd;
 
     private CountDownTimer countDownTimer;
-    private long timeLeftMillis;
+    private long timeLeftInMillis;
 
     private TextView textViewCountDown;
+
+
 
 
 
@@ -42,14 +43,15 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
     private TextView textVFrage;
 
     int aktuelleFrage = 0, level = 0;
-    boolean win = false;
+    boolean win;
+    int rightAnswer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spiel);
 
-        btnAnswer = (Button) findViewById(R.id.btnAnswer1);
+        btnAnswer = (Button) findViewById(R.id.btnAnswer);
         btnAnswer1 = (Button) findViewById(R.id.btnAnswer1);
         btnAnswer2 = (Button) findViewById(R.id.btnAnswer2);
         btnAnswer3 = (Button) findViewById(R.id.btnAnswer3);
@@ -59,11 +61,11 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
 
 
 
-        textColorDefaultRb = btnAnswer.getTextColors();
+        //textColorDefaultRb = btnAnswer.getTextColors();
 
-        textColorDefaultCd = textViewCountDown.getTextColors();
+       textColorDefaultCd = textViewCountDown.getTextColors();
 
-        QuizDBHelper dbHelper = new QuizDBHelper(this);
+       QuizDBHelper dbHelper = new QuizDBHelper(this);
         questionList = dbHelper.getAllQuestions();
         questionCountTotal = questionList.size();
         Collections.shuffle(questionList);
@@ -71,7 +73,9 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
 
 
         showNextQuestion();
-       // fragenLaden();
+
+
+
 
         btnAnswer.setOnClickListener(this);
         btnAnswer1.setOnClickListener(this);
@@ -90,6 +94,8 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
         btnAnswer1.setText(currentQuestion.getOpt2());
         btnAnswer2.setText(currentQuestion.getOpt3());
         btnAnswer3.setText(currentQuestion.getOpt4());
+
+
 
 
 
@@ -137,39 +143,44 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btnAnswer:
-                win = antwortAuswerten(btnAnswer.getText().toString());
-                setTheScore(win);
-              /*  if(antwortAuswerten(btnAnswer.getText().toString())){
-                    checkTheAnswer();
-                    level++;
-                    win = true;
+               if (rightAnswer==1){
+                   win=true;
+                   setTheScore(win);
 
-                    Intent intent = new Intent(this, Ende.class);
-                    startActivity(intent);
-                    this.finish();
-
-                } else {
-
-                    win = false;
-
-                }
-
-               */
+               } else {
+                    win=false;
+                    setTheScore(win);
+               }
 
                 break;
             case R.id.btnAnswer1:
 
-                win = antwortAuswerten(btnAnswer1.getText().toString());
-                setTheScore(win);
+                if (rightAnswer==2){
+                    win=true;
+                    setTheScore(win);
+                } else {
+                    win=false;
+                    setTheScore(win);
+                }
                     break;
             case R.id.btnAnswer2:
-                win = antwortAuswerten(btnAnswer2.getText().toString());
-                setTheScore(win);
+                if (rightAnswer==3){
+                    win=true;
+                    setTheScore(win);
+                } else {
+                    win=false;
+                    setTheScore(win);
+                }
                 break;
             case R.id.btnAnswer3:
 
-                win = antwortAuswerten(btnAnswer3.getText().toString());
-                setTheScore(win);
+                if (rightAnswer==4){
+                    win=true;
+                    setTheScore(win);
+                } else {
+                    win=false;
+                    setTheScore(win);
+                }
                 break;
         }
     }
@@ -188,7 +199,7 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
 
     private void setTheScore(boolean winORLoss){
         if (winORLoss==true){
-            Intent intent = new Intent(this, Ende.class);
+            Intent intent = new Intent(this, End.class);
             startActivity(intent);
             this.finish();
         } else {
@@ -201,50 +212,57 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
     }
 
     private void showNextQuestion(){
+        /*
         btnAnswer.setTextColor(textColorDefaultRb);
         btnAnswer1.setTextColor(textColorDefaultRb);
         btnAnswer2.setTextColor(textColorDefaultRb);
         btnAnswer3.setTextColor(textColorDefaultRb);
 
+         */
+
     currentQuestion = questionList.get(1);
+    textVFrage.setText(currentQuestion.getQuestion());
     btnAnswer.setText(currentQuestion.getOpt1());
         btnAnswer1.setText(currentQuestion.getOpt2());
         btnAnswer2.setText(currentQuestion.getOpt3());
         btnAnswer3.setText(currentQuestion.getOpt4());
 
+        rightAnswer=currentQuestion.getAnswerNr();
 
-
+        timeLeftInMillis = COUNTDOWN_IN_MILLIS;
+        startCountDown();
 
 
 
     }
 
     private void startCountDown(){
-        countDownTimer = new CountDownTimer(timeLeftMillis, 1000) {
+        countDownTimer = new CountDownTimer(timeLeftInMillis, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
-                timeLeftMillis = millisUntilFinished;
+                timeLeftInMillis = millisUntilFinished;
                 updateCountDownText();
             }
 
             @Override
             public void onFinish() {
-                timeLeftMillis = 0;
+                timeLeftInMillis = 0;
                 updateCountDownText();
+
 
             }
         }.start();
     }
 
     private void updateCountDownText(){
-        int minutes = (int)(timeLeftMillis / 1000) / 60;
-        int seconds = (int)(timeLeftMillis / 1000) % 60;
+        int minutes = (int)(timeLeftInMillis / 1000) / 60;
+        int seconds = (int)(timeLeftInMillis / 1000) % 60;
 
-        String timeFormatted = String.format(Locale.getDefault(), "%2d:%02d", minutes, seconds);
+        String timeFormatted = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
 
         textViewCountDown.setText(timeFormatted);
 
-        if (timeLeftMillis < 10000){
+        if (timeLeftInMillis < 10000){
             textViewCountDown.setTextColor(Color.RED);
         } else {
             textViewCountDown.setTextColor(textColorDefaultCd);
