@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LvlOverview"></activity>
+        <activity android:name=".gameOverview" />
+        <activity android:name=".End2" />
+        <activity android:name=".LvlOverview" />
         <activity android:name=".End" />
         <activity android:name=".MainActivity">
             <intent-filter>

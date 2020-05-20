@@ -203,7 +203,7 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
             startActivity(intent);
             this.finish();
         } else {
-            Intent intent = new Intent(this, loss_Scoreboard.class);
+            Intent intent = new Intent(this, End2.class);
             startActivity(intent);
             this.finish();
 
