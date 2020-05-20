@@ -36,13 +36,13 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
     private TextView textViewCountDown;
 
 
-
+    private QuizDBHelper dbHelper;
 
 
 
     private TextView textVFrage;
 
-    int aktuelleFrage = 0, level = 0;
+    int aktuelleFrage = 0, level = 0, ratingStar;
     boolean win;
     int rightAnswer;
 
@@ -65,7 +65,7 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
 
        textColorDefaultCd = textViewCountDown.getTextColors();
 
-       QuizDBHelper dbHelper = new QuizDBHelper(this);
+       dbHelper = new QuizDBHelper(this);
         questionList = dbHelper.getAllQuestions();
         questionCountTotal = questionList.size();
         Collections.shuffle(questionList);
@@ -86,58 +86,7 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
 
     }
 
-    private void fragenLaden(){
 
-        textVFrage.setText(currentQuestion.getQuestion());
-
-        btnAnswer.setText(currentQuestion.getOpt1());
-        btnAnswer1.setText(currentQuestion.getOpt2());
-        btnAnswer2.setText(currentQuestion.getOpt3());
-        btnAnswer3.setText(currentQuestion.getOpt4());
-
-
-
-
-
-
-        /*
-        Fragen fragenC = new Fragen();
-        ArrayList fragen = fragenC.getFragen();
-        String[] frage = (String[]) fragen.get(aktuelleFrage);
-
-        textVFrage.setText(frage[0]);
-        int zufallszahl = (int) (Math.random() * (4-1)+1);
-
-        //soll anzeigen wie man die Fragen an anderen Orten bleiben
-        switch(zufallszahl){
-            case 1:
-                btnAnswer.setText(frage[1]);
-                btnAnswer1.setText(frage[2]);
-                btnAnswer2.setText(frage[3]);
-                btnAnswer3.setText(frage[4]);
-                break;
-            case 2:
-                btnAnswer.setText(frage[4]);
-                btnAnswer1.setText(frage[1]);
-                btnAnswer2.setText(frage[2]);
-                btnAnswer3.setText(frage[3]);
-                break;
-            case 3:
-                btnAnswer.setText(frage[3]);
-                btnAnswer1.setText(frage[4]);
-                btnAnswer2.setText(frage[1]);
-                btnAnswer3.setText(frage[2]);
-                break;
-            case 4:
-                btnAnswer.setText(frage[2]);
-                btnAnswer1.setText(frage[3]);
-                btnAnswer2.setText(frage[4]);
-                btnAnswer3.setText(frage[1]);
-                break;
-        }
-        */
-
-    }
 
     @Override
     public void onClick(View v) {
@@ -199,10 +148,13 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
 
     private void setTheScore(boolean winORLoss){
         if (winORLoss==true){
+            dbHelper.addRating(level, ratingStar);
             Intent intent = new Intent(this, End.class);
             startActivity(intent);
             this.finish();
         } else {
+            ratingStar=0;
+
             Intent intent = new Intent(this, End2.class);
             startActivity(intent);
             this.finish();
@@ -219,21 +171,33 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
         btnAnswer3.setTextColor(textColorDefaultRb);
 
          */
-
-    currentQuestion = questionList.get(1);
+    level=1;
+    currentQuestion = questionList.get(level);
     textVFrage.setText(currentQuestion.getQuestion());
     btnAnswer.setText(currentQuestion.getOpt1());
         btnAnswer1.setText(currentQuestion.getOpt2());
         btnAnswer2.setText(currentQuestion.getOpt3());
         btnAnswer3.setText(currentQuestion.getOpt4());
 
+
+
         rightAnswer=currentQuestion.getAnswerNr();
 
         timeLeftInMillis = COUNTDOWN_IN_MILLIS;
+
         startCountDown();
 
 
 
+
+
+    }
+
+    private void endGame() {
+        ratingStar=0;
+        Intent intent = new Intent(this, End2.class);
+        startActivity(intent);
+        this.finish();
     }
 
     private void startCountDown(){
@@ -251,6 +215,8 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
 
 
             }
+
+
         }.start();
     }
 
@@ -261,11 +227,27 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
         String timeFormatted = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
 
         textViewCountDown.setText(timeFormatted);
+        if (timeLeftInMillis==0){
+            endGame();
+        }
+
+        if (timeLeftInMillis>=40000){
+            ratingStar=3;
+        }
+        if (timeLeftInMillis<40000){
+            ratingStar=2;
+        }
+        if (timeLeftInMillis<20000){
+            ratingStar=1;
+        }
+
 
         if (timeLeftInMillis < 10000){
             textViewCountDown.setTextColor(Color.RED);
+
         } else {
             textViewCountDown.setTextColor(textColorDefaultCd);
         }
+
     }
 }

@@ -3,23 +3,42 @@ package com.example.quiz;
 public class Question {
 
     private String question, opt1, opt2, opt3, opt4;
-    private int answerNr;
+    private int answerNr, levelNr, ratingStars;
+
 
     public Question(){
 
     }
 
-    public Question(String question, String opt1, String opt2, String opt3, String opt4, int answerNr) {
+    public int getLevelNr() {
+        return levelNr;
+    }
+
+    public void setLevelNr(int levelNr) {
+        this.levelNr = levelNr;
+    }
+
+    public Question(String question, String opt1, String opt2, String opt3, String opt4, int answerNr, int levelNr, int ratingStars) {
         this.question = question;
         this.opt1 = opt1;
         this.opt2 = opt2;
         this.opt3 = opt3;
         this.opt4 = opt4;
         this.answerNr = answerNr;
+        this.levelNr = levelNr;
+        this.ratingStars=ratingStars;
     }
 
     public String getQuestion() {
         return question;
+    }
+
+    public int getRatingStars() {
+        return ratingStars;
+    }
+
+    public void setRatingStars(int ratingStars) {
+        this.ratingStars = ratingStars;
     }
 
     public void setQuestion(String question) {

@@ -16,7 +16,9 @@ public final class QuizContract {
         public static final String COLUMN_OPTION3 = "option3";
         public static final String COLUMN_OPTION4 = "option4";
         public static final String COLUMN_ANSWER_NR = "answer_nr";
-        public static final String COLUMN_DIFFICULTY = "difficulty";
+        public static final String COLUMN_LEVEL = "level_number";
+        public static final String LEVEL_DONE = "level_done";
+        public static final String RATING = "rating_stars";
         public static final String COLUMN_CATEGORY_ID = "category_id";
     }
 
