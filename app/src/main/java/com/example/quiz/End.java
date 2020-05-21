@@ -40,13 +40,16 @@ public class End extends Activity implements View.OnClickListener{
 
         dbHelper = new QuizDBHelper(this);
         questionList = dbHelper.getAllQuestions();
+
         level=1;
         this.test = (TextView) findViewById(R.id.test);
        // test.setText(questionList.get(level).getRatingStars());
-        test.setText(questionList.get(level).getRatingStars()+"");
+        test.setText(questionList.get(level).getRatingStars()+" "+questionList.get(level).getQuestion());
 
        // rtBar.setRating(questionList.get(level).getRatingStars());
-        rtBar.setNumStars(6);
+        rtBar.setNumStars(3);
+        float num = questionList.get(level).getRatingStars();
+        rtBar.setRating(num);
 
 
 
