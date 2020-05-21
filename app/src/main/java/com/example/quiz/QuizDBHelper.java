@@ -100,20 +100,18 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         return questionList;
     }
 
-    public void addRating(int level, int ratingStars){
+    public boolean addRating(int level, int ratingStars, String oldRating){
         db=getWritableDatabase();
-        Question rightQuestion = getAllQuestions().get(level-1);
-        rightQuestion.setRatingStars(ratingStars);
-        ContentValues cv = new ContentValues();
-        cv.put(QuestionsTable.COLUMN_QUESTION, rightQuestion.getQuestion());
-        cv.put(QuestionsTable.COLUMN_OPTION1, rightQuestion.getOpt1());
-        cv.put(QuestionsTable.COLUMN_OPTION2, rightQuestion.getOpt2());
-        cv.put(QuestionsTable.COLUMN_OPTION3, rightQuestion.getOpt3());
-        cv.put(QuestionsTable.COLUMN_OPTION4, rightQuestion.getOpt4());
-        cv.put(QuestionsTable.COLUMN_ANSWER_NR, rightQuestion.getAnswerNr());
-        cv.put(QuestionsTable.COLUMN_LEVEL, rightQuestion.getLevelNr());
-        cv.put(QuestionsTable.RATING, rightQuestion.getRatingStars());
-        db.update(QuestionsTable.TABLE_NAME, cv, "RATING = ?", new String[] { ""+ratingStars });
+
+        String rating = String.valueOf(ratingStars);
+
+        String query = "UPDATE "+ QuestionsTable.TABLE_NAME +" SET "+QuestionsTable.RATING+
+                " = '"+rating+"' WHERE "+QuestionsTable.COLUMN_CATEGORY_ID+ " = '"+level+"'"+
+                " AND "+ QuestionsTable.RATING+ " = '"+oldRating+"'";
+        db.execSQL(query);
+
+
+        return true;
     }
 
 

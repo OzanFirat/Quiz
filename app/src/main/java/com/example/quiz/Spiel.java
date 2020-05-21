@@ -8,6 +8,7 @@ import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -68,7 +69,7 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
        dbHelper = new QuizDBHelper(this);
         questionList = dbHelper.getAllQuestions();
         questionCountTotal = questionList.size();
-        Collections.shuffle(questionList);
+       // Collections.shuffle(questionList);
 
 
 
@@ -148,7 +149,15 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
 
     private void setTheScore(boolean winORLoss){
         if (winORLoss==true){
-            dbHelper.addRating(level, ratingStar);
+           String oldRating = ""+currentQuestion.getRatingStars();
+           boolean update = dbHelper.addRating(level, ratingStar, oldRating);
+           if(update==true){
+               Toast.makeText(Spiel.this, "Data updated"+ratingStar, Toast.LENGTH_LONG).show();
+
+           } else {
+               Toast.makeText(Spiel.this, "Data is not updated", Toast.LENGTH_LONG).show();
+           }
+
             Intent intent = new Intent(this, End.class);
             startActivity(intent);
             this.finish();

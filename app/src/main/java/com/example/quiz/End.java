@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RatingBar;
+import android.widget.TextView;
 
 import java.util.List;
 
@@ -24,6 +25,8 @@ public class End extends Activity implements View.OnClickListener{
     private QuizDBHelper dbHelper;
     private List<Question> questionList;
     private int level;
+
+    private TextView test;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,11 +37,17 @@ public class End extends Activity implements View.OnClickListener{
 
        this.rtBar = (RatingBar) findViewById(R.id.ratingBar);
 
+
         dbHelper = new QuizDBHelper(this);
         questionList = dbHelper.getAllQuestions();
-
         level=1;
-        rtBar.setRating(questionList.get(level).getRatingStars());
+        this.test = (TextView) findViewById(R.id.test);
+       // test.setText(questionList.get(level).getRatingStars());
+        test.setText(questionList.get(level).getRatingStars()+"");
+
+       // rtBar.setRating(questionList.get(level).getRatingStars());
+        rtBar.setNumStars(6);
+
 
 
 
