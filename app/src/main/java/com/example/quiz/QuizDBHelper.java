@@ -74,7 +74,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         cv.put(QuestionsTable.COLUMN_ANSWER_NR, question.getAnswerNr());
         cv.put(QuestionsTable.COLUMN_LEVEL, question.getLevelNr());
         cv.put(QuestionsTable.RATING, question.getRatingStars());
-        cv.put(QuestionsTable.LEVEL_DONE, question.getRatingStars());
+        cv.put(QuestionsTable.LEVEL_DONE, question.getLvlDone());
         db.insert(QuestionsTable.TABLE_NAME, null, cv);
 
 

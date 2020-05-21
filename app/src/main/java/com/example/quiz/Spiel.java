@@ -171,7 +171,19 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
         btnAnswer3.setTextColor(textColorDefaultRb);
 
          */
-    level=1;
+
+        int counter=0, doneCounter=0;
+        while (counter<questionCountTotal){
+
+            if(questionList.get(counter).getLvlDone().equalsIgnoreCase("yes")){
+
+                doneCounter++;
+
+            }
+            counter++;
+
+        }
+    level=doneCounter;
     currentQuestion = questionList.get(level);
     textVFrage.setText(currentQuestion.getQuestion());
     btnAnswer.setText(currentQuestion.getOpt1());

@@ -35,6 +35,10 @@ public class End extends Activity implements View.OnClickListener{
        this.btnStartMenu = (Button) findViewById(R.id.btnmainMenu);
        btnStartMenu.setOnClickListener(this);
 
+        this.btnNextLvl = (Button) findViewById(R.id.btnNextLvl);
+        btnNextLvl.setOnClickListener(this);
+
+
        this.rtBar = (RatingBar) findViewById(R.id.ratingBar);
 
 
@@ -68,6 +72,13 @@ public class End extends Activity implements View.OnClickListener{
             startActivity(intent);
             this.finish();
             break;
+
+        case R.id.btnNextLvl:
+            intent = new Intent(this, Spiel.class);
+            startActivity(intent);
+            this.finish();
+            break;
+
     }
 }
 }
