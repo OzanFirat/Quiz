@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +16,8 @@ public class QuizDBHelper extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
 
     private SQLiteDatabase db;
+
+    private static final String TAG = "ListDataActivity";
 
     QuizDBHelper (Context context){
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -106,8 +109,10 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         String rating = String.valueOf(ratingStars);
 
         String query = "UPDATE "+ QuestionsTable.TABLE_NAME +" SET "+QuestionsTable.RATING+
-                " = '"+rating+"' WHERE "+QuestionsTable.COLUMN_CATEGORY_ID+ " = '"+level+"'"+
+                " = '"+rating+"' WHERE "+QuestionsTable._ID+ " = '"+level+"'"+
                 " AND "+ QuestionsTable.RATING+ " = '"+oldRating+"'";
+        Log.d(TAG, "updateRating: query "+query);
+        Log.d(TAG, "updateName: Setting Rating to "+rating);
         db.execSQL(query);
 
 
