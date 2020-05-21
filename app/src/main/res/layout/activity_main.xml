@@ -25,22 +25,27 @@
             android:id="@+id/btnSpielen2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="103dp"
+            android:layout_marginLeft="103dp"
+            android:layout_marginTop="193dp"
             android:background="#13DFD5"
             android:text="New Quiz"
             android:textColor="#2A137C"
             android:textSize="36sp"
-            tools:layout_editor_absoluteX="103dp"
-            tools:layout_editor_absoluteY="193dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btnSpielen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="86dp"
             android:background="#13DFD5"
             android:text="Continiue Quiz"
             android:textColor="#2A137C"
             android:textSize="36sp"
-            tools:layout_editor_absoluteX="66dp"
-            tools:layout_editor_absoluteY="328dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSpielen2" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
