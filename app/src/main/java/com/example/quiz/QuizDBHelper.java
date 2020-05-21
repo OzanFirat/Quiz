@@ -34,6 +34,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
                 QuestionsTable.COLUMN_OPTION2+ " TEXT, "+
                 QuestionsTable.COLUMN_OPTION3+ " TEXT, "+
                 QuestionsTable.COLUMN_OPTION4+ " TEXT, "+
+                QuestionsTable.LEVEL_DONE+" TEXT, "+
                 QuestionsTable.COLUMN_ANSWER_NR + " INTEGER, "+
                 QuestionsTable.COLUMN_LEVEL+" INTEGER, "+
                 QuestionsTable.RATING+" INTEGER"+
@@ -50,11 +51,11 @@ public class QuizDBHelper extends SQLiteOpenHelper {
     }
 
     private void fillQuestionTable(){
-        Question q1 = new Question("A is correct", "A", "B", "C", "D", 1, 1, 0);
-        Question q2 = new Question("B is correct", "A", "B", "C", "D", 2, 2, 0);
-        Question q3 = new Question("C is correct", "A", "B", "C", "D", 3, 3, 0);
-        Question q4 = new Question("D is correct", "A", "B", "C", "D", 4, 4,0);
-        Question q5 = new Question("A is correct", "A", "B", "C", "D", 1, 5,0);
+        Question q1 = new Question("A is correct", "A", "B", "C", "D", 1, 1, 0, "no");
+        Question q2 = new Question("B is correct", "A", "B", "C", "D", 2, 2, 0, "no");
+        Question q3 = new Question("C is correct", "A", "B", "C", "D", 3, 3, 0, "no");
+        Question q4 = new Question("D is correct", "A", "B", "C", "D", 4, 4,0, "no");
+        Question q5 = new Question("A is correct", "A", "B", "C", "D", 1, 5,0, "no");
         addQuestion(q1);
         addQuestion(q2);
         addQuestion(q3);
@@ -73,7 +74,9 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         cv.put(QuestionsTable.COLUMN_ANSWER_NR, question.getAnswerNr());
         cv.put(QuestionsTable.COLUMN_LEVEL, question.getLevelNr());
         cv.put(QuestionsTable.RATING, question.getRatingStars());
+        cv.put(QuestionsTable.LEVEL_DONE, question.getRatingStars());
         db.insert(QuestionsTable.TABLE_NAME, null, cv);
+
 
     }
 
@@ -94,6 +97,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
                 question.setAnswerNr(c.getInt(c.getColumnIndex(QuestionsTable.COLUMN_ANSWER_NR)));
                 question.setLevelNr(c.getInt(c.getColumnIndex(QuestionsTable.COLUMN_LEVEL)));
                 question.setRatingStars(c.getInt(c.getColumnIndex(QuestionsTable.RATING)));
+                question.setLvlDone(c.getString(c.getColumnIndex(QuestionsTable.LEVEL_DONE)));
                 questionList.add(question);
 
 
@@ -103,7 +107,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         return questionList;
     }
 
-    public boolean addRating(int level, int ratingStars, String oldRating){
+    public boolean addRating(int level, int ratingStars, String oldRating, String actualLvlStatus, String oldLvlStatus){
         db=getWritableDatabase();
 
         String rating = String.valueOf(ratingStars);
@@ -114,6 +118,13 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         Log.d(TAG, "updateRating: query "+query);
         Log.d(TAG, "updateName: Setting Rating to "+rating);
         db.execSQL(query);
+
+        String query2 = "UPDATE "+ QuestionsTable.TABLE_NAME +" SET "+QuestionsTable.LEVEL_DONE+
+                " = '"+actualLvlStatus+"' WHERE "+QuestionsTable._ID+ " = '"+level+"'"+
+                " AND "+ QuestionsTable.LEVEL_DONE+ " = '"+oldLvlStatus+"'";
+        Log.d(TAG, "updateRating: query "+query);
+        Log.d(TAG, "updateName: Setting Lvl Status to "+actualLvlStatus);
+        db.execSQL(query2);
 
 
         return true;

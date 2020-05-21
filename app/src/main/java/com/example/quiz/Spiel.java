@@ -135,22 +135,13 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
         }
     }
 
-    private boolean antwortAuswerten (String btnText){
-        boolean frage = false;
-        countDownTimer.cancel();
-        Fragen fragenC = new Fragen();
-       ArrayList fragen = fragenC.getFragen();
-       String[] speicher = (String[]) fragen.get(aktuelleFrage);
-       if (speicher[1].equals(btnText)){
-           frage=true;
-       }
-        return frage;
-    }
 
     private void setTheScore(boolean winORLoss){
         if (winORLoss==true){
            String oldRating = ""+currentQuestion.getRatingStars();
-           boolean update = dbHelper.addRating(level, ratingStar, oldRating);
+           String actualLvlStatus="yes", oldLvlStatus = "no";
+           boolean update = dbHelper.addRating(level, ratingStar, oldRating, actualLvlStatus, oldLvlStatus);
+
            if(update==true){
                Toast.makeText(Spiel.this, "Data updated"+ratingStar, Toast.LENGTH_LONG).show();
 
