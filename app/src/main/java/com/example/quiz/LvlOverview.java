@@ -49,6 +49,18 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         if(doneCounter<=20){
             counter=0;
         }
+        if(doneCounter>20 && doneCounter<=40){
+            counter=20;
+        }
+        if(doneCounter>40 && doneCounter<=60){
+            counter=40;
+        }
+        if(doneCounter>60 && doneCounter<=80){
+            counter=60;
+        }
+        if(doneCounter>80 && doneCounter<=100){
+            counter=80;
+        }
 
       //  Toast.makeText(LvlOverview.this, "Data updated"+doneCounter, Toast.LENGTH_LONG).show();
         super.onCreate(savedInstanceState);
@@ -90,7 +102,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl4.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl4.setClickable(true);
-
+            lvl4.setBackgroundColor(-65536);
         } else {
             lvl4.setClickable(false);
         }
@@ -100,6 +112,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl5.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl5.setClickable(true);
+            lvl5.setBackgroundColor(-65536);
         } else {
             lvl5.setClickable(false);
         }
@@ -109,6 +122,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl6.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl6.setClickable(true);
+            lvl6.setBackgroundColor(-65536);
         }else {
             lvl6.setClickable(false);
         }
@@ -118,6 +132,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl7.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl7.setClickable(true);
+            lvl7.setBackgroundColor(-65536);
         }else {
             lvl7.setClickable(false);
         }
@@ -127,6 +142,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl8.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl8.setClickable(true);
+            lvl8.setBackgroundColor(-65536);
         }else {
             lvl8.setClickable(false);
         }
@@ -136,6 +152,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl9.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl9.setClickable(true);
+            lvl9.setBackgroundColor(-65536);
         } else {
             lvl9.setClickable(false);
         }
@@ -145,6 +162,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl10.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl10.setClickable(true);
+            lvl10.setBackgroundColor(-65536);
         } else {
             lvl10.setClickable(false);
         }
@@ -154,6 +172,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl11.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl11.setClickable(true);
+            lvl11.setBackgroundColor(-65536);
         } else {
             lvl11.setClickable(false);
         }
@@ -163,6 +182,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl12.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl12.setClickable(true);
+            lvl12.setBackgroundColor(-65536);
         } else {
             lvl12.setClickable(false);
         }
@@ -172,6 +192,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl13.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl13.setClickable(true);
+            lvl13.setBackgroundColor(-65536);
         } else {
             lvl13.setClickable(false);
         }
@@ -181,6 +202,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl14.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl14.setClickable(true);
+            lvl14.setBackgroundColor(-65536);
         } else {
             lvl14.setClickable(false);
         }
@@ -190,6 +212,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl15.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl15.setClickable(true);
+            lvl15.setBackgroundColor(-65536);
         } else {
             lvl15.setClickable(false);
         }
@@ -199,6 +222,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl16.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl16.setClickable(true);
+            lvl16.setBackgroundColor(-65536);
         } else {
             lvl16.setClickable(false);
         }
@@ -208,6 +232,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl17.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl17.setClickable(true);
+            lvl17.setBackgroundColor(-65536);
         } else {
             lvl17.setClickable(false);
         }
@@ -217,6 +242,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl18.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl18.setClickable(true);
+            lvl18.setBackgroundColor(-65536);
         } else {
             lvl18.setClickable(false);
         }
@@ -226,6 +252,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl19.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl19.setClickable(true);
+            lvl19.setBackgroundColor(-65536);
         } else {
             lvl19.setClickable(false);
         }
@@ -235,6 +262,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl20.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl20.setClickable(true);
+            lvl20.setBackgroundColor(-65536);
         } else {
             lvl20.setClickable(false);
         }
