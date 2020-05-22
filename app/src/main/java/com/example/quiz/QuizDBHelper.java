@@ -14,6 +14,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "MyAwesomeQuiz.db";
     private static final int DATABASE_VERSION = 1;
+    private List<Question> questionList;
 
     private SQLiteDatabase db;
 
@@ -41,7 +42,10 @@ public class QuizDBHelper extends SQLiteOpenHelper {
                 ")";
 
                 db.execSQL(SQL_CREATE_QUESTIONS_TABLE);
-        fillQuestionTable();
+        if(questionList.isEmpty()){
+            fillQuestionTable();
+        }
+
     }
 
     @Override
@@ -56,11 +60,41 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         Question q3 = new Question("C is correct", "A", "B", "C", "D", 3, 3, 0, "no");
         Question q4 = new Question("D is correct", "A", "B", "C", "D", 4, 4,0, "no");
         Question q5 = new Question("A is correct", "A", "B", "C", "D", 1, 5,0, "no");
+        Question q6 = new Question("A is correct", "A", "B", "C", "D", 1, 6,0, "no");
+        Question q7 = new Question("A is correct", "A", "B", "C", "D", 1, 7,0, "no");
+        Question q8 = new Question("A is correct", "A", "B", "C", "D", 1, 8,0, "no");
+        Question q9 = new Question("A is correct", "A", "B", "C", "D", 1, 9,0, "no");
+        Question q10 = new Question("A is correct", "A", "B", "C", "D", 1, 10,0, "no");
+        Question q11 = new Question("A is correct", "A", "B", "C", "D", 1, 11, 0, "no");
+        Question q12 = new Question("B is correct", "A", "B", "C", "D", 2, 12, 0, "no");
+        Question q13 = new Question("C is correct", "A", "B", "C", "D", 3, 13, 0, "no");
+        Question q14 = new Question("D is correct", "A", "B", "C", "D", 4, 14,0, "no");
+        Question q15 = new Question("A is correct", "A", "B", "C", "D", 1, 15,0, "no");
+        Question q16 = new Question("A is correct", "A", "B", "C", "D", 1, 16,0, "no");
+        Question q17 = new Question("A is correct", "A", "B", "C", "D", 1, 17,0, "no");
+        Question q18 = new Question("A is correct", "A", "B", "C", "D", 1, 18,0, "no");
+        Question q19 = new Question("A is correct", "A", "B", "C", "D", 1, 19,0, "no");
+        Question q20 = new Question("A is correct", "A", "B", "C", "D", 1, 20,0, "no");
         addQuestion(q1);
         addQuestion(q2);
         addQuestion(q3);
         addQuestion(q4);
         addQuestion(q5);
+        addQuestion(q6);
+        addQuestion(q7);
+        addQuestion(q8);
+        addQuestion(q9);
+        addQuestion(q10);
+        addQuestion(q11);
+        addQuestion(q12);
+        addQuestion(q13);
+        addQuestion(q14);
+        addQuestion(q15);
+        addQuestion(q16);
+        addQuestion(q17);
+        addQuestion(q18);
+        addQuestion(q19);
+        addQuestion(q20);
 
     }
 
@@ -81,10 +115,10 @@ public class QuizDBHelper extends SQLiteOpenHelper {
     }
 
     public List<Question> getAllQuestions(){
-        List<Question> questionList = new ArrayList<>();
+        questionList = new ArrayList<>();
         db = getReadableDatabase();
         Cursor c = db.rawQuery("SELECT * FROM "+ QuestionsTable.TABLE_NAME, null);
-        int levelCounter=1;
+
         if(c.moveToFirst()){
             do {
 

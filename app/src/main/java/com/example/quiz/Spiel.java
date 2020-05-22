@@ -83,7 +83,7 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
         btnAnswer2.setOnClickListener(this);
         btnAnswer3.setOnClickListener(this);
 
-
+        Toast.makeText(Spiel.this, "Game activity new loaded", Toast.LENGTH_LONG).show();
 
     }
 
@@ -140,6 +140,7 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
         if (winORLoss==true){
            String oldRating = ""+currentQuestion.getRatingStars();
            String actualLvlStatus="yes", oldLvlStatus = "no";
+           level = currentQuestion.getLevelNr();
            boolean update = dbHelper.addRating(level, ratingStar, oldRating, actualLvlStatus, oldLvlStatus);
 
            if(update==true){
@@ -148,7 +149,7 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
            } else {
                Toast.makeText(Spiel.this, "Data is not updated", Toast.LENGTH_LONG).show();
            }
-
+            countDownTimer.cancel();
             Intent intent = new Intent(this, End.class);
             startActivity(intent);
             this.finish();

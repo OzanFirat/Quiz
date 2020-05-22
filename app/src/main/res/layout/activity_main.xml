@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/btnSpielen2"
+            android:id="@+id/btnNewQuiz"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="103dp"
@@ -36,7 +36,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/btnSpielen"
+            android:id="@+id/btnContinueQuiz"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="86dp"
