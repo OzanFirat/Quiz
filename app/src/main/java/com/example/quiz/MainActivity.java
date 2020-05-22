@@ -30,7 +30,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             case R.id.btnNewQuiz:
                 QuizDBHelper dbHelper = new QuizDBHelper(this);
                 List<Question> questionList = dbHelper.getAllQuestions();
-                Intent intent = new Intent(this, LvlOverview.class);
+                Intent intent = new Intent(this, gameOverview.class);
                 startActivity(intent);
                 this.finish();
 
@@ -38,7 +38,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
 
             case R.id.btnContinueQuiz:
-                intent = new Intent(this, LvlOverview.class);
+                intent = new Intent(this, gameOverview.class);
                 startActivity(intent);
                 this.finish();
                 break;
