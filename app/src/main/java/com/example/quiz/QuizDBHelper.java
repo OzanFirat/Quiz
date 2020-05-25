@@ -164,6 +164,12 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         return true;
     }
 
+    public boolean alterTable(){
+        String query = "DROP TABLE "+ QuestionsTable.TABLE_NAME;
+
+        return true;
+    }
+
 
 
 }

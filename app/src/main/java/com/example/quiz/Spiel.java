@@ -28,7 +28,7 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
     private int score, questionCountTotal;
     private boolean answered;
 
-    private static final long COUNTDOWN_IN_MILLIS = 60000;
+    private static final long COUNTDOWN_IN_MILLIS = 30000;
     private ColorStateList textColorDefaultCd;
 
     private CountDownTimer countDownTimer;
@@ -244,13 +244,13 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
             endGame();
         }
 
-        if (timeLeftInMillis>=40000){
+        if (timeLeftInMillis>=20000){
             ratingStar=3;
         }
-        if (timeLeftInMillis<40000){
+        if (timeLeftInMillis<20000){
             ratingStar=2;
         }
-        if (timeLeftInMillis<20000){
+        if (timeLeftInMillis<10000){
             ratingStar=1;
         }
 

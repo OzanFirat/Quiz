@@ -30,7 +30,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
     protected void onCreate(Bundle savedInstanceState) {
         QuizDBHelper dbHelper = new QuizDBHelper(this);
         List<Question> questionList = dbHelper.getAllQuestions();
-        Toast.makeText(LvlOverview.this, "Data updated"+questionList.get(0).getLvlDone(), Toast.LENGTH_LONG).show();
+        //Toast.makeText(LvlOverview.this, "Data updated"+questionList.get(0).getLvlDone(), Toast.LENGTH_LONG).show();
         int questionCountTotal = questionList.size();
         int counter = 0, doneCounter=0;
         ArrayList<Button> buttons = new ArrayList<Button>();

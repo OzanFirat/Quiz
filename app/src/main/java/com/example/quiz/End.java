@@ -41,7 +41,7 @@ public class End extends Activity implements View.OnClickListener {
         btnNextLvl.setOnClickListener(this);
 
 
-        this.rtBar = (RatingBar) findViewById(R.id.ratingBar);
+        this.rtBar = (RatingBar) findViewById(R.id.ratingBarEnd);
 
 
         QuizDBHelper dbHelper = new QuizDBHelper(this);
