@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -92,7 +93,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl3.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl3.setClickable(true);
-            lvl3.setBackgroundColor(-65536);
+            //lvl3.setBackground(drawable.sparta_helm));
         } else {
             lvl3.setClickable(false);
         }
