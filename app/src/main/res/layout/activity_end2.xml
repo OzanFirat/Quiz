@@ -10,11 +10,12 @@
         android:id="@+id/btnmainMenu1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="227dp"
+        android:layout_marginBottom="125dp"
         android:text="Main Menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTryAgain" />
 
     <Button
         android:id="@+id/btnTryAgain"
@@ -22,26 +23,36 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="3dp"
         android:layout_marginLeft="3dp"
-        android:layout_marginBottom="35dp"
-        android:text="Next"
+        android:layout_marginBottom="53dp"
+        android:text="Try Again"
         app:layout_constraintBottom_toTopOf="@+id/btnmainMenu1"
-        app:layout_constraintStart_toStartOf="@+id/btnmainMenu1" />
+        app:layout_constraintStart_toStartOf="@+id/btnmainMenu1"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBarEnd" />
 
     <RatingBar
         android:id="@+id/ratingBarEnd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="208dp"
+        android:layout_marginBottom="53dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnTryAgain"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/txtScore" />
 
     <TextView
         android:id="@+id/txtScore"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="67dp"
-        android:text="You lost! Try again=)"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="51dp"
+        android:background="@drawable/end2_flag"
+        android:paddingLeft="150dp"
+        android:paddingTop="250dp"
+        android:text="Niederlage"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FBFBFB"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ratingBarEnd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

@@ -10,51 +10,57 @@
         android:id="@+id/btnmainMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="227dp"
+        android:layout_marginBottom="101dp"
         android:text="Main Menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNextLvl" />
 
     <Button
         android:id="@+id/btnNextLvl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_marginLeft="3dp"
-        android:layout_marginBottom="35dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="41dp"
         android:text="Next"
         app:layout_constraintBottom_toTopOf="@+id/btnmainMenu"
-        app:layout_constraintStart_toStartOf="@+id/btnmainMenu" />
+        app:layout_constraintStart_toStartOf="@+id/btnmainMenu"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBarEnd" />
 
     <RatingBar
         android:id="@+id/ratingBarEnd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="208dp"
+        android:layout_marginBottom="66dp"
         android:numStars="3"
+        app:layout_constraintBottom_toTopOf="@+id/btnNextLvl"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/txtScore" />
 
     <TextView
         android:id="@+id/txtScore"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="67dp"
-        android:text="Congrats for your win!"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="40dp"
+        android:autoText="false"
+        android:background="@drawable/end1_banner"
+        android:freezesText="false"
+        android:lineSpacingExtra="8sp"
+        android:paddingLeft="155dp"
+        android:paddingTop="150dp"
+        android:text="Victory!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#FFC107"
+        android:textIsSelectable="false"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ratingBarEnd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="42dp"
-        android:layout_marginEnd="38dp"
-        android:layout_marginRight="38dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/txtScore"
-        app:layout_constraintTop_toBottomOf="@+id/txtScore" />
 </androidx.constraintlayout.widget.ConstraintLayout>

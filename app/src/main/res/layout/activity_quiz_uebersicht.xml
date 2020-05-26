@@ -64,7 +64,7 @@
         android:layout_marginRight="27dp"
         android:layout_marginBottom="30dp"
         android:background="@drawable/topic_button_border"
-        android:text="Topic 1"
+        android:text="Computer Science"
         app:layout_constraintBottom_toTopOf="@+id/btnTopic2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

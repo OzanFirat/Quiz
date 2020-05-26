@@ -55,10 +55,10 @@ public class QuizDBHelper extends SQLiteOpenHelper {
     }
 
     private void fillQuestionTable(){
-        Question q1 = new Question("A is correct", "A", "B", "C", "D", 1, 1, 0, "no");
-        Question q2 = new Question("B is correct", "A", "B", "C", "D", 2, 2, 0, "no");
-        Question q3 = new Question("C is correct", "A", "B", "C", "D", 3, 3, 0, "no");
-        Question q4 = new Question("D is correct", "A", "B", "C", "D", 4, 4,0, "no");
+        Question q1 = new Question("Wie schreibt man IP-Adressen (IPv4)?", "8 durch Doppelpunkt getrennte Hexadezimal Zeichen", "32-Bit stellige binäre Zahl ", "10 Stellige dezimale Zahl", "4 durch Punkt getrennte Zahlen", 4, 1, 0, "no");
+        Question q2 = new Question("Was bedeutet SMTP?", "simple mother terminal protocol", "Schweizer Militärsteamputze", "scientific mail translocation protocol", "simple mail transfer protocol", 4, 2, 0, "no");
+        Question q3 = new Question("Wie nennt man die Anmeldung bei verschiedenen Homepages?", "Logout", "Login", "Lockdown", "Entry", 2, 3, 0, "no");
+        Question q4 = new Question("Was hat nichts mit einem Server zu tun", "Roxy", "Proxy", "Apache", "Q-Mail", 1, 4,0, "no");
         Question q5 = new Question("A is correct", "A", "B", "C", "D", 1, 5,0, "no");
         Question q6 = new Question("A is correct", "A", "B", "C", "D", 1, 6,0, "no");
         Question q7 = new Question("A is correct", "A", "B", "C", "D", 1, 7,0, "no");

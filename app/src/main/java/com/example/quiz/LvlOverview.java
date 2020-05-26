@@ -1,11 +1,13 @@
 package com.example.quiz;
 
 import androidx.annotation.ColorInt;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,6 +29,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
 
 
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         QuizDBHelper dbHelper = new QuizDBHelper(this);
@@ -73,9 +76,13 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl1.setClickable(true);
             //lvl1.setBackgroundColor(@ColorInt);
-            lvl1.setBackgroundColor(-65536);
+          //  lvl1.setBackgroundColor(-65536);
+            lvl1.setBackground(getDrawable(drawable.sparta_helm));
         } else {
             lvl1.setClickable(false);
+            if(questionList.get(counter).getLevelNr()<=doneCounter){
+                lvl1.setBackground(getDrawable(drawable.sieges_banner_drei_sterne));
+            }
         }
         counter++;
        // Toast.makeText(LvlOverview.this, "Second Data updated"+doneCounter, Toast.LENGTH_LONG).show();
@@ -83,7 +90,8 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl2.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl2.setClickable(true);
-            lvl2.setBackgroundColor(-65536);
+          //  lvl2.setBackgroundColor(-65536);
+            lvl2.setBackground(getDrawable(drawable.sparta_helm));
         }  else {
         lvl2.setClickable(false);
     }
@@ -93,7 +101,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl3.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl3.setClickable(true);
-            //lvl3.setBackground(drawable.sparta_helm));
+            lvl3.setBackground(getDrawable(drawable.sparta_helm));
         } else {
             lvl3.setClickable(false);
         }
@@ -103,7 +111,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl4.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl4.setClickable(true);
-            lvl4.setBackgroundColor(-65536);
+            lvl4.setBackground(getDrawable(drawable.sparta_helm));
         } else {
             lvl4.setClickable(false);
         }
@@ -113,7 +121,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl5.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl5.setClickable(true);
-            lvl5.setBackgroundColor(-65536);
+            lvl5.setBackground(getDrawable(drawable.sparta_helm));
         } else {
             lvl5.setClickable(false);
         }
@@ -123,7 +131,8 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl6.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl6.setClickable(true);
-            lvl6.setBackgroundColor(-65536);
+            //lvl6.setBackgroundColor(-65536);
+            lvl6.setBackground(getDrawable(drawable.sparta_helm));
         }else {
             lvl6.setClickable(false);
         }

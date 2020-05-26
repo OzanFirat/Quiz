@@ -61,9 +61,9 @@ public class End extends Activity implements View.OnClickListener {
 
         doneCounter=doneCounter-1;
 
-            this.test = (TextView) findViewById(R.id.test);
+            this.test = (TextView) findViewById(R.id.txtScore);
             // test.setText(questionList.get(level).getRatingStars());
-            test.setText(questionList.get(doneCounter).getRatingStars() + " " + questionList.get(doneCounter).getQuestion()+questionList.get(doneCounter).getLvlDone());
+            //test.setText(questionList.get(doneCounter).getRatingStars() + " " + questionList.get(doneCounter).getQuestion()+questionList.get(doneCounter).getLvlDone());
 
             // rtBar.setRating(questionList.get(level).getRatingStars());
             rtBar.setNumStars(3);
