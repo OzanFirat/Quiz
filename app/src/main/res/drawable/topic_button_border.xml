@@ -10,8 +10,7 @@
 
     <stroke
         android:width="10dp"
-        android:color=""
-        >
+        android:color="#060704">
 
     </stroke>
 
