@@ -4,16 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".quizUebersicht">
+    tools:context="quizUebersicht">
 
     <Button
         android:id="@+id/btnTopic3"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="1dp"
         android:text="Topic 3"
         app:layout_constraintBottom_toTopOf="@+id/btnTopic4"
-        app:layout_constraintEnd_toEndOf="@+id/btnTopic4"
-        app:layout_constraintStart_toStartOf="@+id/btnTopic4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnTopic2" />
 
     <Button
@@ -24,9 +29,8 @@
         android:layout_marginLeft="27dp"
         android:layout_marginEnd="27dp"
         android:layout_marginRight="27dp"
-        android:layout_marginBottom="394dp"
         android:text="Topic 4"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnTopic5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnTopic3" />
@@ -35,29 +39,56 @@
         android:id="@+id/btnTopic2"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
         android:text="Topic 2"
         app:layout_constraintBottom_toTopOf="@+id/btnTopic3"
-        app:layout_constraintEnd_toEndOf="@+id/btnTopic3"
-        app:layout_constraintStart_toStartOf="@+id/btnTopic3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnTopic1" />
 
     <Button
         android:id="@+id/btnTopic1"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="93dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
         android:text="Topic 1"
         app:layout_constraintBottom_toTopOf="@+id/btnTopic2"
-        app:layout_constraintEnd_toEndOf="@+id/btnTopic2"
-        app:layout_constraintStart_toStartOf="@+id/btnTopic2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnTopic5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="332dp"
+        android:text="Topic 5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTopic4" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="23dp"
         android:text="Choose your Quiz Topic"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="29dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnTopic1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

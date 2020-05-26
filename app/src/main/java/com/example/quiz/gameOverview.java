@@ -11,7 +11,7 @@ import java.util.List;
 
 public class gameOverview extends AppCompatActivity implements View.OnClickListener{
 
-    Button topic1, topic2, topic3, topic4;
+    Button topic1, topic2, topic3, topic4, topic5;
     private int counter, doneCounter, questionCountTotal;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
         topic2= (Button) findViewById(R.id.btnTopic2);
         topic3= (Button) findViewById(R.id.btnTopic3);
         topic4= (Button) findViewById(R.id.btnTopic4);
+        topic5= (Button) findViewById(R.id.btnTopic5);
 
         topic1.setOnClickListener(this);
         topic2.setOnClickListener(this);
@@ -99,6 +100,14 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
 
         switch (v.getId()){
             case R.id.btnTopic4:
+                Intent intent = new Intent(this, LvlOverview.class);
+                startActivity(intent);
+                this.finish();
+                break;
+        }
+
+        switch (v.getId()){
+            case R.id.btnTopic5:
                 Intent intent = new Intent(this, LvlOverview.class);
                 startActivity(intent);
                 this.finish();
