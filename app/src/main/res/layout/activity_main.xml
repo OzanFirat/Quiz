@@ -17,25 +17,44 @@
             android:id="@+id/btnNewQuiz"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="47dp"
-            android:background="#13DFD5"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/start_border"
+            android:drawablePadding="40dp"
+            android:padding="15dp"
             android:text="New Quiz"
             android:textColor="#2A137C"
             android:textSize="36sp"
             app:layout_constraintBottom_toTopOf="@+id/btnContinueQuiz"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
         <Button
             android:id="@+id/btnContinueQuiz"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="293dp"
-            android:background="#13DFD5"
+            android:layout_marginBottom="51dp"
+            android:background="@drawable/start_border"
+            android:drawablePadding="50dp"
+            android:padding="15dp"
             android:text="Continiue Quiz"
             android:textColor="#2A137C"
             android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnNewQuiz" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="413dp"
+            android:layout_height="442dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="46dp"
+            android:src="@drawable/quiztime"
+            app:layout_constraintBottom_toTopOf="@+id/btnNewQuiz"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
