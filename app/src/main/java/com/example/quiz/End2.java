@@ -11,7 +11,7 @@ import android.widget.RatingBar;
 
 public class End2 extends AppCompatActivity implements View.OnClickListener {
 
-    private Button btnStartMenu;
+    private Button btnStartMenu, btnTryAgain;
     private RatingBar rtBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,9 @@ public class End2 extends AppCompatActivity implements View.OnClickListener {
 
         this.btnStartMenu = (Button) findViewById(R.id.btnmainMenu1);
         btnStartMenu.setOnClickListener(this);
+
+        this.btnTryAgain = (Button) findViewById(R.id.btnTryAgain);
+        this.btnTryAgain.setOnClickListener(this);
 
         rtBar = (RatingBar) findViewById(R.id.ratingBarEnd);
         rtBar.setNumStars(3);
@@ -39,6 +42,13 @@ public class End2 extends AppCompatActivity implements View.OnClickListener {
                 startActivity(intent);
                 this.finish();
                 break;
+            case R.id.btnTryAgain:
+                intent = new Intent(this, Spiel.class);
+                startActivity(intent);
+                this.finish();
+                break;
         }
+
+
     }
 }

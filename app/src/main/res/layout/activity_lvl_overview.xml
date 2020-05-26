@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/rasen"
     tools:context=".LvlOverview">
 
     <androidx.gridlayout.widget.GridLayout
@@ -15,7 +16,7 @@
         android:layout_marginEnd="1dp"
         android:layout_marginRight="1dp"
         android:layout_marginBottom="60dp"
-        android:background="@drawable/rasen"
+
         android:clipToPadding="true"
 
         app:columnCount="4"

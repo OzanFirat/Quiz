@@ -81,7 +81,18 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         } else {
             lvl1.setClickable(false);
             if(questionList.get(counter).getLevelNr()<=doneCounter){
-                lvl1.setBackground(getDrawable(drawable.sieges_banner_drei_sterne));
+                if(questionList.get(counter).getRatingStars()==3){
+                    lvl1.setBackground(getDrawable(drawable.sieges_banner_drei_sterne));
+                    lvl1.setText("");
+                }
+                if(questionList.get(counter).getRatingStars()==2){
+                    lvl1.setBackground(getDrawable(drawable.sieges_banner_zwei_sterne));
+                    lvl1.setText("");
+                }
+                if(questionList.get(counter).getRatingStars()==1){
+                    lvl1.setBackground(getDrawable(drawable.sieges_banner_ein_stern));
+                    lvl1.setText("");
+                }
             }
         }
         counter++;
@@ -94,6 +105,17 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
             lvl2.setBackground(getDrawable(drawable.sparta_helm));
         }  else {
         lvl2.setClickable(false);
+            if(questionList.get(counter).getLevelNr()<=doneCounter){
+                if(questionList.get(counter).getRatingStars()==3){
+                    lvl2.setBackground(getDrawable(drawable.sieges_banner_drei_sterne));
+                }
+                if(questionList.get(counter).getRatingStars()==2){
+                    lvl2.setBackground(getDrawable(drawable.sieges_banner_zwei_sterne));
+                }
+                if(questionList.get(counter).getRatingStars()==1){
+                    lvl2.setBackground(getDrawable(drawable.sieges_banner_ein_stern));
+                }
+            }
     }
         counter++;
 
@@ -104,6 +126,17 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
             lvl3.setBackground(getDrawable(drawable.sparta_helm));
         } else {
             lvl3.setClickable(false);
+            if(questionList.get(counter).getLevelNr()<=doneCounter){
+                if(questionList.get(counter).getRatingStars()==3){
+                    lvl3.setBackground(getDrawable(drawable.sieges_banner_drei_sterne));
+                }
+                if(questionList.get(counter).getRatingStars()==2){
+                    lvl3.setBackground(getDrawable(drawable.sieges_banner_zwei_sterne));
+                }
+                if(questionList.get(counter).getRatingStars()==1){
+                    lvl3.setBackground(getDrawable(drawable.sieges_banner_ein_stern));
+                }
+            }
         }
         counter++;
 
