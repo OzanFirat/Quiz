@@ -4,117 +4,89 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#8d5f04"
     tools:context=".Spiel">
 
     <Button
-        android:id="@+id/btnAnswer"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="230dp"
+        android:id="@+id/btnAnswer5"
+        android:layout_width="180dp"
+        android:layout_height="123dp"
+        android:background="@drawable/topic_button_border"
         android:text="Berlin"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btnAnswer2"
-        app:layout_constraintStart_toStartOf="@+id/btnAnswer2"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="215dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+    <Button
+        android:id="@+id/btnAnswer"
+        android:layout_width="180dp"
+        android:layout_height="123dp"
+        android:background="@drawable/topic_button_border"
+        android:text="Berlin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="447dp" />
 
     <Button
         android:id="@+id/btnAnswer3"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="101dp"
+        android:layout_width="180dp"
+        android:layout_height="123dp"
+        android:background="@drawable/topic_button_border"
+
         android:text="Berlin"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btnAnswer1"
-        app:layout_constraintStart_toStartOf="@+id/btnAnswer1"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="215dp"
+        tools:layout_editor_absoluteY="584dp" />
 
     <TextView
         android:id="@+id/textVFrage"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginLeft="6dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginRight="6dp"
-        android:layout_marginBottom="20dp"
+        android:layout_width="379dp"
+        android:layout_height="123dp"
+        android:background="@drawable/topic_button_border"
         android:fontFamily="casual"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
         android:text="Wie heisst die Hauptstadt von Frankreich?"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/btnAnswer1"
-        android:layout_width="180dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="215dp"
-        android:layout_marginLeft="215dp"
-        android:text="Berlin"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textSize="16sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btnAnswer"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="10dp" />
 
     <Button
         android:id="@+id/btnAnswer2"
         android:layout_width="180dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="17dp"
-        android:layout_marginRight="17dp"
-        android:layout_marginBottom="101dp"
+        android:layout_height="123dp"
+        android:background="@drawable/topic_button_border"
         android:text="Bern"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnAnswer3"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="584dp" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="18dp"
-        android:layout_marginLeft="18dp"
-        android:layout_marginTop="146dp"
-        android:layout_marginBottom="147dp"
-        android:src="@drawable/ic_launcher_foreground"
-        app:layout_constraintBottom_toTopOf="@+id/btnAnswer"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="37dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginRight="3dp"
-        android:ems="10"
-        android:inputType="date"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textVFrage" />
+        android:layout_width="368dp"
+        android:layout_height="204dp"
+        android:background="@drawable/main_game"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="144dp" />
 
     <TextView
         android:id="@+id/txtVTimer"
-        android:layout_width="54dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginRight="52dp"
-        android:layout_marginBottom="52dp"
+        android:layout_width="58dp"
+        android:layout_height="67dp"
         android:text="00:60"
         app:autoSizeMinTextSize="60dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnAnswer1"
-        app:layout_constraintEnd_toEndOf="parent" />
+        tools:layout_editor_absoluteX="326dp"
+        tools:layout_editor_absoluteY="355dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
