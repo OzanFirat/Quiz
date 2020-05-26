@@ -8,44 +8,35 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_marginBottom="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
 
         <Button
             android:id="@+id/btnNewQuiz"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="103dp"
-            android:layout_marginLeft="103dp"
-            android:layout_marginTop="193dp"
+            android:layout_marginBottom="47dp"
             android:background="#13DFD5"
             android:text="New Quiz"
             android:textColor="#2A137C"
             android:textSize="36sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintBottom_toTopOf="@+id/btnContinueQuiz"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/btnContinueQuiz"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="86dp"
+            android:layout_marginTop="293dp"
             android:background="#13DFD5"
             android:text="Continiue Quiz"
             android:textColor="#2A137C"
             android:textSize="36sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnSpielen2" />
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
