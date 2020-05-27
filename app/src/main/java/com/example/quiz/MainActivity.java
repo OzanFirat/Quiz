@@ -27,11 +27,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnNewQuiz:
-
+                /*
                 QuizDBHelper dbHelper = new QuizDBHelper(this);
                 dbHelper.alterTable();
                 dbHelper = new QuizDBHelper(this);
                 List<Question> questionList = dbHelper.getAllQuestions();
+                 */
+
                 Intent intent = new Intent(this, gameOverview.class);
                 startActivity(intent);
                 this.finish();

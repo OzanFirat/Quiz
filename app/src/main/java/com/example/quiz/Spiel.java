@@ -29,7 +29,7 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
     private ColorStateList textColorDefaultRb;
     private Question currentQuestion;
 
-    private int score, questionCountTotal;
+    private int score, questionCountTotal, amountOfFails;
     private boolean answered;
 
     private static final long COUNTDOWN_IN_MILLIS = 30000;
@@ -199,7 +199,15 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
         btnAnswer2.setText(currentQuestion.getOpt3());
         btnAnswer3.setText(currentQuestion.getOpt4());
 
+        if(level==1){
+            amountOfFails=currentQuestion.getAmountOfFailures();
+        } else{
+            int previousQuestion = currentQuestion.getLevelNr()-1;
+            amountOfFails=questionList.get(previousQuestion).getAmountOfFailures();
 
+            dbHelper.updateAmountOfFailure(currentQuestion.getLevelNr(), currentQuestion.getAmountOfFailures()+"", amountOfFails+"");
+            currentQuestion.setAmountOfFailures(amountOfFails);
+        }
 
 
 
@@ -216,10 +224,21 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
     }
 
     private void endGame() {
+        countDownTimer.cancel();
         ratingStar=0;
-        Intent intent = new Intent(this, End2.class);
-        startActivity(intent);
-        this.finish();
+        amountOfFails++;
+        dbHelper.updateAmountOfFailure(currentQuestion.getLevelNr(), currentQuestion.getAmountOfFailures()+"", amountOfFails+"");
+        if(amountOfFails==3){
+            Intent intent = new Intent(this, End2.class);
+            startActivity(intent);
+            this.finish();
+            dbHelper.alterTable();
+        } else {
+            Intent intent = new Intent(this, End2.class);
+            startActivity(intent);
+            this.finish();
+        }
+
     }
 
     private void startCountDown(){

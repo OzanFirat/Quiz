@@ -19,7 +19,7 @@ public final class QuizContract {
         public static final String COLUMN_LEVEL = "level_number";
         public static final String LEVEL_DONE = "level_done";
         public static final String RATING = "rating_stars";
-        public static final String COLUMN_CATEGORY_ID = "category_id";
+        public static final String COLUMN_FAILS= "fail_count";
     }
 
 

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hintergrund_spiel_ende"
+    tools:context=".End">
+
+
+    <Button
+        android:id="@+id/btnmainMenu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:text="Main Menu"
+        android:background="@drawable/start_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tctViewEnde3" />
+
+    <TextView
+        android:id="@+id/tctViewEnde3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FBFBFB"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnmainMenu1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtScore"
+        tools:text="Try Again from Scratch" />
+
+    <TextView
+        android:id="@+id/txtScore"
+        android:layout_width="422dp"
+        android:layout_height="449dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/defeat3"
+
+        android:paddingLeft="150dp"
+        android:paddingTop="275dp"
+        android:text="Niederlage"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FBFBFB"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tctViewEnde3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

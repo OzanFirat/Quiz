@@ -38,6 +38,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
                 QuestionsTable.LEVEL_DONE+" TEXT, "+
                 QuestionsTable.COLUMN_ANSWER_NR + " INTEGER, "+
                 QuestionsTable.COLUMN_LEVEL+" INTEGER, "+
+                QuestionsTable.COLUMN_FAILS+" INTEGER, "+
                 QuestionsTable.RATING+" INTEGER"+
                 ")";
 
@@ -55,26 +56,26 @@ public class QuizDBHelper extends SQLiteOpenHelper {
     }
 
     private void fillQuestionTable(){
-        Question q1 = new Question("Wie schreibt man IP-Adressen (IPv4)?", "8 durch Doppelpunkt getrennte Hexadezimal Zeichen", "32-Bit stellige binäre Zahl ", "10 Stellige dezimale Zahl", "4 durch Punkt getrennte Zahlen", 4, 1, 0, "no");
-        Question q2 = new Question("Was bedeutet SMTP?", "simple mother terminal protocol", "Schweizer Militärsteamputze", "scientific mail translocation protocol", "simple mail transfer protocol", 4, 2, 0, "no");
-        Question q3 = new Question("Wie nennt man die Anmeldung bei verschiedenen Homepages?", "Logout", "Login", "Lockdown", "Entry", 2, 3, 0, "no");
-        Question q4 = new Question("Was hat nichts mit einem Server zu tun", "Roxy", "Proxy", "Apache", "Q-Mail", 1, 4,0, "no");
-        Question q5 = new Question("A is correct", "A", "B", "C", "D", 1, 5,0, "no");
-        Question q6 = new Question("A is correct", "A", "B", "C", "D", 1, 6,0, "no");
-        Question q7 = new Question("A is correct", "A", "B", "C", "D", 1, 7,0, "no");
-        Question q8 = new Question("A is correct", "A", "B", "C", "D", 1, 8,0, "no");
-        Question q9 = new Question("A is correct", "A", "B", "C", "D", 1, 9,0, "no");
-        Question q10 = new Question("A is correct", "A", "B", "C", "D", 1, 10,0, "no");
-        Question q11 = new Question("A is correct", "A", "B", "C", "D", 1, 11, 0, "no");
-        Question q12 = new Question("B is correct", "A", "B", "C", "D", 2, 12, 0, "no");
-        Question q13 = new Question("C is correct", "A", "B", "C", "D", 3, 13, 0, "no");
-        Question q14 = new Question("D is correct", "A", "B", "C", "D", 4, 14,0, "no");
-        Question q15 = new Question("A is correct", "A", "B", "C", "D", 1, 15,0, "no");
-        Question q16 = new Question("A is correct", "A", "B", "C", "D", 1, 16,0, "no");
-        Question q17 = new Question("A is correct", "A", "B", "C", "D", 1, 17,0, "no");
-        Question q18 = new Question("A is correct", "A", "B", "C", "D", 1, 18,0, "no");
-        Question q19 = new Question("A is correct", "A", "B", "C", "D", 1, 19,0, "no");
-        Question q20 = new Question("A is correct", "A", "B", "C", "D", 1, 20,0, "no");
+        Question q1 = new Question("Wie schreibt man IP-Adressen (IPv4)?", "8 durch Doppelpunkt getrennte Hexadezimal Zeichen", "32-Bit stellige binäre Zahl ", "10 Stellige dezimale Zahl", "4 durch Punkt getrennte Zahlen", 4, 1, 0, "no", 0);
+        Question q2 = new Question("Was bedeutet SMTP?", "simple mother terminal protocol", "Schweizer Militärsteamputze", "scientific mail translocation protocol", "simple mail transfer protocol", 4, 2, 0, "no",0);
+        Question q3 = new Question("Wie nennt man die Anmeldung bei verschiedenen Homepages?", "Logout", "Login", "Lockdown", "Entry", 2, 3, 0, "no",0);
+        Question q4 = new Question("Was hat nichts mit einem Server zu tun", "Roxy", "Proxy", "Apache", "Q-Mail", 1, 4,0, "no",0);
+        Question q5 = new Question("A is correct", "A", "B", "C", "D", 1, 5,0, "no",0);
+        Question q6 = new Question("A is correct", "A", "B", "C", "D", 1, 6,0, "no",0);
+        Question q7 = new Question("A is correct", "A", "B", "C", "D", 1, 7,0, "no",0);
+        Question q8 = new Question("A is correct", "A", "B", "C", "D", 1, 8,0, "no",0);
+        Question q9 = new Question("A is correct", "A", "B", "C", "D", 1, 9,0, "no",0);
+        Question q10 = new Question("A is correct", "A", "B", "C", "D", 1, 10,0, "no",0);
+        Question q11 = new Question("A is correct", "A", "B", "C", "D", 1, 11, 0, "no",0);
+        Question q12 = new Question("B is correct", "A", "B", "C", "D", 2, 12, 0, "no",0);
+        Question q13 = new Question("C is correct", "A", "B", "C", "D", 3, 13, 0, "no",0);
+        Question q14 = new Question("D is correct", "A", "B", "C", "D", 4, 14,0, "no",0);
+        Question q15 = new Question("A is correct", "A", "B", "C", "D", 1, 15,0, "no",0);
+        Question q16 = new Question("A is correct", "A", "B", "C", "D", 1, 16,0, "no",0);
+        Question q17 = new Question("A is correct", "A", "B", "C", "D", 1, 17,0, "no",0);
+        Question q18 = new Question("A is correct", "A", "B", "C", "D", 1, 18,0, "no",0);
+        Question q19 = new Question("A is correct", "A", "B", "C", "D", 1, 19,0, "no",0);
+        Question q20 = new Question("A is correct", "A", "B", "C", "D", 1, 20,0, "no",0);
         addQuestion(q1);
         addQuestion(q2);
         addQuestion(q3);
@@ -131,6 +132,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
                 question.setAnswerNr(c.getInt(c.getColumnIndex(QuestionsTable.COLUMN_ANSWER_NR)));
                 question.setLevelNr(c.getInt(c.getColumnIndex(QuestionsTable.COLUMN_LEVEL)));
                 question.setRatingStars(c.getInt(c.getColumnIndex(QuestionsTable.RATING)));
+                question.setAmountOfFailures(c.getInt(c.getColumnIndex(QuestionsTable.COLUMN_FAILS)));
                 question.setLvlDone(c.getString(c.getColumnIndex(QuestionsTable.LEVEL_DONE)));
                 questionList.add(question);
 
@@ -164,8 +166,20 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         return true;
     }
 
+    public boolean updateAmountOfFailure (int level, String oldAmount, String newAmount){
+        db=getWritableDatabase();
+        String query = "UPDATE "+ QuestionsTable.TABLE_NAME +" SET "+QuestionsTable.COLUMN_FAILS+
+                " = '"+newAmount+"' WHERE "+QuestionsTable._ID+ " = '"+level+"'"+
+                " AND "+ QuestionsTable.RATING+ " = '"+oldAmount+"'";
+        Log.d(TAG, "updateRating: query "+query);
+        Log.d(TAG, "updateName: Setting Fails to "+newAmount);
+        db.execSQL(query);
+       return true;
+    }
+
     public boolean alterTable(){
         String query = "DROP TABLE "+ QuestionsTable.TABLE_NAME;
+        db.execSQL(query);
 
         return true;
     }

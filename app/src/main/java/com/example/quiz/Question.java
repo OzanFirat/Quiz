@@ -3,7 +3,7 @@ package com.example.quiz;
 public class Question {
 
     private String question, opt1, opt2, opt3, opt4, lvlDone;
-    private int answerNr, levelNr, ratingStars;
+    private int answerNr, levelNr, ratingStars, amountOfFailures;
 
 
 
@@ -19,7 +19,15 @@ public class Question {
         this.levelNr = levelNr;
     }
 
-    public Question(String question, String opt1, String opt2, String opt3, String opt4, int answerNr, int levelNr, int ratingStars, String lvlDone) {
+    public int getAmountOfFailures() {
+        return amountOfFailures;
+    }
+
+    public void setAmountOfFailures(int amountOfFailures) {
+        this.amountOfFailures = amountOfFailures;
+    }
+
+    public Question(String question, String opt1, String opt2, String opt3, String opt4, int answerNr, int levelNr, int ratingStars, String lvlDone, int amountOfFailures) {
         this.question = question;
         this.opt1 = opt1;
         this.opt2 = opt2;
@@ -29,6 +37,7 @@ public class Question {
         this.levelNr = levelNr;
         this.ratingStars=ratingStars;
         this.lvlDone = lvlDone;
+        this.amountOfFailures = amountOfFailures;
 
     }
 
