@@ -211,7 +211,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         }
         counter++;
 
-        lvl11 = (Button) findViewById(id.buttonlvl11);
+        /*lvl11 = (Button) findViewById(id.buttonlvl11);
         lvl11.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl11.setClickable(true);
@@ -309,7 +309,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         } else {
             lvl20.setClickable(false);
         }
-
+*/
 
 
 
@@ -388,7 +388,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
                 this.finish();
                 break;
 
-            case id.buttonlvl11:
+            /*case id.buttonlvl11:
                 intent = new Intent(this, Spiel.class);
                 startActivity(intent);
                 this.finish();
@@ -447,7 +447,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
                 startActivity(intent);
                 this.finish();
                 break;
-
+*/
 
 
         }
