@@ -11,7 +11,7 @@
     <Button
         android:id="@+id/btnAnswer1"
         android:layout_width="185dp"
-        android:layout_height="125dp"
+        android:layout_height="110dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:background="@drawable/topic_button_border"
@@ -26,13 +26,13 @@
     <Button
         android:id="@+id/btnAnswer"
         android:layout_width="185dp"
-        android:layout_height="125dp"
+        android:layout_height="110dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginEnd="19dp"
         android:layout_marginRight="19dp"
 
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/topic_button_border"
         android:text="Berlin"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -47,7 +47,7 @@
     <Button
         android:id="@+id/btnAnswer3"
         android:layout_width="185dp"
-        android:layout_height="125dp"
+        android:layout_height="110dp"
         android:layout_marginEnd="15dp"
         android:layout_marginRight="15dp"
         android:background="@drawable/topic_button_border"
@@ -63,7 +63,7 @@
     <Button
         android:id="@+id/btnAnswer2"
         android:layout_width="185dp"
-        android:layout_height="125dp"
+        android:layout_height="110dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginEnd="20dp"

@@ -4,49 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#b1d26e"
+    android:background="@drawable/hintergrund_spiel"
     tools:context=".End">
 
     <Button
-        android:id="@+id/btnmainMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="101dp"
-        android:text="Main Menu"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/btnlvlOverview"
+        android:layout_width="220dp"
+        android:layout_height="65dp"
+        android:background="@drawable/topic_button_border"
+        android:text="Level Overview"
+        app:layout_constraintBottom_toTopOf="@+id/btnmainMenu"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnNextLvl" />
 
     <Button
+        android:id="@+id/btnmainMenu"
+        android:layout_width="220dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/topic_button_border"
+        android:text="Main Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBarEnd" />
+
+    <Button
         android:id="@+id/btnNextLvl"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="7dp"
-        android:layout_marginLeft="7dp"
-        android:layout_marginBottom="41dp"
-        android:text="Next"
-        app:layout_constraintBottom_toTopOf="@+id/btnmainMenu"
-        app:layout_constraintStart_toStartOf="@+id/btnmainMenu"
+        android:layout_width="220dp"
+        android:layout_height="65dp"
+        android:background="@drawable/topic_button_border"
+        android:text="Next Level"
+        app:layout_constraintBottom_toTopOf="@+id/btnlvlOverview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ratingBarEnd" />
 
     <RatingBar
         android:id="@+id/ratingBarEnd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="66dp"
+        android:layout_width="152dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="193dp"
         android:numStars="3"
-        app:layout_constraintBottom_toTopOf="@+id/btnNextLvl"
+        app:layout_constraintBottom_toTopOf="@+id/btnmainMenu"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtScore" />
 
     <TextView
         android:id="@+id/txtScore"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="40dp"
+        android:layout_width="401dp"
+        android:layout_height="328dp"
+        android:layout_marginBottom="53dp"
         android:autoText="false"
         android:background="@drawable/end1_banner"
         android:freezesText="false"
@@ -62,6 +76,21 @@
         app:layout_constraintBottom_toTopOf="@+id/ratingBarEnd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Congrats, you got 3 stars!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.483" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
