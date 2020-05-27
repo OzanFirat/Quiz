@@ -20,8 +20,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         btnNewQuiz = (Button) findViewById(R.id.btnNewQuiz);
         btnNewQuiz.setOnClickListener(this);
 
-        btnContinueQuiz = (Button) findViewById(R.id.btnContinueQuiz);
-        btnContinueQuiz.setOnClickListener(this);
+
     }
 
     @Override
@@ -40,11 +39,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
 
 
-            case R.id.btnContinueQuiz:
-                intent = new Intent(this, gameOverview.class);
-                startActivity(intent);
-                this.finish();
-                break;
+
 
         }
     }
