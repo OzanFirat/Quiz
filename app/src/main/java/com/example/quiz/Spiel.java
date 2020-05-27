@@ -7,10 +7,14 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.Group;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -34,23 +38,25 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
     private CountDownTimer countDownTimer;
     private long timeLeftInMillis;
 
-    private TextView textViewCountDown;
+    private TextView textViewCountDown, textVFrage, imgView;
 
 
     private QuizDBHelper dbHelper;
 
 
 
-    private TextView textVFrage;
+
 
     int aktuelleFrage = 0, level = 0, ratingStar;
     boolean win;
     int rightAnswer;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spiel);
+
 
         btnAnswer = (Button) findViewById(R.id.btnAnswer);
         btnAnswer1 = (Button) findViewById(R.id.btnAnswer1);
@@ -59,6 +65,7 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
 
         textVFrage = (TextView)  findViewById(R.id.textVFrage);
         textViewCountDown = (TextView) findViewById(R.id.txtVTimer);
+    imgView=(TextView) findViewById(R.id.imageView);
 
 
 
@@ -191,6 +198,8 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
         btnAnswer1.setText(currentQuestion.getOpt2());
         btnAnswer2.setText(currentQuestion.getOpt3());
         btnAnswer3.setText(currentQuestion.getOpt4());
+
+
 
 
 
