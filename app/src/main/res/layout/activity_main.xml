@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/main_1"
-
+    android:alpha="0.5"
     tools:context=".MainActivity">
 
 
@@ -20,6 +20,7 @@
         android:text="New Quiz"
         android:textColor="#2A137C"
         android:textSize="36sp"
+
         app:layout_constraintBottom_toTopOf="@+id/btnContinueQuiz"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

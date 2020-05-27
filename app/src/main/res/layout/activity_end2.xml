@@ -45,7 +45,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="51dp"
-        android:background="@drawable/end2_flag"
+        android:background="@drawable/defeat3"
         android:lineSpacingExtra="8sp"
         android:paddingLeft="150dp"
         android:paddingTop="170dp"
