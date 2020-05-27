@@ -125,7 +125,7 @@
         android:layout_marginBottom="25dp"
         android:text="00:60"
         android:background="@drawable/sanduhr"
-        android:backgroundTint="@color/colorPrimaryDark"
+
         app:autoSizeMinTextSize="60dp"
         app:layout_constraintBottom_toTopOf="@+id/btnAnswer"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
