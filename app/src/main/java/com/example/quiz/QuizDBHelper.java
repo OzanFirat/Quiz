@@ -170,8 +170,8 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         db=getWritableDatabase();
         String query = "UPDATE "+ QuestionsTable.TABLE_NAME +" SET "+QuestionsTable.COLUMN_FAILS+
                 " = '"+newAmount+"' WHERE "+QuestionsTable._ID+ " = '"+level+"'"+
-                " AND "+ QuestionsTable.RATING+ " = '"+oldAmount+"'";
-        Log.d(TAG, "updateRating: query "+query);
+                " AND "+ QuestionsTable.COLUMN_FAILS+ " = '"+oldAmount+"'";
+        Log.d(TAG, "updateFail: query "+query);
         Log.d(TAG, "updateName: Setting Fails to "+newAmount);
         db.execSQL(query);
        return true;

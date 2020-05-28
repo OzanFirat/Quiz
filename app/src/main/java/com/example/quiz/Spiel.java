@@ -144,28 +144,33 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
 
 
     private void setTheScore(boolean winORLoss){
+        countDownTimer.cancel();
         if (winORLoss==true){
            String oldRating = ""+currentQuestion.getRatingStars();
            String actualLvlStatus="yes", oldLvlStatus = "no";
            level = currentQuestion.getLevelNr();
            boolean update = dbHelper.addRating(level, ratingStar, oldRating, actualLvlStatus, oldLvlStatus);
 
-           if(update==true){
-               Toast.makeText(Spiel.this, "Data updated"+ratingStar, Toast.LENGTH_LONG).show();
 
-           } else {
-               Toast.makeText(Spiel.this, "Data is not updated", Toast.LENGTH_LONG).show();
-           }
-            countDownTimer.cancel();
+
             Intent intent = new Intent(this, End.class);
             startActivity(intent);
             this.finish();
         } else {
             ratingStar=0;
-
-            Intent intent = new Intent(this, End2.class);
-            startActivity(intent);
-            this.finish();
+            countDownTimer.cancel();
+            amountOfFails=amountOfFails+1;
+            dbHelper.updateAmountOfFailure(level, currentQuestion.getAmountOfFailures()+"", amountOfFails+"");
+            if(amountOfFails==3){
+                Intent intent = new Intent(this, End3.class);
+                startActivity(intent);
+                this.finish();
+                dbHelper.alterTable();
+            } else {
+                Intent intent = new Intent(this, End2.class);
+                startActivity(intent);
+                this.finish();
+            }
 
         }
 
@@ -198,15 +203,25 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
         btnAnswer1.setText(currentQuestion.getOpt2());
         btnAnswer2.setText(currentQuestion.getOpt3());
         btnAnswer3.setText(currentQuestion.getOpt4());
-
+        int previousQuestion = level-1;
         if(level==1){
             amountOfFails=currentQuestion.getAmountOfFailures();
         } else{
-            int previousQuestion = currentQuestion.getLevelNr()-1;
-            amountOfFails=questionList.get(previousQuestion).getAmountOfFailures();
 
-            dbHelper.updateAmountOfFailure(currentQuestion.getLevelNr(), currentQuestion.getAmountOfFailures()+"", amountOfFails+"");
-            currentQuestion.setAmountOfFailures(amountOfFails);
+            if(currentQuestion.getAmountOfFailures()>=questionList.get(previousQuestion).getAmountOfFailures()){
+                amountOfFails=currentQuestion.getAmountOfFailures();
+                Toast.makeText(Spiel.this, "New updated"+amountOfFails, Toast.LENGTH_LONG).show();
+                /*currentQuestion.setAmountOfFailures(amountOfFails);
+                dbHelper.updateAmountOfFailure(currentQuestion.getLevelNr(), currentQuestion.getAmountOfFailures()+"", amountOfFails+"");
+*/
+            } else {
+                amountOfFails=questionList.get(previousQuestion).getAmountOfFailures();
+                Toast.makeText(Spiel.this, "Old updated "+amountOfFails, Toast.LENGTH_LONG).show();
+                dbHelper.updateAmountOfFailure(currentQuestion.getLevelNr(), currentQuestion.getAmountOfFailures()+"", amountOfFails+"");
+                currentQuestion.setAmountOfFailures(amountOfFails);
+            }
+
+
         }
 
 
@@ -227,9 +242,9 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
         countDownTimer.cancel();
         ratingStar=0;
         amountOfFails++;
-        dbHelper.updateAmountOfFailure(currentQuestion.getLevelNr(), currentQuestion.getAmountOfFailures()+"", amountOfFails+"");
+        dbHelper.updateAmountOfFailure(level, currentQuestion.getAmountOfFailures()+"", amountOfFails+"");
         if(amountOfFails==3){
-            Intent intent = new Intent(this, End2.class);
+            Intent intent = new Intent(this, End3.class);
             startActivity(intent);
             this.finish();
             dbHelper.alterTable();

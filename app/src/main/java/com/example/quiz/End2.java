@@ -43,7 +43,7 @@ public class End2 extends AppCompatActivity implements View.OnClickListener {
         this.btnTryAgain.setOnClickListener(this);
 
         this.txtScore = (TextView) findViewById(R.id.txtScore);
-        txtScore.setText("Das ist deine "+questionList.get(doneCounter).getAmountOfFailures()+""+" Niederlage: \nNoch "
+        txtScore.setText("Das ist deine "+questionList.get(doneCounter-1).getAmountOfFailures()+""+" Niederlage: \nNoch "
                 +(3-questionList.get(doneCounter).getAmountOfFailures())+"");
 
         rtBar = (RatingBar) findViewById(R.id.ratingBarEnd);
