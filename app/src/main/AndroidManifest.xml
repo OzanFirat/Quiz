@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".lvlOverview2"></activity>
+        <activity android:name=".lvlOverview7"></activity>
+        <activity android:name=".lvlOverview6" />
+        <activity android:name=".lvlOverview5" />
+        <activity android:name=".lvlOverview4" />
+        <activity android:name=".lvlOverview3" />
+        <activity android:name=".lvlOverview2" />
         <activity android:name=".End3" />
         <activity android:name=".gameOverview" />
         <activity android:name=".End2" />

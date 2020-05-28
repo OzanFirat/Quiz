@@ -66,7 +66,7 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
 
         textVFrage = (TextView)  findViewById(R.id.textVFrage);
         textViewCountDown = (TextView) findViewById(R.id.txtVTimer);
-    imgView=(TextView) findViewById(R.id.imageView);
+
 
 
 

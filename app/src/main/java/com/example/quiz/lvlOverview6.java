@@ -12,7 +12,7 @@ import android.widget.Button;
 import java.util.ArrayList;
 import java.util.List;
 
-public class lvlOverview2 extends AppCompatActivity implements View.OnClickListener{
+public class lvlOverview6 extends AppCompatActivity implements View.OnClickListener{
 
     private static final int REQUEST_CODE_QUIZ = 1;
 
@@ -29,7 +29,7 @@ public class lvlOverview2 extends AppCompatActivity implements View.OnClickListe
 
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lvl_overview2);
+        setContentView(R.layout.activity_lvl_overview3);
         QuizDBHelper dbHelper = new QuizDBHelper(this);
         List<Question> questionList = dbHelper.getAllQuestions();
 
@@ -300,4 +300,3 @@ public class lvlOverview2 extends AppCompatActivity implements View.OnClickListe
 
     }
 }
-
