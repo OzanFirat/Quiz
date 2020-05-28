@@ -2,6 +2,7 @@ package com.example.quiz;
 
 import android.content.Intent;
 import android.content.res.ColorStateList;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -160,12 +161,21 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
             ratingStar=0;
             countDownTimer.cancel();
             amountOfFails=amountOfFails+1;
-            dbHelper.updateAmountOfFailure(level, currentQuestion.getAmountOfFailures()+"", amountOfFails+"");
+            dbHelper.updateAmountOfFailure(currentQuestion.getLevelNr(), currentQuestion.getAmountOfFailures()+"", amountOfFails+"");
             if(amountOfFails==3){
+                /*
+                dbHelper.dropTable();
+                dbHelper = new QuizDBHelper(this);
+
+
+                 */
+
+                dbHelper.onUpgrade(dbHelper.getDb(), dbHelper.getDatabaseVersion(), dbHelper.getDatabaseVersion()+1);
+
                 Intent intent = new Intent(this, End3.class);
                 startActivity(intent);
                 this.finish();
-                dbHelper.alterTable();
+
             } else {
                 Intent intent = new Intent(this, End2.class);
                 startActivity(intent);
@@ -203,8 +213,8 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
         btnAnswer1.setText(currentQuestion.getOpt2());
         btnAnswer2.setText(currentQuestion.getOpt3());
         btnAnswer3.setText(currentQuestion.getOpt4());
-        int previousQuestion = level-1;
-        if(level==1){
+        int previousQuestion = doneCounter-1;
+        if(currentQuestion.getLevelNr()==1){
             amountOfFails=currentQuestion.getAmountOfFailures();
         } else{
 
@@ -242,12 +252,16 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
         countDownTimer.cancel();
         ratingStar=0;
         amountOfFails++;
-        dbHelper.updateAmountOfFailure(level, currentQuestion.getAmountOfFailures()+"", amountOfFails+"");
+        dbHelper.updateAmountOfFailure(currentQuestion.getLevelNr(), currentQuestion.getAmountOfFailures()+"", amountOfFails+"");
         if(amountOfFails==3){
             Intent intent = new Intent(this, End3.class);
             startActivity(intent);
             this.finish();
-            dbHelper.alterTable();
+            /*dbHelper.dropTable();
+            dbHelper = new QuizDBHelper(this);
+
+             */
+            dbHelper.fillQuestionTable();
         } else {
             Intent intent = new Intent(this, End2.class);
             startActivity(intent);

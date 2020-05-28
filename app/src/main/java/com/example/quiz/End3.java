@@ -20,7 +20,8 @@ public class End3 extends AppCompatActivity implements View.OnClickListener{
         btnMainMenu.setOnClickListener(this);
 
         QuizDBHelper db = new QuizDBHelper(this);
-        db.alterTable();
+
+        db.getAllQuestions();
 
     }
 
