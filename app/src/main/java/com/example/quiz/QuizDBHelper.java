@@ -60,9 +60,9 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         Question q2 = new Question("Was bedeutet SMTP?", "simple mother terminal protocol", "Schweizer Militärsteamputze", "scientific mail translocation protocol", "simple mail transfer protocol", 4, 2, 0, "no",0);
         Question q3 = new Question("Wie nennt man die Anmeldung bei verschiedenen Homepages?", "Logout", "Login", "Lockdown", "Entry", 2, 3, 0, "no",0);
         Question q4 = new Question("Was hat nichts mit einem Server zu tun", "Roxy", "Proxy", "Apache", "Q-Mail", 1, 4,0, "no",0);
-        Question q5 = new Question("A is correct", "A", "B", "C", "D", 1, 5,0, "no",0);
-        Question q6 = new Question("A is correct", "A", "B", "C", "D", 1, 6,0, "no",0);
-        Question q7 = new Question("A is correct", "A", "B", "C", "D", 1, 7,0, "no",0);
+        Question q5 = new Question("Wie nennt man vorsätzliches Registrieren und Blockieren von Domains, an denen Rechte Dritter bestehen?", "Boykott", "Domainstopping", "Dispute-Eintrag", "Domaingrabbing", 4, 5,0, "no",0);
+        Question q6 = new Question("Welches Programm schützt vor unbefugten Zugriffen aus dem Internet", "Firewall", "Snowwall", "Waterfall", "Mainboard", 1, 6,0, "no",0);
+        Question q7 = new Question("Wie nennt man die marktübliche Technik für Ferngespräche über das Internet?", "Voice over IP", "Talk over IT", "WalkiTalk", "Phone over intranet", 1, 7,0, "no",0);
         Question q8 = new Question("A is correct", "A", "B", "C", "D", 1, 8,0, "no",0);
         Question q9 = new Question("A is correct", "A", "B", "C", "D", 1, 9,0, "no",0);
         Question q10 = new Question("A is correct", "A", "B", "C", "D", 1, 10,0, "no",0);
