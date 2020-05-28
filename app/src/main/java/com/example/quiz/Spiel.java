@@ -25,7 +25,7 @@ import java.util.Locale;
 
 @SuppressWarnings("ALL")
 public class Spiel extends AppCompatActivity implements View.OnClickListener {
-    private Button btnAnswer,btnAnswer1,btnAnswer2,btnAnswer3;
+    private Button btnAnswer,btnAnswer1,btnAnswer2,btnAnswer3, btnFifty, btnSkip, btnAddTime;
     private List<Question> questionList;
     private ColorStateList textColorDefaultRb;
     private Question currentQuestion;
@@ -91,7 +91,15 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
         btnAnswer2.setOnClickListener(this);
         btnAnswer3.setOnClickListener(this);
 
-        Toast.makeText(Spiel.this, "Game activity new loaded", Toast.LENGTH_LONG).show();
+        btnAddTime = (Button) findViewById(R.id.btnAddTime);
+        btnAddTime.setOnClickListener(this);
+
+        btnSkip = (Button) findViewById(R.id.btnSkip);
+        btnSkip.setOnClickListener(this);
+
+        btnFifty = (Button) findViewById(R.id.btnFifty);
+        btnFifty.setOnClickListener(this);
+
 
     }
 
@@ -139,6 +147,10 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
                     win=false;
                     setTheScore(win);
                 }
+                break;
+
+            case R.id.btnAddTime:
+                addTenSeconds();
                 break;
         }
     }
@@ -213,6 +225,51 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
         btnAnswer1.setText(currentQuestion.getOpt2());
         btnAnswer2.setText(currentQuestion.getOpt3());
         btnAnswer3.setText(currentQuestion.getOpt4());
+
+        //Prove the fails
+        proveFails(doneCounter);
+
+        /*
+        int previousQuestion = doneCounter-1;
+        if(currentQuestion.getLevelNr()==1){
+            amountOfFails=currentQuestion.getAmountOfFailures();
+        } else{
+
+            if(currentQuestion.getAmountOfFailures()>=questionList.get(previousQuestion).getAmountOfFailures()){
+                amountOfFails=currentQuestion.getAmountOfFailures();
+                Toast.makeText(Spiel.this, "New updated"+amountOfFails, Toast.LENGTH_LONG).show();
+                /*currentQuestion.setAmountOfFailures(amountOfFails);
+                dbHelper.updateAmountOfFailure(currentQuestion.getLevelNr(), currentQuestion.getAmountOfFailures()+"", amountOfFails+"");
+
+            } else {
+                amountOfFails=questionList.get(previousQuestion).getAmountOfFailures();
+                Toast.makeText(Spiel.this, "Old updated "+amountOfFails, Toast.LENGTH_LONG).show();
+                dbHelper.updateAmountOfFailure(currentQuestion.getLevelNr(), currentQuestion.getAmountOfFailures()+"", amountOfFails+"");
+                currentQuestion.setAmountOfFailures(amountOfFails);
+            }
+
+
+        }
+
+         */
+
+
+
+
+
+        rightAnswer=currentQuestion.getAnswerNr();
+
+        timeLeftInMillis = COUNTDOWN_IN_MILLIS;
+
+        startCountDown();
+
+
+
+
+
+    }
+
+    private void proveFails(int doneCounter) {
         int previousQuestion = doneCounter-1;
         if(currentQuestion.getLevelNr()==1){
             amountOfFails=currentQuestion.getAmountOfFailures();
@@ -233,19 +290,6 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
 
 
         }
-
-
-
-        rightAnswer=currentQuestion.getAnswerNr();
-
-        timeLeftInMillis = COUNTDOWN_IN_MILLIS;
-
-        startCountDown();
-
-
-
-
-
     }
 
     private void endGame() {
@@ -319,5 +363,11 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
             textViewCountDown.setTextColor(textColorDefaultCd);
         }
 
+    }
+
+    public void addTenSeconds(){
+        countDownTimer.cancel();
+        timeLeftInMillis=timeLeftInMillis+10000;
+        startCountDown();
     }
 }

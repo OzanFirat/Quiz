@@ -22,7 +22,7 @@
 
         android:drawablePadding="40dp"
         android:padding="15dp"
-        android:text="Start Quiz"
+        android:text="Start Game"
         android:textColor="#2A137C"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -40,7 +40,7 @@
         android:layout_marginRight="1dp"
         android:layout_marginBottom="1dp"
         android:alpha="0.7"
-        android:background="@drawable/main_1"
+        android:background="@drawable/main_2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

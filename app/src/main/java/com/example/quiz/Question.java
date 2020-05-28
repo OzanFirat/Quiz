@@ -27,7 +27,7 @@ public class Question {
         this.amountOfFailures = amountOfFailures;
     }
 
-    public Question(String question, String opt1, String opt2, String opt3, String opt4, int answerNr, int levelNr, int ratingStars, String lvlDone, int amountOfFailures) {
+    public Question(String question, String opt1, String opt2, String opt3, String opt4, int answerNr, int levelNr, int ratingStars, String lvlDone, int amountOfFailures, int fiftyJoker, int addTime) {
         this.question = question;
         this.opt1 = opt1;
         this.opt2 = opt2;
