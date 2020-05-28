@@ -48,7 +48,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
 
         }
 
-        if(doneCounter<=20){
+        if(doneCounter<=10){
             counter=0;
             topic1.setClickable(true);
 
