@@ -31,6 +31,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
 
         QuizDBHelper dbHelper = new QuizDBHelper(this);
         List<Question> questionList = dbHelper.getAllQuestions();
+        questionCountTotal=questionList.size();
 
         topic1.setClickable(false);
         topic2.setClickable(false);
@@ -48,15 +49,18 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
 
         }
 
-        if(doneCounter<=10){
-            counter=0;
+        if(doneCounter<11){
+
             topic1.setClickable(true);
 
 
         }
-        if(doneCounter>20 && doneCounter<=40){
-            counter=20;
+        if(doneCounter>=11 && doneCounter<=22){
+
+
             topic2.setClickable(true);
+            topic1.setText("Erobert!");
+
         }
         if(doneCounter>40 && doneCounter<=60){
             counter=40;
@@ -84,7 +88,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
 
         switch (v.getId()){
             case R.id.btnTopic2:
-                Intent intent = new Intent(this, LvlOverview.class);
+                Intent intent = new Intent(this, lvlOverview2.class);
                 startActivity(intent);
                 this.finish();
                 break;
