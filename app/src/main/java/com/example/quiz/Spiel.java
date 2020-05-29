@@ -271,6 +271,12 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
             btnAddTime.setAlpha((float) 0.5);
         }
 
+        if (currentQuestion.getFiftyJoker()==1){
+            btnFifty.setOnClickListener(this);
+        } else{
+            btnFifty.setAlpha((float) 0.5);
+        }
+
     }
 
     private void proveFails(int doneCounter) {
