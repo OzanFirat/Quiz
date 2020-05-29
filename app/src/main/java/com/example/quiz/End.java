@@ -16,7 +16,7 @@ import java.util.List;
 
 public class End extends Activity implements View.OnClickListener {
 
-    private Button btnStartMenu, btnNextLvl;
+    private Button btnlvlOverview, btnNextLvl;
     private RatingBar rtBar;
     private SharedPreferences preferences;
     private SharedPreferences.Editor preferencesEditor;
@@ -34,8 +34,8 @@ public class End extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ende);
 
-        this.btnStartMenu = (Button) findViewById(R.id.btnmainMenu);
-        btnStartMenu.setOnClickListener(this);
+        this.btnlvlOverview = (Button) findViewById(R.id.btnlvlOverview);
+        btnlvlOverview.setOnClickListener(this);
 
         this.btnNextLvl = (Button) findViewById(R.id.btnNextLvl);
         btnNextLvl.setOnClickListener(this);
@@ -86,7 +86,7 @@ public class End extends Activity implements View.OnClickListener {
         @Override
         public void onClick (View v){
             switch (v.getId()) {
-                case R.id.btnmainMenu:
+                case R.id.btnlvlOverview:
                     Intent intent = new Intent(this, gameOverview.class);
                     startActivity(intent);
                     this.finish();

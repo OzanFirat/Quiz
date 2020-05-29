@@ -36,7 +36,7 @@ public class End2 extends AppCompatActivity implements View.OnClickListener {
 
             counter++;  }
 
-        this.btnStartMenu = (Button) findViewById(R.id.btnmainMenu1);
+        this.btnStartMenu = (Button) findViewById(R.id.btnlvlOverview2);
         btnStartMenu.setOnClickListener(this);
 
         this.btnTryAgain = (Button) findViewById(R.id.btnTryAgain);
@@ -46,14 +46,7 @@ public class End2 extends AppCompatActivity implements View.OnClickListener {
         txtScore.setText("Das ist deine "+questionList.get(doneCounter).getAmountOfFailures()+""+" Niederlage: \nNoch "
                 +(3-questionList.get(doneCounter).getAmountOfFailures())+"");
 
-        rtBar = (RatingBar) findViewById(R.id.ratingBarEnd);
-        rtBar.setNumStars(3);
-        rtBar.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                return true;
-            }
-        });
+
 
 
 
@@ -64,7 +57,7 @@ public class End2 extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.btnmainMenu1:
+            case R.id.btnlvlOverview2:
                 Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
                 this.finish();

@@ -2,28 +2,21 @@ package com.example.quiz;
 
 import android.content.Intent;
 import android.content.res.ColorStateList;
-import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.Group;
 
-import org.w3c.dom.Text;
-
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 
 
-@SuppressWarnings("ALL")
+
 public class Spiel extends AppCompatActivity implements View.OnClickListener {
     private Button btnAnswer,btnAnswer1,btnAnswer2,btnAnswer3, btnFifty, btnSkip, btnAddTime;
     private List<Question> questionList;
@@ -56,7 +49,7 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_spiel);
+        setContentView(R.layout.activity_game);
 
 
         btnAnswer = (Button) findViewById(R.id.btnAnswer);

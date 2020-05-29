@@ -4,94 +4,121 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fireworks"
-    android:alpha="0.7"
+
     tools:context=".End">
 
-    <Button
-        android:id="@+id/btnlvlOverview"
-        android:layout_width="220dp"
-        android:layout_height="65dp"
-        android:background="@drawable/topic_button_border"
-        android:text="Level Overview"
-        app:layout_constraintBottom_toTopOf="@+id/btnmainMenu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnNextLvl" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fireworks"
+        android:alpha="0.7"
+        android:orientation="horizontal"></LinearLayout>
 
-    <Button
-        android:id="@+id/btnmainMenu"
-        android:layout_width="220dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="38dp"
-        android:background="@drawable/topic_button_border"
-        android:text="Main Menu"
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="75dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ratingBarEnd" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/btnNextLvl"
-        android:layout_width="220dp"
-        android:layout_height="65dp"
-        android:background="@drawable/topic_button_border"
-        android:text="Next Level"
-        app:layout_constraintBottom_toTopOf="@+id/btnlvlOverview"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ratingBarEnd" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <RatingBar
-        android:id="@+id/ratingBarEnd"
-        android:layout_width="152dp"
-        android:layout_height="52dp"
-        android:layout_marginBottom="193dp"
-        android:numStars="3"
-        app:layout_constraintBottom_toTopOf="@+id/btnmainMenu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtScore" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/txtScore"
-        android:layout_width="401dp"
-        android:layout_height="328dp"
-        android:layout_marginBottom="53dp"
-        android:autoText="false"
-        android:background="@drawable/end1_banner"
-        android:freezesText="false"
-        android:lineSpacingExtra="8sp"
-        android:paddingLeft="155dp"
-        android:paddingTop="150dp"
-        android:text="Victory!"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
-        android:textColor="#FFC107"
-        android:textIsSelectable="false"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/ratingBarEnd"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+                <RatingBar
+                    android:id="@+id/ratingBarEnd"
+                    android:layout_width="152dp"
+                    android:layout_height="52dp"
+                    android:numStars="3" />
+            </LinearLayout>
+        </TableRow>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Congrats, you got 3 stars!"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.483" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtScore"
+                    android:layout_width="401dp"
+                    android:layout_height="328dp"
+                    android:autoText="false"
+                    android:background="@drawable/end1_banner"
+                    android:freezesText="false"
+                    android:lineSpacingExtra="8sp"
+                    android:paddingLeft="155dp"
+                    android:paddingTop="150dp"
+                    android:text="Victory!"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                    android:textColor="#FFC107"
+                    android:textIsSelectable="false"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnNextLvl"
+                    android:layout_width="220dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/topic_button_border"
+                    android:text="Next Level" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"></LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnlvlOverview"
+                    android:layout_width="220dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/topic_button_border"
+                    android:text="Level Overview" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

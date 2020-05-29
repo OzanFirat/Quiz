@@ -1,7 +1,227 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
+    android:layout_height="match_parent"
+    android:background="@drawable/hintergrund_spiel"
+    tools:context=".Spiel"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="411dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="205dp"
+        android:layout_marginBottom="16dp"
+        android:alpha="0.4"
+        android:background="@drawable/main_game"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="121dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="150dp"
+                    android:paddingLeft="25dp"
+                    android:text="Level 0"
+                    android:textAllCaps="false"
+                    android:textIsSelectable="false"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtVTimer"
+                    android:layout_width="140dp"
+                    android:layout_height="99dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/sanduhr_neu"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="26dp"
+                    android:text="00:30"
+                    android:textColor="#F6F0F0"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:autoSizeMinTextSize="60dp" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textVFrage"
+                    android:layout_width="402dp"
+                    android:layout_height="150dp"
+
+                    android:background="@drawable/schriftrolle"
+                    android:fontFamily="casual"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="20dp"
+                    android:text="Wie heisst die Hauptstadt von Frankreich?"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="405dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnAnswer"
+                    android:layout_width="195dp"
+                    android:layout_height="100dp"
+
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/topic_button_border"
+                    android:text="Berlin"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="16sp"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/btnAnswer1"
+                    android:layout_width="195dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="0dp"
+                    android:background="@drawable/topic_border_eckig"
+                    android:lineSpacingExtra="8sp"
+                    android:text="Berlin"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textSize="16sp"
+                    tools:ignore="MissingConstraints" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="200dp"
+            android:layout_height="130dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnAnswer2"
+                    android:layout_width="195dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/topic_button_border"
+                    android:text="Bern"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="16sp"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/btnAnswer3"
+                    android:layout_width="195dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/topic_button_border"
+                    android:text="Berlin"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="16sp"
+                    tools:ignore="MissingConstraints" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSkip"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/topic_button_border"
+                    android:text="skip" />
+
+                <Button
+                    android:id="@+id/btnFifty"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/topic_button_border"
+                    android:text="50/50" />
+
+                <Button
+                    android:id="@+id/btnAddTime"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/topic_button_border"
+                    android:text="+10 sek" />
+            </LinearLayout>
+        </TableRow>
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
