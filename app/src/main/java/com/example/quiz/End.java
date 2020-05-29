@@ -87,7 +87,7 @@ public class End extends Activity implements View.OnClickListener {
         public void onClick (View v){
             switch (v.getId()) {
                 case R.id.btnmainMenu:
-                    Intent intent = new Intent(this, MainActivity.class);
+                    Intent intent = new Intent(this, gameOverview.class);
                     startActivity(intent);
                     this.finish();
                     break;
