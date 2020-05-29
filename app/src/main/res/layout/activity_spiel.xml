@@ -46,7 +46,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/txtViewLevel"
                     android:layout_width="121dp"
                     android:layout_height="32dp"
                     android:layout_marginLeft="150dp"
@@ -99,7 +99,7 @@
                     android:paddingBottom="20dp"
                     android:text="Wie heisst die Hauptstadt von Frankreich?"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textSize="20sp"
+                    android:textSize="12sp"
                     android:textStyle="bold"
                     tools:ignore="MissingConstraints" />
             </LinearLayout>
@@ -121,10 +121,10 @@
 
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="10dp"
-                    android:background="@drawable/topic_button_border"
+                    android:background="@drawable/topic_border_eckig"
                     android:text="Berlin"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    android:textSize="16sp"
+                    android:textSize="10sp"
                     tools:ignore="MissingConstraints" />
 
                 <Button
@@ -136,7 +136,7 @@
                     android:lineSpacingExtra="8sp"
                     android:text="Berlin"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    android:textSize="16sp"
+                    android:textSize="10sp"
                     tools:ignore="MissingConstraints" />
 
             </LinearLayout>
@@ -159,10 +159,10 @@
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="10dp"
-                    android:background="@drawable/topic_button_border"
+                    android:background="@drawable/topic_border_eckig"
                     android:text="Bern"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    android:textSize="16sp"
+                    android:textSize="10sp"
                     tools:ignore="MissingConstraints" />
 
                 <Button
@@ -170,10 +170,10 @@
                     android:layout_width="195dp"
                     android:layout_height="100dp"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/topic_button_border"
+                    android:background="@drawable/topic_border_eckig"
                     android:text="Berlin"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    android:textSize="16sp"
+                    android:textSize="10sp"
                     tools:ignore="MissingConstraints" />
 
             </LinearLayout>
@@ -190,7 +190,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/btnSkip"
+                    android:id="@+id/btnSwitch"
                     android:layout_width="100dp"
                     android:layout_height="60dp"
 

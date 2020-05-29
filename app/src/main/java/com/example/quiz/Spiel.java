@@ -18,12 +18,12 @@ import java.util.Locale;
 
 
 public class Spiel extends AppCompatActivity implements View.OnClickListener {
-    private Button btnAnswer,btnAnswer1,btnAnswer2,btnAnswer3, btnFifty, btnSkip, btnAddTime;
+    private Button btnAnswer,btnAnswer1,btnAnswer2,btnAnswer3, btnFifty, btnSwitch, btnAddTime;
     private List<Question> questionList;
     private ColorStateList textColorDefaultRb;
     private Question currentQuestion;
 
-    private int score, questionCountTotal, amountOfFails;
+    private int score, questionCountTotal, amountOfFails, fiftyJokerNew, addTimeNew, switchNew;
     private boolean answered;
 
     private static final long COUNTDOWN_IN_MILLIS = 30000;
@@ -32,7 +32,7 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
     private CountDownTimer countDownTimer;
     private long timeLeftInMillis;
 
-    private TextView textViewCountDown, textVFrage, imgView;
+    private TextView textViewCountDown, textVFrage, txtViewLevel;
 
 
     private QuizDBHelper dbHelper;
@@ -72,6 +72,14 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
         questionCountTotal = questionList.size();
        // Collections.shuffle(questionList);
 
+        btnAddTime = (Button) findViewById(R.id.btnAddTime);
+        txtViewLevel= (TextView) findViewById(R.id.txtViewLevel) ;
+
+
+        btnSwitch = (Button) findViewById(R.id.btnSwitch);
+
+
+        btnFifty = (Button) findViewById(R.id.btnFifty);
 
 
         showNextQuestion();
@@ -84,15 +92,7 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
         btnAnswer2.setOnClickListener(this);
         btnAnswer3.setOnClickListener(this);
 
-        btnAddTime = (Button) findViewById(R.id.btnAddTime);
 
-        btnAddTime.setOnClickListener(this);
-
-        btnSkip = (Button) findViewById(R.id.btnSkip);
-        btnSkip.setOnClickListener(this);
-
-        btnFifty = (Button) findViewById(R.id.btnFifty);
-        btnFifty.setOnClickListener(this);
 
 
     }
@@ -146,7 +146,51 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
             case R.id.btnAddTime:
                 addTenSeconds();
                 break;
+
+            case R.id.btnFifty:
+                fiftyFiftyJoker();
+                break;
+            case R.id.btnSwitch:
+                switchQuestion(currentQuestion.getLevelNr());
+                break;
+
+
         }
+    }
+
+        private void switchQuestion(int currentLevel) {
+            if (currentLevel<=11){
+                rightAnswer= questionList.get(66).getAnswerNr();
+
+                textVFrage.setText(questionList.get(66).getQuestion());
+                btnAnswer.setText(questionList.get(66).getOpt1());
+                btnAnswer1.setText(questionList.get(66).getOpt2());
+                btnAnswer2.setText(questionList.get(66).getOpt3());
+                btnAnswer3.setText(questionList.get(66).getOpt4());
+
+                this.switchNew=0;
+            }
+            this.btnFifty.setClickable(false);
+            this.btnFifty.setAlpha((float) 0.5);
+        }
+
+    private void fiftyFiftyJoker() {
+        int root=currentQuestion.getAnswerNr();
+        if(root==1 || root==3){
+            btnAnswer1.setClickable(false);
+            btnAnswer1.setAlpha((float) 0.5);
+            btnAnswer3.setClickable(false);
+            btnAnswer3.setAlpha((float) 0.5);
+        } else {
+            btnAnswer.setClickable(false);
+            btnAnswer.setAlpha((float) 0.5);
+            btnAnswer2.setClickable(false);
+            btnAnswer2.setAlpha((float) 0.5);
+        }
+        this.fiftyJokerNew=0;
+        this.btnFifty.setClickable(false);
+        this.btnFifty.setAlpha((float) 0.5);
+
     }
 
 
@@ -158,7 +202,7 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
            level = currentQuestion.getLevelNr();
            boolean update = dbHelper.addRating(level, ratingStar, oldRating, actualLvlStatus, oldLvlStatus);
 
-
+            dbHelper.updateJoker(level, fiftyJokerNew, currentQuestion.getFiftyJoker(), addTimeNew, currentQuestion.getAddTime(), switchNew, currentQuestion.getSwitchQuestion());
 
             Intent intent = new Intent(this, End.class);
             startActivity(intent);
@@ -249,9 +293,11 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
          */
 
 
-
-
-
+        this.fiftyJokerNew=currentQuestion.getFiftyJoker();
+        this.addTimeNew=currentQuestion.getAddTime();
+        this.switchNew=currentQuestion.getSwitchQuestion();
+        int i = level+1;
+        txtViewLevel.setText("Level "+i);
         rightAnswer=currentQuestion.getAnswerNr();
 
         timeLeftInMillis = COUNTDOWN_IN_MILLIS;
@@ -269,12 +315,27 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
             btnAddTime.setOnClickListener(this);
         } else {
             btnAddTime.setAlpha((float) 0.5);
+            btnAddTime.setClickable(false);
         }
 
         if (currentQuestion.getFiftyJoker()==1){
             btnFifty.setOnClickListener(this);
         } else{
             btnFifty.setAlpha((float) 0.5);
+            btnFifty.setClickable(false);
+        }
+
+        if (currentQuestion.getFiftyJoker()==1){
+            btnFifty.setOnClickListener(this);
+        } else{
+            btnFifty.setAlpha((float) 0.5);
+        }
+
+        if(currentQuestion.getSwitchQuestion()==1){
+            btnSwitch.setOnClickListener(this);
+        } else {
+            btnSwitch.setAlpha((float) 0.5);
+            btnSwitch.setClickable(false);
         }
 
     }
@@ -378,6 +439,10 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
     public void addTenSeconds(){
         countDownTimer.cancel();
         timeLeftInMillis=timeLeftInMillis+10000;
+        addTimeNew=0;
+        this.btnAddTime.setClickable(false);
+        this.btnAddTime.setAlpha((float) 0.5);
+
         startCountDown();
     }
 

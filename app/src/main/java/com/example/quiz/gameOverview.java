@@ -28,6 +28,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
         topic2.setOnClickListener(this);
         topic3.setOnClickListener(this);
         topic4.setOnClickListener(this);
+        topic5.setOnClickListener(this);
 
         QuizDBHelper dbHelper = new QuizDBHelper(this);
         List<Question> questionList = dbHelper.getAllQuestions();
@@ -37,6 +38,8 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
         topic2.setClickable(false);
         topic3.setClickable(false);
         topic4.setClickable(false);
+        topic5.setClickable(false);
+
 
         while (counter<questionCountTotal){
 
@@ -52,6 +55,14 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
         if(doneCounter<11){
 
             topic1.setClickable(true);
+
+
+            topic2.setAlpha((float) 0.5);
+            topic3.setAlpha((float) 0.5);
+            topic4.setAlpha((float) 0.5);
+            topic5.setAlpha((float) 0.5);
+
+
 
 
         }

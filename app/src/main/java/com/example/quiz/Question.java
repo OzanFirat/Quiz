@@ -3,12 +3,20 @@ package com.example.quiz;
 public class Question {
 
     private String question, opt1, opt2, opt3, opt4, lvlDone;
-    private int answerNr, levelNr, ratingStars, amountOfFailures, fiftyJoker, addTime;
+    private int answerNr, levelNr, ratingStars, amountOfFailures, fiftyJoker, addTime,switchQuestion;
 
 
 
     public Question(){
 
+    }
+
+    public int getSwitchQuestion() {
+        return switchQuestion;
+    }
+
+    public void setSwitchQuestion(int switchQuestion) {
+        this.switchQuestion = switchQuestion;
     }
 
     public int getLevelNr() {
@@ -44,7 +52,7 @@ public class Question {
     }
 
     public Question(String question, String opt1, String opt2, String opt3, String opt4, int answerNr,
-                    int levelNr, int ratingStars, String lvlDone, int amountOfFailures, int fiftyJoker, int addTime) {
+                    int levelNr, int ratingStars, String lvlDone, int amountOfFailures, int fiftyJoker, int addTime, int switchQuestion) {
         this.question = question;
         this.opt1 = opt1;
         this.opt2 = opt2;
@@ -57,6 +65,7 @@ public class Question {
         this.amountOfFailures = amountOfFailures;
         this.fiftyJoker=fiftyJoker;
         this.addTime=addTime;
+        this.switchQuestion=switchQuestion;
 
     }
 
