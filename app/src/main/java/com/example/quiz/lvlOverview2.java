@@ -55,7 +55,7 @@ public class lvlOverview2 extends AppCompatActivity implements View.OnClickListe
 
 
 
-        lvl12 = (Button) findViewById(R.id.buttonlvl12);
+        lvl12 = (Button) findViewById(R.id.buttonlvl45);
         lvl12.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl12.setClickable(true);
@@ -81,7 +81,7 @@ public class lvlOverview2 extends AppCompatActivity implements View.OnClickListe
         }
         counter++;
         // Toast.makeText(LvlOverview.this, "Second Data updated"+doneCounter, Toast.LENGTH_LONG).show();
-        lvl13 = (Button) findViewById(R.id.buttonlvl13);
+        lvl13 = (Button) findViewById(R.id.buttonlvl46);
         lvl13.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl13.setClickable(true);
@@ -224,13 +224,13 @@ public class lvlOverview2 extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.buttonlvl12:
+            case R.id.buttonlvl45:
                 Intent intent = new Intent(this, Spiel.class);
                 startActivity(intent);
                 this.finish();
                 break;
 
-            case R.id.buttonlvl13:
+            case R.id.buttonlvl46:
                 intent = new Intent(this, Spiel.class);
                 startActivity(intent);
                 this.finish();

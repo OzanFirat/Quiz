@@ -19,177 +19,179 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/buttonlvl12"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginLeft="116dp"
-        android:layout_marginBottom="72dp"
-        android:background="@drawable/ckeckpoint_1"
-        android:text="12"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+    <TableLayout
+        android:layout_width="405dp"
+        android:layout_height="734dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-2dp">
 
-    <Button
-        android:id="@+id/buttonlvl13"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginLeft="150dp"
-        android:layout_marginEnd="187dp"
-        android:layout_marginRight="187dp"
-        android:layout_marginBottom="112dp"
-        android:background="@drawable/ckeckpoint_1"
-        android:drawablePadding="10dp"
-        android:text="13"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.3"
-        app:layout_constraintStart_toStartOf="parent" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/buttonlvl14"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="144dp"
-        android:layout_marginRight="144dp"
-        android:layout_marginBottom="68dp"
-        android:background="@drawable/ckeckpoint_1"
-        android:drawablePadding="10dp"
-        android:text="14"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/buttonlvl12"
-        app:layout_constraintEnd_toEndOf="parent" />
+                <Button
+                    android:id="@+id/buttonlvl66"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="220dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/ckeckpoint_1"
+                    android:drawablePadding="10dp"
+                    android:text="66"
+                    android:textColor="#000000" />
 
-    <Button
-        android:id="@+id/buttonlvl15"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="136dp"
-        android:layout_marginLeft="136dp"
-        android:layout_marginBottom="148dp"
-        android:background="@drawable/ckeckpoint_1"
-        android:drawablePadding="10dp"
-        android:text="15"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/buttonlvl12"
-        app:layout_constraintStart_toStartOf="parent" />
+                <Button
+                    android:id="@+id/buttonlvl65"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/ckeckpoint_1"
+                    android:drawablePadding="10dp"
+                    android:text="65"
+                    android:textColor="#000000" />
 
-    <Button
-        android:id="@+id/buttonlvl16"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="232dp"
-        android:layout_marginRight="232dp"
-        android:layout_marginBottom="44dp"
-        android:background="@drawable/ckeckpoint_1"
-        android:text="16"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/buttonlvl15"
-        app:layout_constraintEnd_toEndOf="parent" />
+                <Button
+                    android:id="@+id/buttonlvl64"
+                    android:layout_width="40dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="260dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/ckeckpoint_1"
+                    android:text="64"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </TableRow>
 
-    <Button
-        android:id="@+id/buttonlvl17"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="244dp"
-        android:layout_marginLeft="244dp"
-        android:layout_marginBottom="96dp"
-        android:background="@drawable/ckeckpoint_1"
-        android:drawablePadding="10dp"
-        android:text="17"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/buttonlvl15"
-        app:layout_constraintStart_toStartOf="parent" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/buttonlvl18"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="235dp"
-        android:layout_marginLeft="235dp"
-        android:layout_marginEnd="136dp"
-        android:layout_marginRight="136dp"
-        android:layout_marginBottom="18dp"
-        android:background="@drawable/ckeckpoint_1"
-        android:drawablePadding="10dp"
-        android:text="18"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/buttonlvl17"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonlvl19" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-    <Button
-        android:id="@+id/buttonlvl19"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="207dp"
-        android:layout_marginLeft="207dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="164dp"
+                <Button
+                    android:id="@+id/buttonlvl63"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
 
-        android:layout_marginRight="164dp"
-        android:background="@drawable/ckeckpoint_1"
-        android:drawablePadding="10dp"
-        android:text="19"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/buttonlvl18"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+                    android:layout_marginLeft="300dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/ckeckpoint_1"
+                    android:drawablePadding="10dp"
+                    android:text="63"
+                    android:textColor="#000000" />
 
-    <Button
-        android:id="@+id/buttonlvl20"
-        android:layout_width="40dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="190dp"
-        android:layout_marginLeft="190dp"
-        android:layout_marginTop="80dp"
-        android:background="@drawable/ckeckpoint_1"
-        android:text="20"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/buttonlvl19"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtViewTopic" />
+                <Button
+                    android:id="@+id/buttonlvl62"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/ckeckpoint_1"
+                    android:drawablePadding="10dp"
+                    android:text="62"
+                    android:textColor="#000000" />
 
-    <Button
-        android:id="@+id/buttonlvl21"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="124dp"
-        android:layout_marginRight="124dp"
-        android:background="@drawable/ckeckpoint_1"
-        android:drawablePadding="10dp"
-        android:text="21"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtViewTopic" />
+                <Button
+                    android:id="@+id/buttonlvl61"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="300dp"
+                    android:background="@drawable/ckeckpoint_1"
+                    android:drawablePadding="10dp"
+                    android:text="61"
+                    android:textColor="#000000" />
 
-    <Button
-        android:id="@+id/buttonlvl22"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="152dp"
-        android:layout_marginLeft="152dp"
-        android:layout_marginEnd="219dp"
-        android:layout_marginRight="219dp"
-        android:layout_marginBottom="137dp"
-        android:background="@drawable/ckeckpoint_1"
-        android:drawablePadding="10dp"
-        android:text="22"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/buttonlvl19"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtViewTopic"
-        app:layout_constraintVertical_bias="0.081" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonlvl59"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/ckeckpoint_1"
+                    android:drawablePadding="10dp"
+                    android:text="59"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/buttonlvl60"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/ckeckpoint_1"
+                    android:text="60"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonlvl56"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="116dp"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="100dp"
+                    android:background="@drawable/ckeckpoint_1"
+                    android:text="56"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/buttonlvl57"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/ckeckpoint_1"
+                    android:drawablePadding="10dp"
+                    android:text="57" />
+
+                <Button
+                    android:id="@+id/buttonlvl58"
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="144dp"
+                    android:layout_marginRight="104dp"
+                    android:layout_marginBottom="68dp"
+                    android:background="@drawable/ckeckpoint_1"
+                    android:drawablePadding="10dp"
+                    android:text="58"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

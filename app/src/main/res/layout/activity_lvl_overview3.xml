@@ -20,176 +20,117 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonlvl12"
+        android:id="@+id/buttonlvl23"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginLeft="116dp"
-        android:layout_marginBottom="72dp"
         android:background="@drawable/ckeckpoint_1"
-        android:text="12"
+        android:text="23"
         android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="619dp" />
 
     <Button
-        android:id="@+id/buttonlvl13"
+        android:id="@+id/buttonlvl24"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginLeft="150dp"
-        android:layout_marginEnd="187dp"
-        android:layout_marginRight="187dp"
-        android:layout_marginBottom="112dp"
         android:background="@drawable/ckeckpoint_1"
         android:drawablePadding="10dp"
-        android:text="13"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.3"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="24"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="579dp" />
 
     <Button
-        android:id="@+id/buttonlvl14"
+        android:id="@+id/buttonlvl25"
 
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginEnd="144dp"
-        android:layout_marginRight="144dp"
-        android:layout_marginBottom="68dp"
         android:background="@drawable/ckeckpoint_1"
         android:drawablePadding="10dp"
-        android:text="14"
+        android:text="25"
         android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/buttonlvl12"
-        app:layout_constraintEnd_toEndOf="parent" />
+        tools:layout_editor_absoluteX="227dp" />
 
     <Button
-        android:id="@+id/buttonlvl15"
+        android:id="@+id/buttonlvl26"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginStart="136dp"
-        android:layout_marginLeft="136dp"
-        android:layout_marginBottom="148dp"
         android:background="@drawable/ckeckpoint_1"
         android:drawablePadding="10dp"
-        android:text="15"
+        android:text="26"
         android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/buttonlvl12"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="136dp" />
 
     <Button
-        android:id="@+id/buttonlvl16"
+        android:id="@+id/buttonlvl27"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginEnd="232dp"
-        android:layout_marginRight="232dp"
-        android:layout_marginBottom="44dp"
         android:background="@drawable/ckeckpoint_1"
-        android:text="16"
+        android:text="27"
         android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/buttonlvl15"
-        app:layout_constraintEnd_toEndOf="parent" />
+        tools:layout_editor_absoluteX="139dp" />
 
     <Button
-        android:id="@+id/buttonlvl17"
+        android:id="@+id/buttonlvl28"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginStart="244dp"
-        android:layout_marginLeft="244dp"
-        android:layout_marginBottom="96dp"
         android:background="@drawable/ckeckpoint_1"
         android:drawablePadding="10dp"
-        android:text="17"
+        android:text="28"
         android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/buttonlvl15"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="244dp" />
 
     <Button
-        android:id="@+id/buttonlvl18"
+        android:id="@+id/buttonlvl29"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginStart="235dp"
-        android:layout_marginLeft="235dp"
-        android:layout_marginEnd="136dp"
-        android:layout_marginRight="136dp"
-        android:layout_marginBottom="18dp"
         android:background="@drawable/ckeckpoint_1"
         android:drawablePadding="10dp"
-        android:text="18"
+        android:text="29"
         android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/buttonlvl17"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonlvl19" />
+        tools:layout_editor_absoluteX="235dp" />
 
     <Button
-        android:id="@+id/buttonlvl19"
+        android:id="@+id/buttonlvl30"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginStart="207dp"
-        android:layout_marginLeft="207dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="164dp"
 
-        android:layout_marginRight="164dp"
         android:background="@drawable/ckeckpoint_1"
         android:drawablePadding="10dp"
-        android:text="19"
+        android:text="30"
         android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/buttonlvl18"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="207dp"
+        tools:layout_editor_absoluteY="200dp" />
 
     <Button
-        android:id="@+id/buttonlvl20"
+        android:id="@+id/buttonlvl31"
         android:layout_width="40dp"
         android:layout_height="48dp"
-        android:layout_marginStart="190dp"
-        android:layout_marginLeft="190dp"
-        android:layout_marginTop="80dp"
         android:background="@drawable/ckeckpoint_1"
-        android:text="20"
+        android:text="31"
         android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/buttonlvl19"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtViewTopic" />
+        tools:layout_editor_absoluteX="281dp"
+        tools:layout_editor_absoluteY="117dp" />
 
     <Button
-        android:id="@+id/buttonlvl21"
+        android:id="@+id/buttonlvl32"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="124dp"
-        android:layout_marginRight="124dp"
         android:background="@drawable/ckeckpoint_1"
         android:drawablePadding="10dp"
-        android:text="21"
+        android:text="32"
         android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtViewTopic" />
+        tools:layout_editor_absoluteX="247dp"
+        tools:layout_editor_absoluteY="90dp" />
 
     <Button
-        android:id="@+id/buttonlvl22"
+        android:id="@+id/buttonlvl33"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginStart="152dp"
-        android:layout_marginLeft="152dp"
-        android:layout_marginEnd="219dp"
-        android:layout_marginRight="219dp"
-        android:layout_marginBottom="137dp"
         android:background="@drawable/ckeckpoint_1"
         android:drawablePadding="10dp"
-        android:text="22"
+        android:text="33"
         android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/buttonlvl19"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtViewTopic"
-        app:layout_constraintVertical_bias="0.081" />
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="37dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
