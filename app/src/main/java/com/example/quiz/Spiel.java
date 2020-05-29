@@ -85,6 +85,7 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
         btnAnswer3.setOnClickListener(this);
 
         btnAddTime = (Button) findViewById(R.id.btnAddTime);
+
         btnAddTime.setOnClickListener(this);
 
         btnSkip = (Button) findViewById(R.id.btnSkip);
@@ -221,6 +222,7 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
 
         //Prove the fails
         proveFails(doneCounter);
+        proveJokers(currentQuestion);
 
         /*
         int previousQuestion = doneCounter-1;
@@ -259,6 +261,15 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
 
 
 
+
+    }
+
+    private void proveJokers(Question currentQuestion) {
+        if(currentQuestion.getAddTime()==1){
+            btnAddTime.setOnClickListener(this);
+        } else {
+            btnAddTime.setAlpha((float) 0.5);
+        }
 
     }
 
@@ -363,4 +374,6 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
         timeLeftInMillis=timeLeftInMillis+10000;
         startCountDown();
     }
+
+
 }
