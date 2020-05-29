@@ -4,139 +4,156 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background=" #c8eef8 "
+    android:background="#d4cec4"
 
     >
 
-    <Button
-        android:id="@+id/btnTopic"
-        android:layout_width="65dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="350dp"
-        android:layout_marginLeft="350dp"
-        android:layout_marginTop="450dp"
-        android:layout_marginEnd="22dp"
-        android:layout_marginRight="22dp"
-        android:background="@drawable/banner6"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="410dp"
+        android:layout_height="730dp"
+        android:layout_marginTop="735dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="386dp"
-        android:layout_height="54dp"
-        android:text="Choose a land to conquer"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="7dp" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="410dp"
+            android:layout_height="625dp"
+            android:layout_marginTop="105dp"
+            android:layout_marginBottom="@dimen/cardview_compat_inset_shadow"
+            android:alpha="0.65"
+            android:background="@drawable/world_map" />
+    </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="409dp"
-        android:layout_height="535dp"
-        android:layout_marginBottom="98dp"
-        android:alpha="0.75"
-        android:background="@drawable/world_map"
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/btnTopic4"
-        android:layout_width="65dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="700dp"
-        android:layout_marginLeft="700dp"
-        android:layout_marginTop="350dp"
-        android:layout_marginEnd="43dp"
-        android:layout_marginRight="43dp"
-        android:background="@drawable/banner4"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btnTopic1"
-        android:layout_width="65dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="53dp"
-        android:layout_marginLeft="53dp"
-        android:layout_marginEnd="750dp"
-        android:layout_marginRight="750dp"
-        android:layout_marginBottom="600dp"
-        android:background="@drawable/banner5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+            <LinearLayout
+                android:layout_width="410dp"
+                android:layout_height="120dp"
+                android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/btnTopic2"
-        android:layout_width="65dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="65dp"
-        android:layout_marginLeft="65dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginRight="14dp"
-        android:layout_marginBottom="1000dp"
-        android:background="@drawable/banner1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnTopic"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="390dp"
+                    android:layout_height="120dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/rahmen_antik"
+                    android:gravity="center|center_vertical"
+                    android:text="Choose a land to conquer"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints" />
+            </LinearLayout>
+        </TableRow>
 
-    <Button
-        android:id="@+id/btnTopic3"
-        android:layout_width="65dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="173dp"
-        android:layout_marginLeft="173dp"
-        android:layout_marginTop="850dp"
-        android:layout_marginEnd="173dp"
-        android:layout_marginRight="173dp"
-        android:alpha="2.5"
-        android:background="@drawable/banner2"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btnTopic5"
-        android:layout_width="65dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="250dp"
-        android:layout_marginLeft="250dp"
-        android:layout_marginTop="325dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginRight="1dp"
-        android:background="@drawable/banner3"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
-        app:layout_constraintStart_toEndOf="@+id/btnTopic"
-        app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/btnTopic6"
-        android:layout_width="65dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="400dp"
-        android:layout_marginLeft="400dp"
-        android:layout_marginTop="470dp"
-        android:background="@drawable/banner7"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
-        app:layout_constraintEnd_toStartOf="@+id/btnTopic3"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnTopic1"
-        app:layout_constraintTop_toBottomOf="@+id/btnTopic" />
+                <Button
+                    android:id="@+id/btnTopic2"
+                    android:layout_width="65dp"
+                    android:layout_height="85dp"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginTop="64dp"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginBottom="1000dp"
+                    android:background="@drawable/banner1" />
+
+                <Button
+                    android:id="@+id/btnTopic5"
+                    android:layout_width="55dp"
+                    android:layout_height="85dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/banner3" />
+
+                <Button
+                    android:id="@+id/btnTopic6"
+                    android:layout_width="55dp"
+                    android:layout_height="85dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/banner7" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnTopic"
+                    android:layout_width="65dp"
+                    android:layout_height="85dp"
+                    android:layout_marginLeft="135dp"
+                    android:background="@drawable/banner6" />
+
+                <Button
+                    android:id="@+id/btnTopic4"
+                    android:layout_width="60dp"
+                    android:layout_height="85dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@drawable/banner4" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnTopic1"
+                    android:layout_width="65dp"
+                    android:layout_height="85dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/banner5" />
+
+                <Button
+                    android:id="@+id/btnTopic3"
+                    android:layout_width="65dp"
+                    android:layout_height="85dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="150dp"
+                    android:alpha="2.5"
+                    android:background="@drawable/banner2" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

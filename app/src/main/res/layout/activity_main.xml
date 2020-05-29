@@ -9,26 +9,6 @@
     tools:context=".MainActivity">
 
 
-    <Button
-        android:id="@+id/btnNewQuiz"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="31dp"
-        android:layout_marginLeft="31dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginRight="31dp"
-        android:layout_marginBottom="132dp"
-        android:background="@drawable/start_border"
-
-        android:drawablePadding="40dp"
-        android:padding="15dp"
-        android:text="Start Game"
-        android:textColor="#2A137C"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="0dp"
@@ -43,8 +23,35 @@
         android:background="@drawable/main_2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnNewQuiz"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="150dp"
+
+            android:background="@drawable/rahmen_antik"
+            android:drawablePadding="40dp"
+            android:padding="15dp"
+            android:text="Start Game"
+            android:textColor="#DF9A10"
+            android:textSize="36sp" />
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
