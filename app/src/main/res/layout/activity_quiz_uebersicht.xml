@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#d4cec4"
+    android:background=" #8ad7fa "
 
     >
 
@@ -151,6 +151,16 @@
                     android:layout_marginTop="150dp"
                     android:alpha="2.5"
                     android:background="@drawable/banner2" />
+
+                <Button
+                    android:id="@+id/btnTopic8"
+                    android:layout_width="20dp"
+                    android:layout_height="85dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/banner8" />
             </LinearLayout>
         </TableRow>
     </TableLayout>

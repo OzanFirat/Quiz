@@ -1,8 +1,11 @@
 package com.example.quiz;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -54,9 +57,28 @@ public class End2 extends AppCompatActivity implements View.OnClickListener {
 
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private void setBanner(int doneCounter) {
         if(doneCounter<=11){
-
+            txtScore.setBackground(getDrawable(Integer.parseInt("@drawable/banner4")));
+        }
+        if(doneCounter>11&&doneCounter<=22){
+            txtScore.setBackground(getDrawable(Integer.parseInt("@drawable/banner1")));
+        }
+        if(doneCounter>22&&doneCounter<=33){
+            txtScore.setBackground(getDrawable(Integer.parseInt("@drawable/banner1")));
+        }
+        if(doneCounter>33&&doneCounter<=44){
+            txtScore.setBackground(getDrawable(Integer.parseInt("@drawable/banner1")));
+        }
+        if(doneCounter>44&&doneCounter<=55){
+            txtScore.setBackground(getDrawable(Integer.parseInt("@drawable/banner1")));
+        }
+        if(doneCounter>55&&doneCounter<=66){
+            txtScore.setBackground(getDrawable(Integer.parseInt("@drawable/banner1")));
+        }
+        if(doneCounter>66&&doneCounter<=77){
+            txtScore.setBackground(getDrawable(Integer.parseInt("@drawable/banner1")));
         }
 
     }
