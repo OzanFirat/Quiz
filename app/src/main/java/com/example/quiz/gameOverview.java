@@ -25,6 +25,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
         topic5= (Button) findViewById(R.id.btnTopic5);
         topic6= (Button) findViewById(R.id.btnTopic6);
         topic7= (Button) findViewById(R.id.btnTopic7);
+        topic8= (Button) findViewById(R.id.btnTopic8);
 
         topic1.setOnClickListener(this);
         topic2.setOnClickListener(this);
@@ -33,6 +34,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
         topic5.setOnClickListener(this);
         topic6.setOnClickListener(this);
         topic7.setOnClickListener(this);
+        topic8.setOnClickListener(this);
 
         QuizDBHelper dbHelper = new QuizDBHelper(this);
         List<Question> questionList = dbHelper.getAllQuestions();
@@ -45,7 +47,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
         topic5.setClickable(false);
         topic6.setClickable(false);
         topic7.setClickable(false);
-
+        topic8.setClickable(false);
 
         while (counter<questionCountTotal){
 
@@ -69,6 +71,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
             topic5.setAlpha((float) 0.5);
             topic6.setAlpha((float) 0.5);
             topic7.setAlpha((float) 0.5);
+            topic8.setAlpha((float) 0.5);
 
 
 
@@ -84,7 +87,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
             topic5.setAlpha((float) 0.5);
             topic6.setAlpha((float) 0.5);
             topic7.setAlpha((float) 0.5);
-
+            topic8.setAlpha((float) 0.5);
 
         }
         if(doneCounter>22 && doneCounter<=33){
@@ -97,7 +100,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
             topic5.setAlpha((float) 0.5);
             topic6.setAlpha((float) 0.5);
             topic7.setAlpha((float) 0.5);
-
+            topic8.setAlpha((float) 0.5);
 
         }
         if(doneCounter>33 && doneCounter<=44){
@@ -110,7 +113,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
             topic5.setAlpha((float) 0.5);
             topic6.setAlpha((float) 0.5);
             topic7.setAlpha((float) 0.5);
-
+            topic8.setAlpha((float) 0.5);
         }
         if(doneCounter>44 && doneCounter<=55){
             topic1.setText("Erobert!");
@@ -122,6 +125,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
 
             topic6.setAlpha((float) 0.5);
             topic7.setAlpha((float) 0.5);
+            topic8.setAlpha((float) 0.5);
         }
 
         if(doneCounter>55 && doneCounter<=66){
@@ -134,6 +138,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
             topic6.setClickable(true);
 
             topic7.setAlpha((float) 0.5);
+            topic8.setAlpha((float) 0.5);
         }
 
         if(doneCounter>66 && doneCounter<=77){
@@ -145,6 +150,20 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
             topic6.setText("Erobert!");
 
             topic7.setClickable(true);
+            topic8.setAlpha((float) 0.5);
+        }
+
+        if(doneCounter>77 && doneCounter<=88){
+            topic1.setText("Erobert!");
+            topic2.setText("Erobert!");
+            topic3.setText("Erobert!");
+            topic4.setText("Erobert!");
+            topic5.setText("Erobert!");
+            topic6.setText("Erobert!");
+            topic7.setText("Erobert!");
+
+
+            topic8.setClickable(true);
 
         }
 
@@ -202,6 +221,13 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
         }
         switch (v.getId()){
             case R.id.btnTopic7:
+                Intent intent = new Intent(this, lvlOverview7.class);
+                startActivity(intent);
+                this.finish();
+                break;
+        }
+        switch (v.getId()){
+            case R.id.btnTopic8:
                 Intent intent = new Intent(this, lvlOverview7.class);
                 startActivity(intent);
                 this.finish();

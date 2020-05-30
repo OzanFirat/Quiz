@@ -20,6 +20,7 @@ public class End2 extends AppCompatActivity implements View.OnClickListener {
     private Button btnStartMenu, btnTryAgain;
     private RatingBar rtBar;
     private TextView txtScore;
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,10 +47,10 @@ public class End2 extends AppCompatActivity implements View.OnClickListener {
         this.btnTryAgain.setOnClickListener(this);
 
         this.txtScore = (TextView) findViewById(R.id.txtScore);
-        txtScore.setText("Das ist deine "+questionList.get(doneCounter).getAmountOfFailures()+""+" Niederlage: \nNoch "
-                +(3-questionList.get(doneCounter).getAmountOfFailures())+"");
 
-        setBanner(doneCounter);
+
+
+      //  setBanner(doneCounter);
 
 
 
@@ -60,25 +61,29 @@ public class End2 extends AppCompatActivity implements View.OnClickListener {
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private void setBanner(int doneCounter) {
         if(doneCounter<=11){
-            txtScore.setBackground(getDrawable(Integer.parseInt("@drawable/banner4")));
+            txtScore.setBackground(getDrawable(R.drawable.banner4));
         }
         if(doneCounter>11&&doneCounter<=22){
-            txtScore.setBackground(getDrawable(Integer.parseInt("@drawable/banner1")));
+            txtScore.setBackground(getDrawable(R.drawable.banner1));
         }
         if(doneCounter>22&&doneCounter<=33){
-            txtScore.setBackground(getDrawable(Integer.parseInt("@drawable/banner1")));
+            txtScore.setBackground(getDrawable(R.drawable.banner7));
         }
         if(doneCounter>33&&doneCounter<=44){
-            txtScore.setBackground(getDrawable(Integer.parseInt("@drawable/banner1")));
+            txtScore.setBackground(getDrawable(R.drawable.banner5));
         }
         if(doneCounter>44&&doneCounter<=55){
-            txtScore.setBackground(getDrawable(Integer.parseInt("@drawable/banner1")));
+            txtScore.setBackground(getDrawable(R.drawable.banner3));
         }
         if(doneCounter>55&&doneCounter<=66){
-            txtScore.setBackground(getDrawable(Integer.parseInt("@drawable/banner1")));
+            txtScore.setBackground(getDrawable(R.drawable.banner2));
         }
         if(doneCounter>66&&doneCounter<=77){
-            txtScore.setBackground(getDrawable(Integer.parseInt("@drawable/banner1")));
+            txtScore.setBackground(getDrawable(R.drawable.banner6));
+        }
+
+        if(doneCounter>77&&doneCounter<=88){
+            txtScore.setBackground(getDrawable(R.drawable.banner8));
         }
 
     }
