@@ -91,7 +91,7 @@
                     android:background="@drawable/banner3" />
 
                 <Button
-                    android:id="@+id/btnTopic6"
+                    android:id="@+id/btnTopic3"
                     android:layout_width="55dp"
                     android:layout_height="85dp"
                     android:layout_marginLeft="20dp"
@@ -118,7 +118,7 @@
                     android:background="@drawable/banner6" />
 
                 <Button
-                    android:id="@+id/btnTopic4"
+                    android:id="@+id/btnTopic1"
                     android:layout_width="60dp"
                     android:layout_height="85dp"
                     android:layout_marginLeft="80dp"
@@ -136,7 +136,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/btnTopic1"
+                    android:id="@+id/btnTopic4"
                     android:layout_width="65dp"
                     android:layout_height="85dp"
                     android:layout_marginLeft="60dp"
@@ -144,7 +144,7 @@
                     android:background="@drawable/banner5" />
 
                 <Button
-                    android:id="@+id/btnTopic3"
+                    android:id="@+id/btnTopic6"
                     android:layout_width="65dp"
                     android:layout_height="85dp"
                     android:layout_marginLeft="60dp"
