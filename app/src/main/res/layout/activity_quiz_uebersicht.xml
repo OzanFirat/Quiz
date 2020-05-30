@@ -111,7 +111,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/btnTopic"
+                    android:id="@+id/btnTopic7"
                     android:layout_width="65dp"
                     android:layout_height="85dp"
                     android:layout_marginLeft="135dp"

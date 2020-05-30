@@ -46,11 +46,18 @@ public class End2 extends AppCompatActivity implements View.OnClickListener {
         txtScore.setText("Das ist deine "+questionList.get(doneCounter).getAmountOfFailures()+""+" Niederlage: \nNoch "
                 +(3-questionList.get(doneCounter).getAmountOfFailures())+"");
 
+        setBanner(doneCounter);
 
 
 
 
 
+    }
+
+    private void setBanner(int doneCounter) {
+        if(doneCounter<=11){
+
+        }
 
     }
 

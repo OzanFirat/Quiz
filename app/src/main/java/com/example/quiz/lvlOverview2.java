@@ -19,7 +19,7 @@ public class lvlOverview2 extends AppCompatActivity implements View.OnClickListe
     public static final String SHARED_PREFS = "sharedPrefs";
     //public static final String SHARED_PREFS = "keyHighscore";
     Button lvl21, lvl22, lvl12, lvl13, lvl14, lvl15, lvl16, lvl17, lvl18, lvl19, lvl20;
-
+    private  List<Question> questionList;
 
 
 
@@ -31,7 +31,7 @@ public class lvlOverview2 extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lvl_overview2);
         QuizDBHelper dbHelper = new QuizDBHelper(this);
-        List<Question> questionList = dbHelper.getAllQuestions();
+        questionList = dbHelper.getAllQuestions();
 
         //Toast.makeText(LvlOverview.this, "Data updated"+questionList.get(0).getLvlDone(), Toast.LENGTH_LONG).show();
         int questionCountTotal = questionList.size();
@@ -54,8 +54,7 @@ public class lvlOverview2 extends AppCompatActivity implements View.OnClickListe
         //  Toast.makeText(LvlOverview.this, "Data updated"+doneCounter, Toast.LENGTH_LONG).show();
 
 
-
-        lvl12 = (Button) findViewById(R.id.buttonlvl45);
+        lvl12 = (Button) findViewById(R.id.buttonlvl12);
         lvl12.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl12.setClickable(true);
@@ -63,44 +62,19 @@ public class lvlOverview2 extends AppCompatActivity implements View.OnClickListe
             //  lvl1.setBackgroundColor(-65536);
             lvl12.setBackground(getDrawable(R.drawable.sparta_helm));
         } else {
-            lvl12.setClickable(false);
-            if(questionList.get(counter).getLevelNr()<=doneCounter){
-                if(questionList.get(counter).getRatingStars()==3){
-                    lvl12.setBackground(getDrawable(R.drawable.sieges_banner_drei_sterne));
-                    lvl12.setText("");
-                }
-                if(questionList.get(counter).getRatingStars()==2){
-                    lvl12.setBackground(getDrawable(R.drawable.sieges_banner_zwei_sterne));
-                    lvl12.setText("");
-                }
-                if(questionList.get(counter).getRatingStars()==1){
-                    lvl12.setBackground(getDrawable(R.drawable.sieges_banner_ein_stern));
-                    lvl12.setText("");
-                }
-            }
+            levelIsDone(lvl12,doneCounter,counter);
+
         }
         counter++;
         // Toast.makeText(LvlOverview.this, "Second Data updated"+doneCounter, Toast.LENGTH_LONG).show();
-        lvl13 = (Button) findViewById(R.id.buttonlvl46);
+        lvl13 = (Button) findViewById(R.id.buttonlvl13);
         lvl13.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl13.setClickable(true);
-            //  lvl2.setBackgroundColor(-65536);
             lvl13.setBackground(getDrawable(R.drawable.sparta_helm));
         }  else {
-            lvl13.setClickable(false);
-            if(questionList.get(counter).getLevelNr()<=doneCounter){
-                if(questionList.get(counter).getRatingStars()==3){
-                    lvl13.setBackground(getDrawable(R.drawable.sieges_banner_drei_sterne));
-                }
-                if(questionList.get(counter).getRatingStars()==2){
-                    lvl13.setBackground(getDrawable(R.drawable.sieges_banner_zwei_sterne));
-                }
-                if(questionList.get(counter).getRatingStars()==1){
-                    lvl13.setBackground(getDrawable(R.drawable.sieges_banner_ein_stern));
-                }
-            }
-        }
+            levelIsDone(lvl13,doneCounter,counter);
+                    }
         counter++;
 
         lvl14 = (Button) findViewById(R.id.buttonlvl14);
@@ -109,18 +83,8 @@ public class lvlOverview2 extends AppCompatActivity implements View.OnClickListe
             lvl14.setClickable(true);
             lvl14.setBackground(getDrawable(R.drawable.sparta_helm));
         } else {
-            lvl14.setClickable(false);
-            if(questionList.get(counter).getLevelNr()<=doneCounter){
-                if(questionList.get(counter).getRatingStars()==3){
-                    lvl14.setBackground(getDrawable(R.drawable.sieges_banner_drei_sterne));
-                }
-                if(questionList.get(counter).getRatingStars()==2){
-                    lvl14.setBackground(getDrawable(R.drawable.sieges_banner_zwei_sterne));
-                }
-                if(questionList.get(counter).getRatingStars()==1){
-                    lvl14.setBackground(getDrawable(R.drawable.sieges_banner_ein_stern));
-                }
-            }
+            levelIsDone(lvl14,doneCounter,counter);
+
         }
         counter++;
 
@@ -130,7 +94,7 @@ public class lvlOverview2 extends AppCompatActivity implements View.OnClickListe
             lvl15.setClickable(true);
             lvl15.setBackground(getDrawable(R.drawable.sparta_helm));
         } else {
-            lvl15.setClickable(false);
+            levelIsDone(lvl15,doneCounter,counter);
         }
         counter++;
 
@@ -140,7 +104,7 @@ public class lvlOverview2 extends AppCompatActivity implements View.OnClickListe
             lvl16.setClickable(true);
             lvl16.setBackground(getDrawable(R.drawable.sparta_helm));
         } else {
-            lvl16.setClickable(false);
+            levelIsDone(lvl16,doneCounter,counter);
         }
         counter++;
 
@@ -148,10 +112,9 @@ public class lvlOverview2 extends AppCompatActivity implements View.OnClickListe
         lvl17.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl17.setClickable(true);
-            //lvl6.setBackgroundColor(-65536);
             lvl17.setBackground(getDrawable(R.drawable.sparta_helm));
         }else {
-            lvl17.setClickable(false);
+            levelIsDone(lvl17,doneCounter,counter);
         }
         counter++;
 
@@ -159,9 +122,9 @@ public class lvlOverview2 extends AppCompatActivity implements View.OnClickListe
         lvl18.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl18.setClickable(true);
-            lvl18.setBackgroundColor(-65536);
+            lvl18.setBackground(getDrawable(R.drawable.sparta_helm));
         }else {
-            lvl18.setClickable(false);
+            levelIsDone(lvl18,doneCounter,counter);
         }
         counter++;
 
@@ -169,9 +132,9 @@ public class lvlOverview2 extends AppCompatActivity implements View.OnClickListe
         lvl19.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl19.setClickable(true);
-            lvl19.setBackgroundColor(-65536);
+            lvl19.setBackground(getDrawable(R.drawable.sparta_helm));
         }else {
-            lvl19.setClickable(false);
+            levelIsDone(lvl19,doneCounter,counter);
         }
         counter++;
 
@@ -179,9 +142,9 @@ public class lvlOverview2 extends AppCompatActivity implements View.OnClickListe
         lvl20.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl20.setClickable(true);
-            lvl20.setBackgroundColor(-65536);
+            lvl20.setBackground(getDrawable(R.drawable.sparta_helm));
         } else {
-            lvl20.setClickable(false);
+            levelIsDone(lvl20,doneCounter,counter);
         }
         counter++;
 
@@ -189,9 +152,9 @@ public class lvlOverview2 extends AppCompatActivity implements View.OnClickListe
         lvl21.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl21.setClickable(true);
-            lvl21.setBackgroundColor(-65536);
+            lvl21.setBackground(getDrawable(R.drawable.sparta_helm));
         } else {
-            lvl21.setClickable(false);
+            levelIsDone(lvl21,doneCounter,counter);
         }
         counter++;
 
@@ -199,38 +162,40 @@ public class lvlOverview2 extends AppCompatActivity implements View.OnClickListe
         lvl22.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()){
             lvl22.setClickable(true);
-            lvl22.setBackgroundColor(-65536);
+            lvl22.setBackground(getDrawable(R.drawable.sparta_helm));
         } else {
-            lvl22.setClickable(false);
+            levelIsDone(lvl22,doneCounter,counter);
         }
-        counter++;
 
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    private void levelIsDone(Button lvlXY, int doneCounter, int counter) {
+        lvlXY.setClickable(false);
+        if(questionList.get(counter).getLevelNr()<=doneCounter){
+            if(questionList.get(counter).getRatingStars()==3){
+                lvlXY.setBackground(getDrawable(R.drawable.sieges_banner_drei_sterne));
+            }
+            if(questionList.get(counter).getRatingStars()==2){
+                lvlXY.setBackground(getDrawable(R.drawable.sieges_banner_zwei_sterne));
+            }
+            if(questionList.get(counter).getRatingStars()==1){
+                lvlXY.setBackground(getDrawable(R.drawable.sieges_banner_ein_stern));
+            }
+        }
     }
 
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.buttonlvl45:
+            case R.id.buttonlvl12:
                 Intent intent = new Intent(this, Spiel.class);
                 startActivity(intent);
                 this.finish();
                 break;
 
-            case R.id.buttonlvl46:
+            case R.id.buttonlvl13:
                 intent = new Intent(this, Spiel.class);
                 startActivity(intent);
                 this.finish();

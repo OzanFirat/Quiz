@@ -20,8 +20,8 @@ public class lvlOverview3 extends AppCompatActivity implements View.OnClickListe
 
         public static final String SHARED_PREFS = "sharedPrefs";
         //public static final String SHARED_PREFS = "keyHighscore";
-        Button lvl21, lvl22, lvl12, lvl13, lvl14, lvl15, lvl16, lvl17, lvl18, lvl19, lvl20;
-
+        Button lvl23, lvl24, lvl25, lvl26, lvl27, lvl28, lvl29, lvl30, lvl31, lvl32, lvl33;
+    private  List<Question> questionList;
 
 
 
@@ -33,7 +33,7 @@ public class lvlOverview3 extends AppCompatActivity implements View.OnClickListe
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_lvl_overview3);
             QuizDBHelper dbHelper = new QuizDBHelper(this);
-            List<Question> questionList = dbHelper.getAllQuestions();
+            questionList = dbHelper.getAllQuestions();
 
             //Toast.makeText(LvlOverview.this, "Data updated"+questionList.get(0).getLvlDone(), Toast.LENGTH_LONG).show();
             int questionCountTotal = questionList.size();
@@ -57,153 +57,115 @@ public class lvlOverview3 extends AppCompatActivity implements View.OnClickListe
 
 
 
-            lvl12 = (Button) findViewById(R.id.buttonlvl45);
-            lvl12.setOnClickListener(this);
+            lvl23 = (Button) findViewById(R.id.buttonlvl23);
+            lvl23.setOnClickListener(this);
             if(doneCounter+1==questionList.get(counter).getLevelNr()){
-                lvl12.setClickable(true);
-                //lvl1.setBackgroundColor(@ColorInt);
-                //  lvl1.setBackgroundColor(-65536);
-                lvl12.setBackground(getDrawable(R.drawable.sparta_helm));
+                lvl23.setClickable(true);
+                lvl23.setBackground(getDrawable(R.drawable.sparta_helm));
             } else {
-                lvl12.setClickable(false);
-                if(questionList.get(counter).getLevelNr()<=doneCounter){
-                    if(questionList.get(counter).getRatingStars()==3){
-                        lvl12.setBackground(getDrawable(R.drawable.sieges_banner_drei_sterne));
-                        lvl12.setText("");
-                    }
-                    if(questionList.get(counter).getRatingStars()==2){
-                        lvl12.setBackground(getDrawable(R.drawable.sieges_banner_zwei_sterne));
-                        lvl12.setText("");
-                    }
-                    if(questionList.get(counter).getRatingStars()==1){
-                        lvl12.setBackground(getDrawable(R.drawable.sieges_banner_ein_stern));
-                        lvl12.setText("");
-                    }
-                }
+                levelIsDone(lvl23,doneCounter,counter);
             }
             counter++;
             // Toast.makeText(LvlOverview.this, "Second Data updated"+doneCounter, Toast.LENGTH_LONG).show();
-            lvl13 = (Button) findViewById(R.id.buttonlvl46);
-            lvl13.setOnClickListener(this);
+            lvl24 = (Button) findViewById(R.id.buttonlvl24);
+            lvl24.setOnClickListener(this);
             if(doneCounter+1==questionList.get(counter).getLevelNr()){
-                lvl13.setClickable(true);
+                lvl24.setClickable(true);
                 //  lvl2.setBackgroundColor(-65536);
-                lvl13.setBackground(getDrawable(R.drawable.sparta_helm));
+                lvl24.setBackground(getDrawable(R.drawable.sparta_helm));
             }  else {
-                lvl13.setClickable(false);
-                if(questionList.get(counter).getLevelNr()<=doneCounter){
-                    if(questionList.get(counter).getRatingStars()==3){
-                        lvl13.setBackground(getDrawable(R.drawable.sieges_banner_drei_sterne));
-                    }
-                    if(questionList.get(counter).getRatingStars()==2){
-                        lvl13.setBackground(getDrawable(R.drawable.sieges_banner_zwei_sterne));
-                    }
-                    if(questionList.get(counter).getRatingStars()==1){
-                        lvl13.setBackground(getDrawable(R.drawable.sieges_banner_ein_stern));
-                    }
-                }
+                levelIsDone(lvl24,doneCounter,counter);
             }
             counter++;
 
-            lvl14 = (Button) findViewById(R.id.buttonlvl14);
-            lvl14.setOnClickListener(this);
+            lvl25 = (Button) findViewById(R.id.buttonlvl25);
+            lvl25.setOnClickListener(this);
             if(doneCounter+1==questionList.get(counter).getLevelNr()){
-                lvl14.setClickable(true);
-                lvl14.setBackground(getDrawable(R.drawable.sparta_helm));
+                lvl25.setClickable(true);
+                lvl25.setBackground(getDrawable(R.drawable.sparta_helm));
             } else {
-                lvl14.setClickable(false);
-                if(questionList.get(counter).getLevelNr()<=doneCounter){
-                    if(questionList.get(counter).getRatingStars()==3){
-                        lvl14.setBackground(getDrawable(R.drawable.sieges_banner_drei_sterne));
-                    }
-                    if(questionList.get(counter).getRatingStars()==2){
-                        lvl14.setBackground(getDrawable(R.drawable.sieges_banner_zwei_sterne));
-                    }
-                    if(questionList.get(counter).getRatingStars()==1){
-                        lvl14.setBackground(getDrawable(R.drawable.sieges_banner_ein_stern));
-                    }
-                }
+                levelIsDone(lvl25,doneCounter,counter);
             }
             counter++;
 
-            lvl15 = (Button) findViewById(R.id.buttonlvl15);
-            lvl15.setOnClickListener(this);
+            lvl26 = (Button) findViewById(R.id.buttonlvl26);
+            lvl26.setOnClickListener(this);
             if(doneCounter+1==questionList.get(counter).getLevelNr()){
-                lvl15.setClickable(true);
-                lvl15.setBackground(getDrawable(R.drawable.sparta_helm));
+                lvl26.setClickable(true);
+                lvl26.setBackground(getDrawable(R.drawable.sparta_helm));
             } else {
-                lvl15.setClickable(false);
+                levelIsDone(lvl26,doneCounter,counter);
             }
             counter++;
 
-            lvl16 = (Button) findViewById(R.id.buttonlvl16);
-            lvl16.setOnClickListener(this);
+            lvl27 = (Button) findViewById(R.id.buttonlvl27);
+            lvl27.setOnClickListener(this);
             if(doneCounter+1==questionList.get(counter).getLevelNr()){
-                lvl16.setClickable(true);
-                lvl16.setBackground(getDrawable(R.drawable.sparta_helm));
+                lvl27.setClickable(true);
+                lvl27.setBackground(getDrawable(R.drawable.sparta_helm));
             } else {
-                lvl16.setClickable(false);
+                levelIsDone(lvl27,doneCounter,counter);
             }
             counter++;
 
-            lvl17 = (Button) findViewById(R.id.buttonlvl17);
-            lvl17.setOnClickListener(this);
+            lvl28 = (Button) findViewById(R.id.buttonlvl28);
+            lvl28.setOnClickListener(this);
             if(doneCounter+1==questionList.get(counter).getLevelNr()){
-                lvl17.setClickable(true);
+                lvl28.setClickable(true);
                 //lvl6.setBackgroundColor(-65536);
-                lvl17.setBackground(getDrawable(R.drawable.sparta_helm));
+                lvl28.setBackground(getDrawable(R.drawable.sparta_helm));
             }else {
-                lvl17.setClickable(false);
+                levelIsDone(lvl28,doneCounter,counter);
             }
             counter++;
 
-            lvl18 = (Button) findViewById(R.id.buttonlvl18);
-            lvl18.setOnClickListener(this);
+            lvl29 = (Button) findViewById(R.id.buttonlvl29);
+            lvl29.setOnClickListener(this);
             if(doneCounter+1==questionList.get(counter).getLevelNr()){
-                lvl18.setClickable(true);
-                lvl18.setBackgroundColor(-65536);
+                lvl29.setClickable(true);
+                lvl29.setBackground(getDrawable(R.drawable.sparta_helm));
             }else {
-                lvl18.setClickable(false);
+                levelIsDone(lvl29,doneCounter,counter);
             }
             counter++;
 
-            lvl19 = (Button) findViewById(R.id.buttonlvl19);
-            lvl19.setOnClickListener(this);
+            lvl30 = (Button) findViewById(R.id.buttonlvl30);
+            lvl30.setOnClickListener(this);
             if(doneCounter+1==questionList.get(counter).getLevelNr()){
-                lvl19.setClickable(true);
-                lvl19.setBackgroundColor(-65536);
+                lvl30.setClickable(true);
+                lvl30.setBackground(getDrawable(R.drawable.sparta_helm));
             }else {
-                lvl19.setClickable(false);
+                levelIsDone(lvl30,doneCounter,counter);
             }
             counter++;
 
-            lvl20 = (Button) findViewById(R.id.buttonlvl20);
-            lvl20.setOnClickListener(this);
+            lvl31 = (Button) findViewById(R.id.buttonlvl31);
+            lvl31.setOnClickListener(this);
             if(doneCounter+1==questionList.get(counter).getLevelNr()){
-                lvl20.setClickable(true);
-                lvl20.setBackgroundColor(-65536);
+                lvl31.setClickable(true);
+                lvl31.setBackground(getDrawable(R.drawable.sparta_helm));
             } else {
-                lvl20.setClickable(false);
+                levelIsDone(lvl31,doneCounter,counter);
             }
             counter++;
 
-            lvl21 = (Button) findViewById(R.id.buttonlvl21);
-            lvl21.setOnClickListener(this);
+            lvl32 = (Button) findViewById(R.id.buttonlvl32);
+            lvl32.setOnClickListener(this);
             if(doneCounter+1==questionList.get(counter).getLevelNr()){
-                lvl21.setClickable(true);
-                lvl21.setBackgroundColor(-65536);
+                lvl32.setClickable(true);
+                lvl32.setBackground(getDrawable(R.drawable.sparta_helm));
             } else {
-                lvl21.setClickable(false);
+                levelIsDone(lvl32,doneCounter,counter);
             }
             counter++;
 
-            lvl22 = (Button) findViewById(R.id.buttonlvl22);
-            lvl22.setOnClickListener(this);
+            lvl33 = (Button) findViewById(R.id.buttonlvl33);
+            lvl33.setOnClickListener(this);
             if(doneCounter+1==questionList.get(counter).getLevelNr()){
-                lvl22.setClickable(true);
-                lvl22.setBackgroundColor(-65536);
+                lvl33.setClickable(true);
+                lvl33.setBackground(getDrawable(R.drawable.sparta_helm));
             } else {
-                lvl22.setClickable(false);
+                levelIsDone(lvl33,doneCounter,counter);
             }
             counter++;
 
@@ -222,71 +184,87 @@ public class lvlOverview3 extends AppCompatActivity implements View.OnClickListe
 
         }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    private void levelIsDone(Button lvlXY, int doneCounter, int counter) {
+        lvlXY.setClickable(false);
+        if(questionList.get(counter).getLevelNr()<=doneCounter){
+            if(questionList.get(counter).getRatingStars()==3){
+                lvlXY.setBackground(getDrawable(R.drawable.sieges_banner_drei_sterne));
+            }
+            if(questionList.get(counter).getRatingStars()==2){
+                lvlXY.setBackground(getDrawable(R.drawable.sieges_banner_zwei_sterne));
+            }
+            if(questionList.get(counter).getRatingStars()==1){
+                lvlXY.setBackground(getDrawable(R.drawable.sieges_banner_ein_stern));
+            }
+        }
+    }
+
 
         @Override
         public void onClick(View v) {
             switch (v.getId()){
-                case R.id.buttonlvl45:
+                case R.id.buttonlvl23:
                     Intent intent = new Intent(this, Spiel.class);
                     startActivity(intent);
                     this.finish();
                     break;
 
-                case R.id.buttonlvl46:
+                case R.id.buttonlvl24:
                     intent = new Intent(this, Spiel.class);
                     startActivity(intent);
                     this.finish();
                     break;
 
-                case R.id.buttonlvl14:
+                case R.id.buttonlvl25:
                     intent = new Intent(this, Spiel.class);
                     startActivity(intent);
                     this.finish();
                     break;
 
-                case R.id.buttonlvl15:
+                case R.id.buttonlvl26:
                     intent = new Intent(this, Spiel.class);
                     startActivity(intent);
                     this.finish();
                     break;
 
-                case R.id.buttonlvl16:
+                case R.id.buttonlvl27:
                     intent = new Intent(this, Spiel.class);
                     startActivity(intent);
                     this.finish();
                     break;
 
-                case R.id.buttonlvl17:
+                case R.id.buttonlvl28:
                     intent = new Intent(this, Spiel.class);
                     startActivity(intent);
                     this.finish();
                     break;
 
-                case R.id.buttonlvl18:
+                case R.id.buttonlvl29:
                     intent = new Intent(this, Spiel.class);
                     startActivity(intent);
                     this.finish();
                     break;
 
-                case R.id.buttonlvl19:
+                case R.id.buttonlvl30:
                     intent = new Intent(this, Spiel.class);
                     startActivity(intent);
                     this.finish();
                     break;
 
-                case R.id.buttonlvl20:
+                case R.id.buttonlvl31:
                     intent = new Intent(this, Spiel.class);
                     startActivity(intent);
                     this.finish();
                     break;
 
-                case R.id.buttonlvl21:
+                case R.id.buttonlvl32:
                     intent = new Intent(this, Spiel.class);
                     startActivity(intent);
                     this.finish();
                     break;
 
-                case R.id.buttonlvl22:
+                case R.id.buttonlvl33:
                     intent = new Intent(this, Spiel.class);
                     startActivity(intent);
                     this.finish();

@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonlvl45"
+        android:id="@+id/buttonlvl12"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="116dp"
@@ -33,7 +33,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/buttonlvl46"
+        android:id="@+id/buttonlvl13"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="150dp"
@@ -61,7 +61,7 @@
         android:drawablePadding="10dp"
         android:text="14"
         android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/buttonlvl45"
+        app:layout_constraintBottom_toTopOf="@+id/buttonlvl12"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
@@ -75,7 +75,7 @@
         android:drawablePadding="10dp"
         android:text="15"
         android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/buttonlvl45"
+        app:layout_constraintBottom_toTopOf="@+id/buttonlvl12"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
