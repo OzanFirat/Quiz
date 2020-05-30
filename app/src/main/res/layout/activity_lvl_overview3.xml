@@ -43,8 +43,8 @@
                     android:id="@+id/buttonlvl33"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="120dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="240dp"
+                    android:layout_marginTop="70dp"
                     android:layout_marginBottom="20dp"
                     android:background="@drawable/ckeckpoint_1"
                     android:drawablePadding="10dp"
@@ -55,8 +55,8 @@
                     android:id="@+id/buttonlvl32"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="240dp"
-                    android:layout_marginBottom="60dp"
+                    android:layout_marginLeft="235dp"
+                    android:layout_marginBottom="30dp"
                     android:background="@drawable/ckeckpoint_1"
                     android:drawablePadding="10dp"
                     android:text="32"
@@ -66,7 +66,7 @@
                     android:id="@+id/buttonlvl31"
                     android:layout_width="40dp"
                     android:layout_height="48dp"
-                    android:layout_marginLeft="280dp"
+                    android:layout_marginLeft="270dp"
                     android:background="@drawable/ckeckpoint_1"
                     android:text="31"
                     android:textColor="#000000" />
@@ -87,7 +87,8 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
 
-                    android:layout_marginLeft="180dp"
+                    android:layout_marginLeft="300dp"
+                    android:layout_marginTop="30dp"
                     android:background="@drawable/ckeckpoint_1"
                     android:drawablePadding="10dp"
                     android:text="30"
@@ -97,7 +98,8 @@
                     android:id="@+id/buttonlvl29"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="290dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="30dp"
                     android:background="@drawable/ckeckpoint_1"
                     android:drawablePadding="10dp"
                     android:text="29"
@@ -107,7 +109,7 @@
                     android:id="@+id/buttonlvl28"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="190dp"
+                    android:layout_marginLeft="310dp"
                     android:background="@drawable/ckeckpoint_1"
                     android:drawablePadding="10dp"
                     android:text="28"
@@ -122,40 +124,29 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <Button
-                    android:id="@+id/buttonlvl27"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="140dp"
-                    android:layout_marginTop="35dp"
-                    android:background="@drawable/ckeckpoint_1"
-                    android:text="27"
-                    android:textColor="#000000" />
+                android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/buttonlvl26"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="210dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="40dp"
                     android:background="@drawable/ckeckpoint_1"
                     android:drawablePadding="10dp"
                     android:text="26"
                     android:textColor="#000000" />
 
                 <Button
-                    android:id="@+id/buttonlvl25"
-
+                    android:id="@+id/buttonlvl27"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="210dp"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="35dp"
                     android:background="@drawable/ckeckpoint_1"
-                    android:drawablePadding="10dp"
-                    android:text="25"
+                    android:text="27"
                     android:textColor="#000000" />
+
             </LinearLayout>
         </TableRow>
 
@@ -169,13 +160,26 @@
                 android:orientation="vertical">
 
                 <Button
+                    android:id="@+id/buttonlvl25"
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="180dp"
+                    android:background="@drawable/ckeckpoint_1"
+                    android:drawablePadding="10dp"
+                    android:text="25"
+                    android:textColor="#000000" />
+
+                <Button
                     android:id="@+id/buttonlvl24"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="150dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="20dp"
                     android:background="@drawable/ckeckpoint_1"
                     android:drawablePadding="10dp"
-                    android:text="24" />
+                    android:text="24"
+                    android:textColor="#050505" />
 
                 <Button
                     android:id="@+id/buttonlvl23"
@@ -183,6 +187,7 @@
                     android:layout_height="40dp"
                     android:layout_marginLeft="120dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
                     android:background="@drawable/ckeckpoint_1"
                     android:text="23"
                     android:textColor="#000000" />
