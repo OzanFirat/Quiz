@@ -49,7 +49,7 @@
             android:drawablePadding="40dp"
             android:padding="15dp"
             android:text="Start Game"
-            android:textColor="#DF9A10"
+            android:textColor="#000000"
             android:textSize="36sp" />
     </LinearLayout>
 

@@ -30,10 +30,10 @@
                     android:layout_height="40dp"
                     android:layout_marginLeft="170dp"
                     android:layout_marginTop="50dp"
-                    android:background="@drawable/ckeckpoint_1"
+                    android:background="@drawable/treasure"
                     android:drawablePadding="10dp"
                     android:text="66"
-                    android:textColor="#000000" />
+                    android:textColor="#FFFFFF" />
 
                 <Button
                     android:id="@+id/buttonlvl65"
