@@ -7,14 +7,6 @@
     android:background="@drawable/lvl_candy_map"
     tools:context=".LvlOverview">
 
-    <TextView
-        android:id="@+id/txtViewTopic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="177dp"
-        tools:layout_editor_absoluteY="18dp" />
-
     <TableLayout
         android:layout_width="408dp"
         android:layout_height="728dp"

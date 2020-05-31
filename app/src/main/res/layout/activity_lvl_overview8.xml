@@ -6,4 +6,195 @@
     android:layout_height="match_parent"
     tools:context=".lvlOverview8">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="0.75"
+            android:background="@drawable/wustenoase_lvl_map"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+        <TableLayout
+            android:id="@+id/tableLayout8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/buttonlvl88"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="240dp"
+                        android:layout_marginTop="70dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/treasure"
+                        android:drawablePadding="10dp"
+                        android:text="88"
+                        android:textColor="#FFFFFF" />
+
+                    <Button
+                        android:id="@+id/buttonlvl87"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="235dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/ckeckpoint_1"
+                        android:drawablePadding="10dp"
+                        android:text="87"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/buttonlvl86"
+                        android:layout_width="40dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="270dp"
+                        android:background="@drawable/ckeckpoint_1"
+                        android:text="86"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/buttonlvl85"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="300dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/ckeckpoint_1"
+                        android:drawablePadding="10dp"
+                        android:text="85"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/buttonlvl84"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="180dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/ckeckpoint_1"
+                        android:drawablePadding="10dp"
+                        android:text="84"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/buttonlvl83"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="310dp"
+                        android:background="@drawable/ckeckpoint_1"
+                        android:drawablePadding="10dp"
+                        android:text="83"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonlvl82"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="210dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/ckeckpoint_1"
+                        android:drawablePadding="10dp"
+                        android:text="82"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/buttonlvl81"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="35dp"
+                        android:background="@drawable/ckeckpoint_1"
+                        android:text="81"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/buttonlvl80"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="180dp"
+                        android:background="@drawable/ckeckpoint_1"
+                        android:drawablePadding="10dp"
+                        android:text="80"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/buttonlvl79"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="140dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/ckeckpoint_1"
+                        android:drawablePadding="10dp"
+                        android:text="79"
+                        android:textColor="#050505" />
+
+                    <Button
+                        android:id="@+id/buttonlvl78"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/ckeckpoint_1"
+                        android:text="78"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+            </TableRow>
+        </TableLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
