@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ice_lvl_map"
+    android:background="@drawable/icewald_lvl_map"
     tools:context=".LvlOverview">
 
     <TableLayout
@@ -160,7 +160,8 @@
                     android:layout_marginLeft="250dp"
                     android:background="@drawable/ckeckpoint_1"
                     android:drawablePadding="10dp"
-                    android:text="57" />
+                    android:text="57"
+                    android:textColor="#000000" />
 
                 <Button
                     android:id="@+id/buttonlvl56"

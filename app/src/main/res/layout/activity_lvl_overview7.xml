@@ -170,7 +170,8 @@
                     android:layout_marginLeft="240dp"
                     android:background="@drawable/ckeckpoint_1"
                     android:drawablePadding="10dp"
-                    android:text="68" />
+                    android:text="68"
+                    android:textColor="#000000" />
 
                 <Button
                     android:id="@+id/buttonlvl67"
