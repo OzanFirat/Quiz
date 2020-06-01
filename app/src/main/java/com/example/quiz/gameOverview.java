@@ -85,8 +85,8 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
 
         }
         if(doneCounter>=11 && doneCounter<=22){
-            //topic1.setText("Erobert!");
-            topic1.setForeground(done);
+            topic1.setText("Erobert");
+            //topic1.setForeground(done);
 
             topic2.setClickable(true);
 
