@@ -285,6 +285,13 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
 
            if(level%11==0){
               dbHelper.updateAmountOfFailure(currentQuestion.getLevelNr(), currentQuestion.getAmountOfFailures()+"", 0+"");
+
+              if(level==88){
+                  Intent intent = new Intent(this, end_win.class);
+                  startActivity(intent);
+                  this.finish();
+              }
+
            }
 
                         dbHelper.updateJoker(level, fiftyJokerNew, currentQuestion.getFiftyJoker(), addTimeNew, currentQuestion.getAddTime(), switchNew, currentQuestion.getSwitchQuestion());
