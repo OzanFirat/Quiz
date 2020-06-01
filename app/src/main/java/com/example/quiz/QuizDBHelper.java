@@ -149,38 +149,38 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         Question q66 = new Question("Welcher Staat der USA gilt als Heimat der Mormonen?", "Utah", "Texas", "Iowa", "Wisconsin", 1, 66,0, "no",0, 0,0,0);
 
         //Erotik
-        Question q67 = new Question("Wer einer Rumänin oder einem Rumänen seine Zuneigung mitteilen will, sagt: ", "Te Amo", "Te Iubiu", "Ti Amo", "Te iubesc", 4, 15,0, "no",0, 0,0,0);
-        Question q68 = new Question("Wie nannten die Römer ihre Göttin der Liebe?", "Juno", "Venus", "Aurora", "Amor", 3, 16,0, "no",0, 0,0,0);
-        Question q69 = new Question("Treue: Wie viel Prozent der Frauen gehen häufig fremd?", "25", "20", "30", "35", 1, 17,0, "no",0, 0,0,0);
-        Question q70 = new Question("Was ist ein Aphrodisiakum? ", "Französische Liebesgöttin", "Luststeigerungsmittel", "Verhüttungsmittel", "Aphrodites Haare", 2, 11, 0, "no",0, 0,0,0);
+        Question q67 = new Question("Wer einer Rumänin oder einem Rumänen seine Zuneigung mitteilen will, sagt: ", "Te Amo", "Te Iubiu", "Ti Amo", "Te iubesc", 4, 67,0, "no",0, 0,0,0);
+        Question q68 = new Question("Wie nannten die Römer ihre Göttin der Liebe?", "Juno", "Venus", "Aurora", "Amor", 3, 68,0, "no",0, 0,0,0);
+        Question q69 = new Question("Treue: Wie viel Prozent der Frauen gehen häufig fremd?", "25", "20", "30", "35", 1, 69,0, "no",0, 0,0,0);
+        Question q70 = new Question("Was ist ein Aphrodisiakum? ", "Französische Liebesgöttin", "Luststeigerungsmittel", "Verhüttungsmittel", "Aphrodites Haare", 2, 70, 0, "no",0, 0,0,0);
         Question q71 = new Question("Was ist ein Diaphragma?", "Verhüttungsmittel für Frauen", "Ein Intimschmuck", "Kondom", "gemoetrische Form mit 7 Kanten und 8 Ecken", 1, 12, 0, "no",0, 0,0,0);
-        Question q72 = new Question("Wie hieß der Liebesgott der Griechen?", "Ares", "Amor", "Eros", "Eos", 3, 13, 0, "no",0, 0,0,0);
-        Question q73 = new Question("Wie setzten die alten Chinesen die Pfauenfeder beim Liebesspiel ein? ", "Sie legen sie beim Akt unter sich ", "Die Akupunkturpunkte werden stimuliert ", "Haut wurde gestreichelt ", "Damit sorgte man für Kühle Luft ", 2, 14,0, "no",0, 0,0,0);
-        Question q74 = new Question("Was bezeichnet gesteigerten Geschlechtstrieb bei Frauen?", "Androidie", "Andromanie", "Androphobie", "Androgynie", 2, 15,0, "no",0, 0,0,0);
-        Question q75 = new Question("Wann ist für üblich der Tag der Liebe?", "14.02", "21.03", "06.06", "12.06", 1, 16,0, "no",0, 0,0,0);
-        Question q76 = new Question("Welche Blume ist verbildlicht die Liebe?", "Tulpe", "Nelke", "Orchidee", "Rose", 1, 17,0, "no",0, 0,0,0);
-        Question q77 = new Question("Liebesgedicht der Araber heisst?", "Gazelle", "Gaze", "Gaz", "Gazhel", 4, 12, 0, "no",0, 0,0,0);
-
-        Question q78= new Question("Zusammen mit welchem Land veranstaltete Österreich die Fußball-Europameisterschaft 2008?", "England", "Deutschland", "Tschechien", "Schweiz", 4, 15,0, "no",0, 0,0,0);
-        Question q79 = new Question("Was wird beim Fußball vom Schiedsrichter als Foul gepfiffen?", "Feuermelder", "Warnblinker", "Alermmelder", "Notbremse", 4, 16,0, "no",0, 0,0,0);
-        Question q80 = new Question("Welche dieser Personen ist kein berühmter Sportler?", "Zinedine Zidane", "Usain Bolt", "Bill Gates", "Ronaldo", 3, 17,0, "no",0, 0,0,0);
-        Question q81 = new Question("Wie hiess der Olympionike, der Gold bei den Sommerspielen 1920 und bei Winterspielen 1932 gewann?", "Mark Medlock", "Eddie Eagan", "Simon Amman", "Paavo Nurmi", 2, 11, 0, "no",0, 0,0,0);
-        Question q82 = new Question("Wie nennt man beim Dartsport die einzelnen Spiele?", "Legs", "Heads", "Feed", "Arm", 1, 12, 0, "no",0, 0,0,0);
-        Question q83 = new Question("In welcher Sportart gibt es eine Fallschule?", "Fussball", "Judo", "Basketball", "Badminton", 2, 13, 0, "no",0, 0,0,0);
-        Question q84 = new Question("Wodurch fallen Hooligans auf?", "Ihre musik", "Hosen", "Taschenmesser", "Ihr aggressives Verhalten", 4, 14,0, "no",0, 0,0,0);
-        Question q85 = new Question("Welchen Fußballer nennt man den Kaiser?", "Franz Beckenbauer", "Ronaldinho", "Messi", "Cristiano Ronaldo", 1, 15,0, "no",0, 0,0,0);
-        Question q86 = new Question("Mit welcher Aktion wird das Spiel beim Eishockey eröffnet?", "Pucky", "Anstoss", "Bully", "Einwurf", 3, 16,0, "no",0, 0,0,0);
-        Question q87 = new Question("Wie wird der mehrfache italienische Fußballmeister Juventus Turin liebevoll genannt?", "Alte Dame", "Der Kaiser des Nordens", "Pizzaiolo Nummer 1", "Bianco Champions", 1, 17,0, "no",0, 0,0,0);
-        Question q88 = new Question("Bei welcher Sportart findet man ein sogenanntes Wicket?", "Polo", "Curling", "Cricket", "Dart", 3, 12, 0, "no",0, 0,0,0);
-
-        Question q89= new Question("Was bedeuted DB ausgesprochen?", "Datenbank", "Die Bulls", "Definitiv bestanden", "Durchbeissen", 1, 15,0, "no",0, 0,0,0);
-        Question q90 = new Question("Wann war der Mauerfall in Deutschland?", "1990", "1989", "1993", "1992", 2, 16,0, "no",0, 0,0,0);
-        Question q91 = new Question("Wie nennt man eine Kreuzung zwischen Löwe und Tiger", "Tiwe", "Tigerilöw", "Löwger", "Liger", 4, 17,0, "no",0, 0,0,0);
-        Question q92 = new Question("Welche der gennanten Programmier Sprachen ist die älteste?", "ASP", "PERL", "C#", "JAVA", 2, 11, 0, "no",0, 0,0,0);
-        Question q93 = new Question("Welches der Folgenden Städte hat mehr Winwohner", "Aarau", "Basel", "Istanbul", "Berlin", 3, 12, 0, "no",0, 0,0,0);
-        Question q94 = new Question("Welche Religion hat die meisten Anhänger?", "Christentum", "Buddhismus", "Islam", "Hiduismus", 1, 13, 0, "no",0, 0,0,0);
-        Question q95 = new Question("Was muss man kaufen wenn man einer Frau ein Antrag machen will?", "Ring", "Ball", "Rhabarber", "Designer Kleidung", 1, 14,0, "no",0, 0,0,0);
-        Question q96 = new Question("Wo fand die Fußball-EM 2016 statt?", "Andorra", "Belgien", "Italien", "Frankreich", 4, 15,0, "no",0, 0,0,0);
+        Question q72 = new Question("Wie hieß der Liebesgott der Griechen?", "Ares", "Amor", "Eros", "Eos", 3, 71, 0, "no",0, 0,0,0);
+        Question q73 = new Question("Wie setzten die alten Chinesen die Pfauenfeder beim Liebesspiel ein? ", "Sie legen sie beim Akt unter sich ", "Die Akupunkturpunkte werden stimuliert ", "Haut wurde gestreichelt ", "Damit sorgte man für Kühle Luft ", 2, 73,0, "no",0, 0,0,0);
+        Question q74 = new Question("Was bezeichnet gesteigerten Geschlechtstrieb bei Frauen?", "Androidie", "Andromanie", "Androphobie", "Androgynie", 2, 74,0, "no",0, 0,0,0);
+        Question q75 = new Question("Wann ist für üblich der Tag der Liebe?", "14.02", "21.03", "06.06", "12.06", 1, 75,0, "no",0, 0,0,0);
+        Question q76 = new Question("Welche Blume ist verbildlicht die Liebe?", "Tulpe", "Nelke", "Orchidee", "Rose", 1, 76,0, "no",0, 0,0,0);
+        Question q77 = new Question("Liebesgedicht der Araber heisst?", "Gazelle", "Gaze", "Gaz", "Gazhel", 4, 77, 0, "no",0, 0,0,0);
+        //Sport
+        Question q78= new Question("Zusammen mit welchem Land veranstaltete Österreich die Fußball-Europameisterschaft 2008?", "England", "Deutschland", "Tschechien", "Schweiz", 4, 78,0, "no",0, 0,0,0);
+        Question q79 = new Question("Was wird beim Fußball vom Schiedsrichter als Foul gepfiffen?", "Feuermelder", "Warnblinker", "Alermmelder", "Notbremse", 4, 79,0, "no",0, 0,0,0);
+        Question q80 = new Question("Welche dieser Personen ist kein berühmter Sportler?", "Zinedine Zidane", "Usain Bolt", "Bill Gates", "Ronaldo", 3, 80,0, "no",0, 0,0,0);
+        Question q81 = new Question("Wie hiess der Olympionike, der Gold bei den Sommerspielen 1920 und bei Winterspielen 1932 gewann?", "Mark Medlock", "Eddie Eagan", "Simon Amman", "Paavo Nurmi", 2, 81, 0, "no",0, 0,0,0);
+        Question q82 = new Question("Wie nennt man beim Dartsport die einzelnen Spiele?", "Legs", "Heads", "Feed", "Arm", 1, 82, 0, "no",0, 0,0,0);
+        Question q83 = new Question("In welcher Sportart gibt es eine Fallschule?", "Fussball", "Judo", "Basketball", "Badminton", 2, 83, 0, "no",0, 0,0,0);
+        Question q84 = new Question("Wodurch fallen Hooligans auf?", "Ihre musik", "Hosen", "Taschenmesser", "Ihr aggressives Verhalten", 4, 84,0, "no",0, 0,0,0);
+        Question q85 = new Question("Welchen Fußballer nennt man den Kaiser?", "Franz Beckenbauer", "Ronaldinho", "Messi", "Cristiano Ronaldo", 1, 85,0, "no",0, 0,0,0);
+        Question q86 = new Question("Mit welcher Aktion wird das Spiel beim Eishockey eröffnet?", "Pucky", "Anstoss", "Bully", "Einwurf", 3, 86,0, "no",0, 0,0,0);
+        Question q87 = new Question("Wie wird der mehrfache italienische Fußballmeister Juventus Turin liebevoll genannt?", "Alte Dame", "Der Kaiser des Nordens", "Pizzaiolo Nummer 1", "Bianco Champions", 1, 87,0, "no",0, 0,0,0);
+        Question q88 = new Question("Bei welcher Sportart findet man ein sogenanntes Wicket?", "Polo", "Curling", "Cricket", "Dart", 3, 88, 0, "no",0, 0,0,0);
+        //Switch-Question
+        Question q89= new Question("Was bedeuted DB ausgesprochen?", "Datenbank", "Die Bulls", "Definitiv bestanden", "Durchbeissen", 1, 89,0, "no",0, 0,0,0);
+        Question q90 = new Question("Wann war der Mauerfall in Deutschland?", "1990", "1989", "1993", "1992", 2, 90,0, "no",0, 0,0,0);
+        Question q91 = new Question("Wie nennt man eine Kreuzung zwischen Löwe und Tiger", "Tiwe", "Tigerilöw", "Löwger", "Liger", 4, 91,0, "no",0, 0,0,0);
+        Question q92 = new Question("Welche der gennanten Programmier Sprachen ist die älteste?", "ASP", "PERL", "C#", "JAVA", 2, 92, 0, "no",0, 0,0,0);
+        Question q93 = new Question("Welches der Folgenden Städte hat mehr Winwohner", "Aarau", "Basel", "Istanbul", "Berlin", 3, 93, 0, "no",0, 0,0,0);
+        Question q94 = new Question("Welche Religion hat die meisten Anhänger?", "Christentum", "Buddhismus", "Islam", "Hiduismus", 1, 94, 0, "no",0, 0,0,0);
+        Question q95 = new Question("Was muss man kaufen wenn man einer Frau ein Antrag machen will?", "Ring", "Ball", "Rhabarber", "Designer Kleidung", 1, 95,0, "no",0, 0,0,0);
+        Question q96 = new Question("Wo fand die Fußball-EM 2016 statt?", "Andorra", "Belgien", "Italien", "Frankreich", 4, 96,0, "no",0, 0,0,0);
 
 
 
