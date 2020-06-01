@@ -106,7 +106,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         Question q29 = new Question("Welche Farbe bildet Jod, wenn es sich in Alkohol löst?", "Braun", "Blau", "Gelb", "Rot", 1, 29, 0, "no",0, 0,0,0);
         Question q30 = new Question("Welches Element hat den niedrigsten Schmelzpunkt?", "Wasserstoff", "Neon", "Fluor", "Sauerstoff", 1, 30, 0, "no",0, 0,0,0);
         Question q31 = new Question("Bei welcher Temperatur wird (unter Normaldruck) Luft flüssig", "0.15K", "-98° C ", "-213° C", "bei keiner", 3, 31,0, "no",0, 0,0,0);
-        Question q32 = new Question("Wie sind die Doppelbindungen in einer konjugierten Kohlenwasserstoffkette gesetzt?", "abwechselnd", "irgendwie", "gar nicht", "am Ende und am Anfang", 32, 15,0, "no",0, 0,0,0);
+        Question q32 = new Question("Wie sind die Doppelbindungen in einer konjugierten Kohlenwasserstoffkette gesetzt?", "abwechselnd", "irgendwie", "gar nicht", "am Ende und am Anfang", 3, 32,0, "no",0, 0,0,0);
         Question q33 = new Question("Extrem reaktionsträge Stoffe wie Glas und die Edelgase sind ...", "alkalisch", "alert", "chalkogen", "inert", 4, 33,0, "no",0, 0,0,0);
 
         //Tierwelt
@@ -181,9 +181,6 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         Question q94 = new Question("Welche Religion hat die meisten Anhänger?", "Christentum", "Buddhismus", "Islam", "Hiduismus", 1, 94, 0, "no",0, 0,0,0);
         Question q95 = new Question("Was muss man kaufen wenn man einer Frau ein Antrag machen will?", "Ring", "Ball", "Rhabarber", "Designer Kleidung", 1, 95,0, "no",0, 0,0,0);
         Question q96 = new Question("Wo fand die Fußball-EM 2016 statt?", "Andorra", "Belgien", "Italien", "Frankreich", 4, 96,0, "no",0, 0,0,0);
-
-
-
 
         addQuestion(q1);
         addQuestion(q2);
