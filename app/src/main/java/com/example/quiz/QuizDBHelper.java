@@ -106,7 +106,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         Question q29 = new Question("Welche Farbe bildet Jod, wenn es sich in Alkohol löst?", "Braun", "Blau", "Gelb", "Rot", 1, 29, 0, "no",0, 0,0,0);
         Question q30 = new Question("Welches Element hat den niedrigsten Schmelzpunkt?", "Wasserstoff", "Neon", "Fluor", "Sauerstoff", 1, 30, 0, "no",0, 0,0,0);
         Question q31 = new Question("Bei welcher Temperatur wird (unter Normaldruck) Luft flüssig", "0.15K", "-98° C ", "-213° C", "bei keiner", 3, 31,0, "no",0, 0,0,0);
-        Question q32 = new Question("Wie sind die Doppelbindungen in einer konjugierten Kohlenwasserstoffkette gesetzt?", "abwechselnd", "irgendwie", "gar nicht", "am Ende und am Anfang", 32, 15,0, "no",0, 0,0,0);
+        Question q32 = new Question("Wie sind die Doppelbindungen in einer konjugierten Kohlenwasserstoffkette gesetzt?", "abwechselnd", "irgendwie", "gar nicht", "am Ende und am Anfang", 1, 32,0, "no",0, 0,0,0);
         Question q33 = new Question("Extrem reaktionsträge Stoffe wie Glas und die Edelgase sind ...", "alkalisch", "alert", "chalkogen", "inert", 4, 33,0, "no",0, 0,0,0);
 
         //Tierwelt
@@ -153,8 +153,8 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         Question q68 = new Question("Wie nannten die Römer ihre Göttin der Liebe?", "Juno", "Venus", "Aurora", "Amor", 3, 68,0, "no",0, 0,0,0);
         Question q69 = new Question("Treue: Wie viel Prozent der Frauen gehen häufig fremd?", "25", "20", "30", "35", 1, 69,0, "no",0, 0,0,0);
         Question q70 = new Question("Was ist ein Aphrodisiakum? ", "Französische Liebesgöttin", "Luststeigerungsmittel", "Verhüttungsmittel", "Aphrodites Haare", 2, 70, 0, "no",0, 0,0,0);
-        Question q71 = new Question("Was ist ein Diaphragma?", "Verhüttungsmittel für Frauen", "Ein Intimschmuck", "Kondom", "gemoetrische Form mit 7 Kanten und 8 Ecken", 1, 12, 0, "no",0, 0,0,0);
-        Question q72 = new Question("Wie hieß der Liebesgott der Griechen?", "Ares", "Amor", "Eros", "Eos", 3, 71, 0, "no",0, 0,0,0);
+        Question q71 = new Question("Was ist ein Diaphragma?", "Verhüttungsmittel für Frauen", "Ein Intimschmuck", "Kondom", "gemoetrische Form mit 7 Kanten und 8 Ecken", 1, 71, 0, "no",0, 0,0,0);
+        Question q72 = new Question("Wie hieß der Liebesgott der Griechen?", "Ares", "Amor", "Eros", "Eos", 3, 72, 0, "no",0, 0,0,0);
         Question q73 = new Question("Wie setzten die alten Chinesen die Pfauenfeder beim Liebesspiel ein? ", "Sie legen sie beim Akt unter sich ", "Die Akupunkturpunkte werden stimuliert ", "Haut wurde gestreichelt ", "Damit sorgte man für Kühle Luft ", 2, 73,0, "no",0, 0,0,0);
         Question q74 = new Question("Was bezeichnet gesteigerten Geschlechtstrieb bei Frauen?", "Androidie", "Andromanie", "Androphobie", "Androgynie", 2, 74,0, "no",0, 0,0,0);
         Question q75 = new Question("Wann ist für üblich der Tag der Liebe?", "14.02", "21.03", "06.06", "12.06", 1, 75,0, "no",0, 0,0,0);
