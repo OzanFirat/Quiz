@@ -84,7 +84,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         Question q11 = new Question("Welche der gennanten Programmier Sprachen ist die älteste?", "ASP", "PERL", "C#", "JAVA", 2, 11, 0, "no",0, 0,0,0);
 
         //Geschichte
-        Question q12 = new Question("Wer umsegelte als erster die Welt?", "Columbus", "Vespucci", "Gustavo Amerigo", "Magellan", 4, 12, 0, "no",0, 0,0,0);
+        Question q12 = new Question("Wer umsegelte als erster die Welt?", "Columbus", "Vespucci", "Gustavo Amerigo", "Magellan", 4, 12, 0, "no",0, 1,1,1);
         Question q13 = new Question("Wie hieß der erste Präsident der USA?", "Washington", "Lincoln", "Roosevelt", "Bushy", 1, 13, 0, "no",0, 0,0,0);
         Question q14 = new Question("Im Jahre 1207 eroberten die Seldschuken von den Byzantinern ...", "Konstantinopel", "Athen", "Antalya", "Rom", 3, 14,0, "no",0, 0,0,0);
         Question q15 = new Question("In welchem Jahr wurden die Vereinten Nationen gegründet?", "1946", "1944", "1948", "1945", 4, 15,0, "no",0, 0,0,0);
@@ -97,7 +97,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         Question q22 = new Question("Wann war die Reichsteilung im Römischen Reich?", "395 n.C", "41 v.C", "895 n.C", "980 n.C", 1, 22, 0, "no",0, 0,0,0);
 
         //Chemie
-        Question q23 = new Question("Ist Erdgas leichter als Luft?", "Ja", "Nein", "Vielleicht", "Keine Ahnung", 1, 23, 0, "no",0, 0,0,0);
+        Question q23 = new Question("Ist Erdgas leichter als Luft?", "Ja", "Nein", "Vielleicht", "Keine Ahnung", 1, 23, 0, "no",0, 1,1,1);
         Question q24 = new Question("Was ist ein Schwermetall?", "Lithium", "Titan", "Sillizium", "Indium", 4, 24,0, "no",0, 0,0,0);
         Question q25 = new Question("Alle Edelmetalle sind ...", "radioaktiv", "Schwermetalle", "Platin Metalle", "keine Metalle", 2, 25,0, "no",0, 0,0,0);
         Question q26 = new Question("Welches Metall hat die größte Dichte?", "Gold", "Iridium", "Blei", "Uran", 2, 26,0, "no",0, 0,0,0);
@@ -110,7 +110,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         Question q33 = new Question("Extrem reaktionsträge Stoffe wie Glas und die Edelgase sind ...", "alkalisch", "alert", "chalkogen", "inert", 4, 33,0, "no",0, 0,0,0);
 
         //Tierwelt
-        Question q34 = new Question("Sind Termiten große Ameisen?", "Ja", "Nein", "Könnte sein", "Hab kein Spickzettel", 2, 34,0, "no",0, 0,0,0);
+        Question q34 = new Question("Sind Termiten große Ameisen?", "Ja", "Nein", "Könnte sein", "Hab kein Spickzettel", 2, 34,0, "no",0, 1,1,1);
         Question q35 = new Question("Wie heißt das asiatische Hochgebirgsrind?", "Wagyu", "Kobe Bryant", "Yang", "Yak", 4, 35, 0, "no",0, 0,0,0);
         Question q36 = new Question("Was ist Guano?", "Affenart", "Fisch", "Droge", "Vogelkot", 4, 36, 0, "no",0, 0,0,0);
         Question q37 = new Question("Wie nennt man weibliche Pferde?", "Alpha Weibchen", "Stute", "Hengst", "Pony", 2, 37, 0, "no",0, 0,0,0);
@@ -123,7 +123,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         Question q44 = new Question("Die Giraffe reisst die Blätter mit der Zunge vom Baum. Was für eine Farbe hat ihre Zunge?", "Weiss", "Rot", "Blau", "Rosa", 3, 44, 0, "no",0, 0,0,0);
 
         //Geographie
-        Question q45 = new Question("Der Teil des Mittelmeeres zwischen Griechenland und der Türkei heißt...", "Der Golf von Mexiko", "Adriatisches Meer", "Mittelmeer", "Aegaeisches Meer", 4, 45,0, "no",0, 0,0,0);
+        Question q45 = new Question("Der Teil des Mittelmeeres zwischen Griechenland und der Türkei heißt...", "Der Golf von Mexiko", "Adriatisches Meer", "Mittelmeer", "Aegaeisches Meer", 4, 45,0, "no",0, 1,1,1);
         Question q46 = new Question("Die Mojavewüste liegt in ...", "Asien", "Balkan", "Afrika", "Nordamerika", 4, 46,0, "no",0, 0,0,0);
         Question q47 = new Question("Welche Sprache ist die Amtssprache im Iran?", "Arabisch", "Persisch", "Iranisch", "Paschto", 2, 47,0, "no",0, 0,0,0);
         Question q48 = new Question("In welchem Land liegt die größte Wüste Amerikas?", "USA", "Brasilien", "Argentinien", "Kanada", 3, 48,0, "no",0, 0,0,0);
@@ -136,7 +136,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         Question q55 = new Question("Paramaribo ist die Hauptstadt von ...", "Ecuador", "Suriname", "Guyana", "Belize", 2, 55,0, "no",0, 0,0,0);
 
         //Religion
-        Question q56 = new Question("Wo steht Christi Geburtskirche?", "Jerusalem", "Bethlehem", "Nazareth", "Haifa", 2, 56, 0, "no",0, 0,0,0);
+        Question q56 = new Question("Wo steht Christi Geburtskirche?", "Jerusalem", "Bethlehem", "Nazareth", "Haifa", 2, 56, 0, "no",0, 1,1,1);
         Question q57 = new Question("Wie heißt Versöhnungstag auf Hebräisch?", "Gemara", "Jom Kippur", "Jom An-Nur", "Rosch Ha-Schana", 2, 57, 0, "no",0, 0,0,0);
         Question q58 = new Question("Was ist keines der fünf Bücher Mose?", "Genesis", "Numeri", "Hesekiel", "Leviticus", 3, 58, 0, "no",0,0,0,0);
         Question q59 = new Question("In welcher Religion spielt Reinkarnation eine große Rolle?", "Islam", "Taoismus", "Christentum", "Hinduismus und Buddhismus", 4, 59,0, "no",0, 0,0,0);
@@ -159,6 +159,32 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         Question q75 = new Question("A is correct", "A", "B", "C", "D", 1, 16,0, "no",0, 0,0,0);
         Question q76 = new Question("A is correct", "A", "B", "C", "D", 1, 17,0, "no",0, 0,0,0);
         Question q77 = new Question("B is correct", "A", "B", "C", "D", 2, 12, 0, "no",0, 0,0,0);
+
+        Question q78= new Question("A is correct", "A", "B", "C", "D", 1, 15,0, "no",0, 0,0,0);
+        Question q79 = new Question("A is correct", "A", "B", "C", "D", 1, 16,0, "no",0, 0,0,0);
+        Question q80 = new Question("A is correct", "A", "B", "C", "D", 1, 17,0, "no",0, 0,0,0);
+        Question q81 = new Question("Welche der gennanten Programmier Sprachen ist die älteste?", "ASP", "PERL", "C#", "JAVA", 2, 11, 0, "no",0, 0,0,0);
+        Question q82 = new Question("B is correct", "A", "B", "C", "D", 2, 12, 0, "no",0, 0,0,0);
+        Question q83 = new Question("C is correct", "A", "B", "C", "D", 3, 13, 0, "no",0, 0,0,0);
+        Question q84 = new Question("D is correct", "A", "B", "C", "D", 4, 14,0, "no",0, 0,0,0);
+        Question q85 = new Question("A is correct", "A", "B", "C", "D", 1, 15,0, "no",0, 0,0,0);
+        Question q86 = new Question("A is correct", "A", "B", "C", "D", 1, 16,0, "no",0, 0,0,0);
+        Question q87 = new Question("A is correct", "A", "B", "C", "D", 1, 17,0, "no",0, 0,0,0);
+        Question q88 = new Question("B is correct", "A", "B", "C", "D", 2, 12, 0, "no",0, 0,0,0);
+
+        Question q89= new Question("A is correct", "A", "B", "C", "D", 1, 15,0, "no",0, 0,0,0);
+        Question q90 = new Question("A is correct", "A", "B", "C", "D", 1, 16,0, "no",0, 0,0,0);
+        Question q91 = new Question("A is correct", "A", "B", "C", "D", 1, 17,0, "no",0, 0,0,0);
+        Question q92 = new Question("Welche der gennanten Programmier Sprachen ist die älteste?", "ASP", "PERL", "C#", "JAVA", 2, 11, 0, "no",0, 0,0,0);
+        Question q93 = new Question("B is correct", "A", "B", "C", "D", 2, 12, 0, "no",0, 0,0,0);
+        Question q94 = new Question("C is correct", "A", "B", "C", "D", 3, 13, 0, "no",0, 0,0,0);
+        Question q95 = new Question("D is correct", "A", "B", "C", "D", 4, 14,0, "no",0, 0,0,0);
+        Question q96 = new Question("A is correct", "A", "B", "C", "D", 1, 15,0, "no",0, 0,0,0);
+        Question q97 = new Question("A is correct", "A", "B", "C", "D", 1, 16,0, "no",0, 0,0,0);
+        Question q98 = new Question("A is correct", "A", "B", "C", "D", 1, 17,0, "no",0, 0,0,0);
+        Question q99 = new Question("B is correct", "A", "B", "C", "D", 2, 12, 0, "no",0, 0,0,0);
+
+
 
 
         addQuestion(q1);
@@ -227,6 +253,35 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         addQuestion(q64);
         addQuestion(q65);
         addQuestion(q66);
+        addQuestion(q67);
+        addQuestion(q68);
+        addQuestion(q69);
+        addQuestion(q70);
+        addQuestion(q71);
+        addQuestion(q72);
+        addQuestion(q73);
+        addQuestion(q74);
+        addQuestion(q75);
+        addQuestion(q76);
+        addQuestion(q77);
+        addQuestion(q78);
+        addQuestion(q79);
+        addQuestion(q80);
+        addQuestion(q81);
+        addQuestion(q82);
+        addQuestion(q83);
+        addQuestion(q84);
+        addQuestion(q85);
+        addQuestion(q87);
+        addQuestion(q88);
+        addQuestion(q89);
+        addQuestion(q90);
+        addQuestion(q91);
+        addQuestion(q92);
+        addQuestion(q93);
+        addQuestion(q94);
+        addQuestion(q95);
+        addQuestion(q96);
 
 
 
@@ -309,6 +364,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
     public void updateJoker(int currentLvl, int fiftyJokerNew, int fiftyJokerOld, int addTimeJokerNew, int addTimeJokerOld, int switchJokerNew, int switchJokerOld ){
         db=getWritableDatabase();
         if (currentLvl%11==0){
+            currentLvl=currentLvl++;
             String query = "UPDATE "+ QuestionsTable.TABLE_NAME +" SET "+QuestionsTable.COLUMN_FIFTY_JOKER+
                     " = '"+1+"' WHERE "+QuestionsTable._ID+ " = '"+currentLvl+"'"+
                     " AND "+ QuestionsTable.COLUMN_FIFTY_JOKER+ " = '"+fiftyJokerOld+"'";

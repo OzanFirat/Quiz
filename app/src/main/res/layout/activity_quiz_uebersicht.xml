@@ -43,8 +43,8 @@
 
             <LinearLayout
                 android:layout_width="410dp"
-                android:layout_height="120dp"
-                android:orientation="horizontal">
+                android:layout_height="150dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView"
@@ -58,6 +58,14 @@
                     android:textSize="24sp"
                     android:textStyle="bold"
                     tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/buttonHelp"
+                    android:layout_width="35dp"
+                    android:layout_height="43dp"
+                    android:layout_marginLeft="350dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/help" />
             </LinearLayout>
         </TableRow>
 
@@ -76,7 +84,7 @@
                     android:layout_height="85dp"
                     android:layout_marginStart="65dp"
                     android:layout_marginLeft="65dp"
-                    android:layout_marginTop="64dp"
+                    android:layout_marginTop="54dp"
                     android:layout_marginEnd="14dp"
                     android:layout_marginRight="14dp"
                     android:layout_marginBottom="1000dp"
@@ -87,7 +95,7 @@
                     android:layout_width="55dp"
                     android:layout_height="85dp"
                     android:layout_marginLeft="50dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="20dp"
                     android:background="@drawable/banner3" />
 
                 <Button
@@ -95,7 +103,8 @@
                     android:layout_width="55dp"
                     android:layout_height="85dp"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
                     android:background="@drawable/banner7" />
 
             </LinearLayout>
@@ -140,7 +149,7 @@
                     android:layout_width="65dp"
                     android:layout_height="85dp"
                     android:layout_marginLeft="60dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="10dp"
                     android:background="@drawable/banner5" />
 
                 <Button
@@ -148,7 +157,7 @@
                     android:layout_width="65dp"
                     android:layout_height="85dp"
                     android:layout_marginLeft="60dp"
-                    android:layout_marginTop="150dp"
+                    android:layout_marginTop="140dp"
                     android:alpha="2.5"
                     android:background="@drawable/banner2" />
 
@@ -157,7 +166,7 @@
                     android:layout_width="20dp"
                     android:layout_height="85dp"
                     android:layout_marginLeft="40dp"
-                    android:layout_marginTop="150dp"
+                    android:layout_marginTop="140dp"
                     android:layout_marginRight="40dp"
                     android:layout_weight="1"
                     android:background="@drawable/banner8" />

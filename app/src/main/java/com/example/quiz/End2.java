@@ -66,29 +66,29 @@ public class End2 extends AppCompatActivity implements View.OnClickListener {
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private void setBanner(int doneCounter) {
-        if(doneCounter<=11){
+        if(doneCounter<=10){
             txtScore.setBackground(getDrawable(R.drawable.banner4));
         }
-        if(doneCounter>11&&doneCounter<=22){
+        if(doneCounter>10&&doneCounter<=21){
             txtScore.setBackground(getDrawable(R.drawable.banner1));
         }
-        if(doneCounter>22&&doneCounter<=33){
+        if(doneCounter>21&&doneCounter<=32){
             txtScore.setBackground(getDrawable(R.drawable.banner7));
         }
-        if(doneCounter>33&&doneCounter<=44){
+        if(doneCounter>32&&doneCounter<=43){
             txtScore.setBackground(getDrawable(R.drawable.banner5));
         }
-        if(doneCounter>44&&doneCounter<=55){
+        if(doneCounter>43&&doneCounter<=54){
             txtScore.setBackground(getDrawable(R.drawable.banner3));
         }
-        if(doneCounter>55&&doneCounter<=66){
+        if(doneCounter>54&&doneCounter<=65){
             txtScore.setBackground(getDrawable(R.drawable.banner2));
         }
-        if(doneCounter>66&&doneCounter<=77){
+        if(doneCounter>65&&doneCounter<=76){
             txtScore.setBackground(getDrawable(R.drawable.banner6));
         }
 
-        if(doneCounter>77&&doneCounter<=88){
+        if(doneCounter>76&&doneCounter<=87){
             txtScore.setBackground(getDrawable(R.drawable.banner8));
         }
 

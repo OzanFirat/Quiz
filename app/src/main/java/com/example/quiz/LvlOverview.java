@@ -177,9 +177,9 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl7.setOnClickListener(this);
         if (doneCounter + 1 == questionList.get(counter).getLevelNr()) {
             lvl7.setClickable(true);
-            lvl7.setBackgroundColor(-65536);
+            lvl7.setBackground(getDrawable(drawable.sparta_helm));
         } else {
-            lvl7.setClickable(false);
+            levelIsDone(lvl7, doneCounter, counter);
         }
         counter++;
 
@@ -187,7 +187,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl8.setOnClickListener(this);
         if (doneCounter + 1 == questionList.get(counter).getLevelNr()) {
             lvl8.setClickable(true);
-            lvl8.setBackgroundColor(-65536);
+            lvl8.setBackground(getDrawable(drawable.sparta_helm));
         } else {
             levelIsDone(lvl8, doneCounter, counter);
         }
@@ -197,7 +197,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl9.setOnClickListener(this);
         if (doneCounter + 1 == questionList.get(counter).getLevelNr()) {
             lvl9.setClickable(true);
-            lvl9.setBackgroundColor(-65536);
+            lvl9.setBackground(getDrawable(drawable.sparta_helm));
         } else {
             levelIsDone(lvl9, doneCounter, counter);
         }
@@ -207,7 +207,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl10.setOnClickListener(this);
         if (doneCounter + 1 == questionList.get(counter).getLevelNr()) {
             lvl10.setClickable(true);
-            lvl10.setBackgroundColor(-65536);
+            lvl10.setBackground(getDrawable(drawable.sparta_helm));
         } else {
             levelIsDone(lvl10, doneCounter, counter);
         }
@@ -217,7 +217,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         lvl11.setOnClickListener(this);
         if (doneCounter + 1 == questionList.get(counter).getLevelNr()) {
             lvl11.setClickable(true);
-            lvl11.setBackgroundColor(-65536);
+            lvl11.setBackground(getDrawable(drawable.sparta_helm));
         } else {
             levelIsDone(lvl11, doneCounter, counter);
         }

@@ -159,17 +159,97 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
     }
 
         private void switchQuestion(int currentLevel) {
-            if (currentLevel<=11){
-                rightAnswer= questionList.get(66).getAnswerNr();
+            int switchQuestion=89;
+            if (currentLevel>=0){
+                rightAnswer= questionList.get(switchQuestion).getAnswerNr();
+                textVFrage.setText(questionList.get(switchQuestion).getQuestion());
+                btnAnswer.setText(questionList.get(switchQuestion).getOpt1());
+                btnAnswer1.setText(questionList.get(switchQuestion).getOpt2());
+                btnAnswer2.setText(questionList.get(switchQuestion).getOpt3());
+                btnAnswer3.setText(questionList.get(switchQuestion).getOpt4());
 
-                textVFrage.setText(questionList.get(66).getQuestion());
-                btnAnswer.setText(questionList.get(66).getOpt1());
-                btnAnswer1.setText(questionList.get(66).getOpt2());
-                btnAnswer2.setText(questionList.get(66).getOpt3());
-                btnAnswer3.setText(questionList.get(66).getOpt4());
+                this.switchNew=0;
+            }switchQuestion++;
+            if (currentLevel>=11){
+
+                rightAnswer= questionList.get(switchQuestion).getAnswerNr();
+                textVFrage.setText(questionList.get(switchQuestion).getQuestion());
+                btnAnswer.setText(questionList.get(switchQuestion).getOpt1());
+                btnAnswer1.setText(questionList.get(switchQuestion).getOpt2());
+                btnAnswer2.setText(questionList.get(switchQuestion).getOpt3());
+                btnAnswer3.setText(questionList.get(switchQuestion).getOpt4());
+
+                this.switchNew=0;
+            }switchQuestion++;
+            if (currentLevel>=22){
+
+                rightAnswer= questionList.get(switchQuestion).getAnswerNr();
+                textVFrage.setText(questionList.get(switchQuestion).getQuestion());
+                btnAnswer.setText(questionList.get(switchQuestion).getOpt1());
+                btnAnswer1.setText(questionList.get(switchQuestion).getOpt2());
+                btnAnswer2.setText(questionList.get(switchQuestion).getOpt3());
+                btnAnswer3.setText(questionList.get(switchQuestion).getOpt4());
+
+                this.switchNew=0;
+            }switchQuestion++;
+            if (currentLevel>=33){
+
+                rightAnswer= questionList.get(switchQuestion).getAnswerNr();
+                textVFrage.setText(questionList.get(switchQuestion).getQuestion());
+                btnAnswer.setText(questionList.get(switchQuestion).getOpt1());
+                btnAnswer1.setText(questionList.get(switchQuestion).getOpt2());
+                btnAnswer2.setText(questionList.get(switchQuestion).getOpt3());
+                btnAnswer3.setText(questionList.get(switchQuestion).getOpt4());
 
                 this.switchNew=0;
             }
+            if (currentLevel>=44){
+
+                rightAnswer= questionList.get(switchQuestion).getAnswerNr();
+                textVFrage.setText(questionList.get(switchQuestion).getQuestion());
+                btnAnswer.setText(questionList.get(switchQuestion).getOpt1());
+                btnAnswer1.setText(questionList.get(switchQuestion).getOpt2());
+                btnAnswer2.setText(questionList.get(switchQuestion).getOpt3());
+                btnAnswer3.setText(questionList.get(switchQuestion).getOpt4());
+
+                this.switchNew=0;
+            }switchQuestion++;
+            if (currentLevel>=55){
+
+                rightAnswer= questionList.get(switchQuestion).getAnswerNr();
+                textVFrage.setText(questionList.get(switchQuestion).getQuestion());
+                btnAnswer.setText(questionList.get(switchQuestion).getOpt1());
+                btnAnswer1.setText(questionList.get(switchQuestion).getOpt2());
+                btnAnswer2.setText(questionList.get(switchQuestion).getOpt3());
+                btnAnswer3.setText(questionList.get(switchQuestion).getOpt4());
+
+                this.switchNew=0;
+            }switchQuestion++;
+
+            if (currentLevel>=66){
+
+                rightAnswer= questionList.get(switchQuestion).getAnswerNr();
+                textVFrage.setText(questionList.get(switchQuestion).getQuestion());
+                btnAnswer.setText(questionList.get(switchQuestion).getOpt1());
+                btnAnswer1.setText(questionList.get(switchQuestion).getOpt2());
+                btnAnswer2.setText(questionList.get(switchQuestion).getOpt3());
+                btnAnswer3.setText(questionList.get(switchQuestion).getOpt4());
+
+                this.switchNew=0;
+            }
+            switchQuestion++;
+            if (currentLevel>=77){
+                switchQuestion++;
+                rightAnswer= questionList.get(switchQuestion).getAnswerNr();
+                textVFrage.setText(questionList.get(switchQuestion).getQuestion());
+                btnAnswer.setText(questionList.get(switchQuestion).getOpt1());
+                btnAnswer1.setText(questionList.get(switchQuestion).getOpt2());
+                btnAnswer2.setText(questionList.get(switchQuestion).getOpt3());
+                btnAnswer3.setText(questionList.get(switchQuestion).getOpt4());
+
+                this.switchNew=0;
+            }
+
             this.btnFifty.setClickable(false);
             this.btnFifty.setAlpha((float) 0.5);
         }
