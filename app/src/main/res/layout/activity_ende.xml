@@ -37,7 +37,8 @@
                     android:id="@+id/ratingBarEnd"
                     android:layout_width="152dp"
                     android:layout_height="52dp"
-                    android:numStars="3" />
+                    android:numStars="3"
+                    android:progressTint="@color/gold"/>
             </LinearLayout>
         </TableRow>
 

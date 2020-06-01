@@ -44,7 +44,7 @@ public class End2 extends AppCompatActivity implements View.OnClickListener {
         currentAmountF=3-currentAmountF;
         this.textViewLostCount = (TextView) findViewById(R.id.textViewLostCount);
 
-        textViewLostCount.setText(currentAmountF+" bis zur Niederlage");
+        textViewLostCount.setText(currentAmountF+" Versuche bis zur Niederlage");
 
         this.btnStartMenu = (Button) findViewById(R.id.btnlvlOverview2);
         btnStartMenu.setOnClickListener(this);

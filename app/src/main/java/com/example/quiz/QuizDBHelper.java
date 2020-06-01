@@ -272,6 +272,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         addQuestion(q83);
         addQuestion(q84);
         addQuestion(q85);
+        addQuestion(q86);
         addQuestion(q87);
         addQuestion(q88);
         addQuestion(q89);
