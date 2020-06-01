@@ -282,15 +282,15 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
            level = currentQuestion.getLevelNr();
 
            boolean update = dbHelper.addRating(level, ratingStar, oldRating, actualLvlStatus, oldLvlStatus);
-
+            if(level==88){
+                Intent intent = new Intent(this, end_win.class);
+                startActivity(intent);
+                this.finish();
+            }
            if(level%11==0){
               dbHelper.updateAmountOfFailure(currentQuestion.getLevelNr(), currentQuestion.getAmountOfFailures()+"", 0+"");
 
-              if(level==88){
-                  Intent intent = new Intent(this, end_win.class);
-                  startActivity(intent);
-                  this.finish();
-              }
+
 
            }
 
