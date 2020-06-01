@@ -1,22 +1,33 @@
 package com.example.quiz;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.quiz.R.drawable;
+
 import java.util.List;
+
+import static com.example.quiz.R.drawable.*;
 
 public class gameOverview extends AppCompatActivity implements View.OnClickListener{
 
-    Button topic1, topic2, topic3, topic4, topic5, topic6, topic7, topic8;
+    Button topic1, topic2, topic3, topic4, topic5, topic6, topic7, topic8, buttonHelp;
     private int counter, doneCounter, questionCountTotal;
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_uebersicht);
+
+        this.buttonHelp =(Button) findViewById(R.id.buttonHelp);
+        buttonHelp.setClickable(true);
+        buttonHelp.setOnClickListener(this);
 
         topic1= (Button) findViewById(R.id.btnTopic1);
         topic2= (Button) findViewById(R.id.btnTopic2);
@@ -78,7 +89,8 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
 
         }
         if(doneCounter>=11 && doneCounter<=22){
-            topic1.setText("Erobert!");
+            topic1.setText("Erobert");
+            //topic1.setForeground(done);
 
             topic2.setClickable(true);
 
@@ -228,10 +240,18 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
         }
         switch (v.getId()){
             case R.id.btnTopic8:
-                Intent intent = new Intent(this, lvlOverview7.class);
+                Intent intent = new Intent(this, lvlOverview8.class);
                 startActivity(intent);
                 this.finish();
                 break;
         }
+        switch (v.getId()){
+            case R.id.buttonHelp:
+                Intent intent = new Intent(this, Hilfemenue.class);
+                startActivity(intent);
+                this.finish();
+                break;
+        }
+
     }
 }

@@ -159,7 +159,7 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
     }
 
         private void switchQuestion(int currentLevel) {
-            int switchQuestion=89;
+            int switchQuestion=90;
             if (currentLevel>=0){
                 rightAnswer= questionList.get(switchQuestion).getAnswerNr();
                 textVFrage.setText(questionList.get(switchQuestion).getQuestion());
@@ -250,8 +250,8 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
                 this.switchNew=0;
             }
 
-            this.btnFifty.setClickable(false);
-            this.btnFifty.setAlpha((float) 0.5);
+            this.btnSwitch.setClickable(false);
+            this.btnSwitch.setAlpha((float) 0.5);
         }
 
     private void fiftyFiftyJoker() {
@@ -280,9 +280,14 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
            String oldRating = ""+currentQuestion.getRatingStars();
            String actualLvlStatus="yes", oldLvlStatus = "no";
            level = currentQuestion.getLevelNr();
+
            boolean update = dbHelper.addRating(level, ratingStar, oldRating, actualLvlStatus, oldLvlStatus);
 
-            dbHelper.updateJoker(level, fiftyJokerNew, currentQuestion.getFiftyJoker(), addTimeNew, currentQuestion.getAddTime(), switchNew, currentQuestion.getSwitchQuestion());
+           if(level%11==0){
+              dbHelper.updateAmountOfFailure(currentQuestion.getLevelNr(), currentQuestion.getAmountOfFailures()+"", 0+"");
+           }
+
+                        dbHelper.updateJoker(level, fiftyJokerNew, currentQuestion.getFiftyJoker(), addTimeNew, currentQuestion.getAddTime(), switchNew, currentQuestion.getSwitchQuestion());
 
             Intent intent = new Intent(this, End.class);
             startActivity(intent);
