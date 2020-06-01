@@ -440,13 +440,12 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
 
             if(currentQuestion.getAmountOfFailures()>=questionList.get(previousQuestion).getAmountOfFailures()){
                 amountOfFails=currentQuestion.getAmountOfFailures();
-                Toast.makeText(Spiel.this, "New updated"+amountOfFails, Toast.LENGTH_LONG).show();
+
                 /*currentQuestion.setAmountOfFailures(amountOfFails);
                 dbHelper.updateAmountOfFailure(currentQuestion.getLevelNr(), currentQuestion.getAmountOfFailures()+"", amountOfFails+"");
 */
             } else {
                 amountOfFails=questionList.get(previousQuestion).getAmountOfFailures();
-                Toast.makeText(Spiel.this, "Old updated "+amountOfFails, Toast.LENGTH_LONG).show();
                 dbHelper.updateAmountOfFailure(currentQuestion.getLevelNr(), currentQuestion.getAmountOfFailures()+"", amountOfFails+"");
                 currentQuestion.setAmountOfFailures(amountOfFails);
             }
