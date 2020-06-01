@@ -61,7 +61,7 @@
 
                 <Button
                     android:id="@+id/buttonHelp"
-                    android:layout_width="35dp"
+                    android:layout_width="30dp"
                     android:layout_height="43dp"
                     android:layout_marginLeft="350dp"
                     android:layout_weight="1"

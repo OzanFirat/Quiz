@@ -17,13 +17,17 @@ import static com.example.quiz.R.drawable.*;
 
 public class gameOverview extends AppCompatActivity implements View.OnClickListener{
 
-    Button topic1, topic2, topic3, topic4, topic5, topic6, topic7, topic8;
+    Button topic1, topic2, topic3, topic4, topic5, topic6, topic7, topic8, buttonHelp;
     private int counter, doneCounter, questionCountTotal;
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_uebersicht);
+
+        this.buttonHelp =(Button) findViewById(R.id.buttonHelp);
+        buttonHelp.setClickable(true);
+        buttonHelp.setOnClickListener(this);
 
         topic1= (Button) findViewById(R.id.btnTopic1);
         topic2= (Button) findViewById(R.id.btnTopic2);
@@ -236,10 +240,18 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
         }
         switch (v.getId()){
             case R.id.btnTopic8:
-                Intent intent = new Intent(this, lvlOverview7.class);
+                Intent intent = new Intent(this, lvlOverview8.class);
                 startActivity(intent);
                 this.finish();
                 break;
         }
+        switch (v.getId()){
+            case R.id.buttonHelp:
+                Intent intent = new Intent(this, Hilfemenue.class);
+                startActivity(intent);
+                this.finish();
+                break;
+        }
+
     }
 }

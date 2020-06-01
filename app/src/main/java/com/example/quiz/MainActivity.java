@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import java.util.List;
-
 public class MainActivity extends Activity implements View.OnClickListener {
 
     Button btnNewQuiz, btnContinueQuiz;
@@ -17,7 +15,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnNewQuiz = (Button) findViewById(R.id.btnNewQuiz);
+        btnNewQuiz = (Button) findViewById(R.id.btnBack);
         btnNewQuiz.setOnClickListener(this);
 
 
@@ -26,7 +24,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btnNewQuiz:
+            case R.id.btnBack:
                 /*
                 QuizDBHelper dbHelper = new QuizDBHelper(this);
                 dbHelper.alterTable();

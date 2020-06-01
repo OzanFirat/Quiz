@@ -4,10 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-
-    tools:context=".MainActivity">
-
+    tools:context=".Hilfemenue"
+    >
 
     <ImageView
         android:id="@+id/imageView3"
@@ -19,7 +17,7 @@
         android:layout_marginEnd="1dp"
         android:layout_marginRight="1dp"
         android:layout_marginBottom="1dp"
-        android:alpha="0.7"
+        android:alpha="0.2"
         android:background="@drawable/main_2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,11 +31,27 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Spielanleitung"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtAnleitung"
+            android:layout_width="match_parent"
+            android:layout_height="381dp"
+            android:padding="10dp"
+            android:text="Das Spiel ist in verschiedene Länder unterteilt. Jedes Level hat ein bestimmtes Topic (Computer/IT, Chemie, Geschichte, Geographie, Erotik und Liebe, Tierwelt, Religion und Sport). Zu jedem Land gibt es jeweils 11 Fragen. Um ein Land zu erobern, muss man sein Wissen unter Beweis stellen und alle Fragen richtig beantworten. Macht man 3 Fehler springt man ganz nach vorn, wo man begonnen hat. Allerdings werden die Fehlversuche nach erfolgreicher Eroberung zurückgesetzt. Wurde das Feld erobert, kann die Reise bis zur Schatztruhe weitergehen mit dem nächsten Level. Ausserdem kann jedes Level nur einmal gelöst werden. Wer Wissen schätzt ist Weise und wer das Wissen beherrscht, besitzt die Macht!"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnBack"
@@ -45,13 +59,12 @@
             android:layout_height="100dp"
             android:layout_marginTop="150dp"
 
-            android:background="@drawable/rahmen_antik"
+            android:background="@drawable/topic_border_rahmen"
             android:drawablePadding="40dp"
             android:padding="15dp"
-            android:text="Starte Spiel"
-            android:textColor="#000000"
+            android:text="Zurück"
+            android:textColor="#FAF6F6"
             android:textSize="36sp" />
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
