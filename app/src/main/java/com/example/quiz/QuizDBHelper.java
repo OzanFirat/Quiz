@@ -74,9 +74,9 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         Question q1 = new Question("Wie schreibt man IP-Adressen (IPv4)?", "8 Punkt getrennte Hexadezimal", "32-Bit stellige binäre Zahl ", "10 Stellige dezimale Zahl", "4 durch Punkt getrennte Zahlen", 4, 1, 0, "no", 0, 1, 1, 1);
         Question q2 = new Question("Was bedeutet SMTP?", "simple mother terminal protocol", "Schweizer Militärsteamputze", "scientific mail translocation protocol", "simple mail transfer protocol", 4, 2, 0, "no",0, 0,0,0);
         Question q3 = new Question("Wie nennt man die Anmeldung bei verschiedenen Homepages?", "Logout", "Login", "Lockdown", "Entry", 2, 3, 0, "no",0,0,0,0);
-        Question q4 = new Question("Was hat nichts mit einem Server zu tun", "Roxy", "Proxy", "Apache", "Q-Mail", 1, 4,0, "no",0,0,0,0);
+        Question q4 = new Question("Was hat nichts mit einem Server zu tun?", "Roxy", "Proxy", "Apache", "Q-Mail", 1, 4,0, "no",0,0,0,0);
         Question q5 = new Question("Wie nennt man vorsätzliches Registrieren und Blockieren von Domains, an denen Rechte Dritter bestehen?", "Boykott", "Domainstopping", "Dispute-Eintrag", "Domaingrabbing", 4, 5,0, "no",0, 0,0,0);
-        Question q6 = new Question("Welches Programm schützt vor unbefugten Zugriffen aus dem Internet", "Firewall", "Snowwall", "Waterfall", "Mainboard", 1, 6,0, "no",0,0,0,0);
+        Question q6 = new Question("Welches Programm schützt vor unbefugten Zugriffen aus dem Internet?", "Firewall", "Snowwall", "Waterfall", "Mainboard", 1, 6,0, "no",0,0,0,0);
         Question q7 = new Question("Wie nennt man die marktübliche Technik für Ferngespräche über das Internet?", "Voice over IP", "Talk over IT", "WalkiTalk", "Phone over intranet", 1, 7,0, "no",0, 0,0,0);
         Question q8 = new Question("Welche dieser HTML-Arten gibt es nicht?", "DHTML", "XHTML", "SHTML", "NHTML", 4, 8,0, "no",0, 0,0,0);
         Question q9 = new Question("Wie heisst der erste Microprozessor?", "Apple 44", "Intel 404", "Intel 4004", "Pentium 1", 3, 9,0, "no",0, 0,0,0);
@@ -89,7 +89,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         Question q14 = new Question("Im Jahre 1207 eroberten die Seldschuken von den Byzantinern ...", "Konstantinopel", "Athen", "Antalya", "Rom", 3, 14,0, "no",0, 0,0,0);
         Question q15 = new Question("In welchem Jahr wurden die Vereinten Nationen gegründet?", "1946", "1944", "1948", "1945", 4, 15,0, "no",0, 0,0,0);
         Question q16 = new Question("Wie hießen die beiden Jugendorganisationen im dritten Reich?", "HJ & BDM", "SS-Junior und SS-Mädel", "SS, HJ", "Jugend ohne Gott", 1, 16,0, "no",0, 0,0,0);
-        Question q17 = new Question("Wann erschien Das Kapital von Karlmarx", "1867", "1845", "1857", "1898", 1, 17,0, "no",0, 0,0,0);
+        Question q17 = new Question("Wann erschien Das Kapital von Karlmarx?", "1867", "1845", "1857", "1898", 1, 17,0, "no",0, 0,0,0);
         Question q18 = new Question("Wer sagte veni, vidi, vici (Ich kam, sah, siegte)?", "Julius Gaius Caesar", "Marcus Antonius", "Petrus Metrus", "Optimus Primus", 1, 18,0, "no",0, 0,0,0);
         Question q19 = new Question("Wer entdeckte im Jahre 1497 den für den Handel so wichtigen Seeweg nach Indien?", "Vasco da Gama", "Columbus", "Amerigo Vespucci", "Fernando Magellan", 1, 19,0, "no",0, 0,0,0);
         Question q20 = new Question("In welchem Jahrhundert war die Reformation?", "15.", "17.", "16.", "18.", 3, 20,0, "no",0, 0,0,0);
@@ -105,7 +105,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         Question q28 = new Question("Das chemische zeichen für Zink?", "Zk", "Zn", "Cn", "Zi", 2, 28, 0, "no",0, 0,0,0);
         Question q29 = new Question("Welche Farbe bildet Jod, wenn es sich in Alkohol löst?", "Braun", "Blau", "Gelb", "Rot", 1, 29, 0, "no",0, 0,0,0);
         Question q30 = new Question("Welches Element hat den niedrigsten Schmelzpunkt?", "Wasserstoff", "Neon", "Fluor", "Sauerstoff", 1, 30, 0, "no",0, 0,0,0);
-        Question q31 = new Question("Bei welcher Temperatur wird (unter Normaldruck) Luft flüssig", "0.15K", "-98° C ", "-213° C", "bei keiner", 3, 31,0, "no",0, 0,0,0);
+        Question q31 = new Question("Bei welcher Temperatur wird (unter Normaldruck) Luft flüssig?", "0.15K", "-98° C ", "-213° C", "bei keiner", 3, 31,0, "no",0, 0,0,0);
         Question q32 = new Question("Wie sind die Doppelbindungen in einer konjugierten Kohlenwasserstoffkette gesetzt?", "abwechselnd", "irgendwie", "gar nicht", "am Ende und am Anfang", 1, 32,0, "no",0, 0,0,0);
         Question q33 = new Question("Extrem reaktionsträge Stoffe wie Glas und die Edelgase sind ...", "alkalisch", "alert", "chalkogen", "inert", 4, 33,0, "no",0, 0,0,0);
 
@@ -115,7 +115,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         Question q36 = new Question("Was ist Guano?", "Affenart", "Fisch", "Droge", "Vogelkot", 4, 36, 0, "no",0, 0,0,0);
         Question q37 = new Question("Wie nennt man weibliche Pferde?", "Alpha Weibchen", "Stute", "Hengst", "Pony", 2, 37, 0, "no",0, 0,0,0);
         Question q38 = new Question("Wie groß ist eine Giraffe?", "ca. 8 Meter", "ca. 5 Meter", "ca. 7 Meter", "ca. 6 Meter", 4, 38,0, "no",0, 0,0,0);
-        Question q39 = new Question("Die Nachahmung wehrhafter Tiere durch Form- und Farbanpassung nennt man ...?", "Mimose", "Mimik", "Mimikry", "Mime", 3, 39,0, "no",0, 0,0,0);
+        Question q39 = new Question("Die Nachahmung wehrhafter Tiere durch Form- und Farbanpassung nennt man ...", "Mimose", "Mimik", "Mimikry", "Mime", 3, 39,0, "no",0, 0,0,0);
         Question q40 = new Question("Glühwürmchen sind ...", "Würmer", "Zecken", "Kaefer", "Bienen", 3, 40,0, "no",0, 0,0,0);
         Question q41 = new Question("Wie nennt man die Welt der Tiere?", "Fabel", "Fauna", "Sauna", "Haivana", 2, 41,0, "no",0, 0,0,0);
         Question q42 = new Question("Wie viele Flügel hat eine Biene?", "2", "3", "4", "6", 3, 42, 0, "no",0, 0,0,0);
@@ -127,7 +127,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         Question q46 = new Question("Die Mojavewüste liegt in ...", "Asien", "Balkan", "Afrika", "Nordamerika", 4, 46,0, "no",0, 0,0,0);
         Question q47 = new Question("Welche Sprache ist die Amtssprache im Iran?", "Arabisch", "Persisch", "Iranisch", "Paschto", 2, 47,0, "no",0, 0,0,0);
         Question q48 = new Question("In welchem Land liegt die größte Wüste Amerikas?", "USA", "Brasilien", "Argentinien", "Kanada", 3, 48,0, "no",0, 0,0,0);
-        Question q49 = new Question("Welche der gennanten Programmier Sprachen ist die älteste?", "ASP", "PERL", "C#", "JAVA", 2, 49, 0, "no",0, 0,0,0);
+        Question q49 = new Question("Welcher Kontinent ist der Grösste?", "Europa", "Südamerika", "Afrika", "Asien", 4, 49, 0, "no",0, 0,0,0);
         Question q50 = new Question("Die Hauptstadt von Uruguay ist...", "Montevideo", "Bogota", "Vuvuzuela", "Baskia", 1, 50, 0, "no",0, 0,0,0);
         Question q51 = new Question("In welcher Gebirgskette ist der K2 (der zweithöchste Berg der Welt)?", "Karakorum", "Anden", "Himalaya", "Kaukasus", 1, 51, 0, "no",0, 0,0,0);
         Question q52 = new Question("Welches afrikanische Land hat die größte Fläche?", "Algerien", "Mali", "Sudan", "Libyen", 1, 52,0, "no",0, 0,0,0);
@@ -140,7 +140,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         Question q57 = new Question("Wie heißt Versöhnungstag auf Hebräisch?", "Gemara", "Jom Kippur", "Jom An-Nur", "Rosch Ha-Schana", 2, 57, 0, "no",0, 0,0,0);
         Question q58 = new Question("Was ist keines der fünf Bücher Mose?", "Genesis", "Numeri", "Hesekiel", "Leviticus", 3, 58, 0, "no",0,0,0,0);
         Question q59 = new Question("In welcher Religion spielt Reinkarnation eine große Rolle?", "Islam", "Taoismus", "Christentum", "Hinduismus und Buddhismus", 4, 59,0, "no",0, 0,0,0);
-        Question q60 = new Question(" Mit welchem Tag beginnt das katholische Kirchenjahr?", "1. Advent", "Silvester", "Ostermontag", "37614", 1, 60,0, "no",0, 0,0,0);
+        Question q60 = new Question("Mit welchem Tag beginnt das katholische Kirchenjahr?", "1. Advent", "Silvester", "Ostermontag", "37614", 1, 60,0, "no",0, 0,0,0);
         Question q61 = new Question("Wie nannten die Griechen den Strom des Vergessens in der Unterwelt?", "Acheron", "Lethe", "Hades", "Styx", 2, 61,0, "no",0, 0,0,0);
         Question q62 = new Question("Über welche Kirche erhebt sich die größte gemauerte Kuppel der Welt?", "Petersdom", "Stephansdom", "Karlskirche", "Mailaender Dom", 1, 62,0, "no",0, 0,0,0);
         Question q63 = new Question("Wer rief 1096 zum ersten Kreuzzug auf?", "Papst Leo III.", "Papst Urban I.", "Kaiser Friedrich Barbossa I. (Rotbart)", "Papst Urban II.", 4, 63, 0, "no",0, 0,0,0);
@@ -155,7 +155,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         Question q70 = new Question("Was ist ein Aphrodisiakum? ", "Französische Liebesgöttin", "Luststeigerungsmittel", "Verhüttungsmittel", "Aphrodites Haare", 2, 70, 0, "no",0, 0,0,0);
         Question q71 = new Question("Was ist ein Diaphragma?", "Verhüttungsmittel für Frauen", "Ein Intimschmuck", "Kondom", "gemoetrische Form mit 7 Kanten und 8 Ecken", 1, 71, 0, "no",0, 0,0,0);
         Question q72 = new Question("Wie hieß der Liebesgott der Griechen?", "Ares", "Amor", "Eros", "Eos", 3, 72, 0, "no",0, 0,0,0);
-        Question q73 = new Question("Wie setzten die alten Chinesen die Pfauenfeder beim Liebesspiel ein? ", "Sie legen sie beim Akt unter sich ", "Die Akupunkturpunkte werden stimuliert ", "Haut wurde gestreichelt ", "Damit sorgte man für Kühle Luft ", 2, 73,0, "no",0, 0,0,0);
+        Question q73 = new Question("Wie setzten die alten Chinesen die Pfauenfeder beim Liebesspiel ein?", "Sie legen sie beim Akt unter sich ", "Die Akupunkturpunkte werden stimuliert ", "Haut wurde gestreichelt ", "Damit sorgte man für Kühle Luft ", 2, 73,0, "no",0, 0,0,0);
         Question q74 = new Question("Was bezeichnet gesteigerten Geschlechtstrieb bei Frauen?", "Androidie", "Andromanie", "Androphobie", "Androgynie", 2, 74,0, "no",0, 0,0,0);
         Question q75 = new Question("Wann ist für üblich der Tag der Liebe?", "14.02", "21.03", "06.06", "12.06", 1, 75,0, "no",0, 0,0,0);
         Question q76 = new Question("Welche Blume ist verbildlicht die Liebe?", "Tulpe", "Nelke", "Orchidee", "Rose", 1, 76,0, "no",0, 0,0,0);
@@ -175,9 +175,9 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         //Switch-Question
         Question q89= new Question("Was bedeuted DB ausgesprochen?", "Datenbank", "Die Bulls", "Definitiv bestanden", "Durchbeissen", 1, 89,0, "no",0, 0,0,0);
         Question q90 = new Question("Wann war der Mauerfall in Deutschland?", "1990", "1989", "1993", "1992", 2, 90,0, "no",0, 0,0,0);
-        Question q91 = new Question("Wie nennt man eine Kreuzung zwischen Löwe und Tiger", "Tiwe", "Tigerilöw", "Löwger", "Liger", 4, 91,0, "no",0, 0,0,0);
+        Question q91 = new Question("Wie nennt man eine Kreuzung zwischen Löwe und Tiger?", "Tiwe", "Tigerilöw", "Löwger", "Liger", 4, 91,0, "no",0, 0,0,0);
         Question q92 = new Question("Welche der gennanten Programmier Sprachen ist die älteste?", "ASP", "PERL", "C#", "JAVA", 2, 92, 0, "no",0, 0,0,0);
-        Question q93 = new Question("Welches der Folgenden Städte hat mehr Winwohner", "Aarau", "Basel", "Istanbul", "Berlin", 3, 93, 0, "no",0, 0,0,0);
+        Question q93 = new Question("Welches der Folgenden Städte hat mehr Winwohner?", "Aarau", "Basel", "Istanbul", "Berlin", 3, 93, 0, "no",0, 0,0,0);
         Question q94 = new Question("Welche Religion hat die meisten Anhänger?", "Christentum", "Buddhismus", "Islam", "Hiduismus", 1, 94, 0, "no",0, 0,0,0);
         Question q95 = new Question("Was muss man kaufen wenn man einer Frau ein Antrag machen will?", "Ring", "Ball", "Rhabarber", "Designer Kleidung", 1, 95,0, "no",0, 0,0,0);
         Question q96 = new Question("Wo fand die Fußball-EM 2016 statt?", "Andorra", "Belgien", "Italien", "Frankreich", 4, 96,0, "no",0, 0,0,0);

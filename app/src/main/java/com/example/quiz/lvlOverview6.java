@@ -50,7 +50,7 @@ public class lvlOverview6 extends AppCompatActivity implements View.OnClickListe
 
         }
 
-        counter=11;
+        counter=55;
 
         //  Toast.makeText(LvlOverview.this, "Data updated"+doneCounter, Toast.LENGTH_LONG).show();
 
@@ -193,67 +193,67 @@ public class lvlOverview6 extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.buttonlvl45:
+            case R.id.buttonlvl56:
                 Intent intent = new Intent(this, Spiel.class);
                 startActivity(intent);
                 this.finish();
                 break;
 
-            case R.id.buttonlvl46:
+            case R.id.buttonlvl57:
                 intent = new Intent(this, Spiel.class);
                 startActivity(intent);
                 this.finish();
                 break;
 
-            case R.id.buttonlvl47:
+            case R.id.buttonlvl58:
                 intent = new Intent(this, Spiel.class);
                 startActivity(intent);
                 this.finish();
                 break;
 
-            case R.id.buttonlvl48:
+            case R.id.buttonlvl59:
                 intent = new Intent(this, Spiel.class);
                 startActivity(intent);
                 this.finish();
                 break;
 
-            case R.id.buttonlvl49:
+            case R.id.buttonlvl60:
                 intent = new Intent(this, Spiel.class);
                 startActivity(intent);
                 this.finish();
                 break;
 
-            case R.id.buttonlvl50:
+            case R.id.buttonlvl61:
                 intent = new Intent(this, Spiel.class);
                 startActivity(intent);
                 this.finish();
                 break;
 
-            case R.id.buttonlvl51:
+            case R.id.buttonlvl62:
                 intent = new Intent(this, Spiel.class);
                 startActivity(intent);
                 this.finish();
                 break;
 
-            case R.id.buttonlvl52:
+            case R.id.buttonlvl63:
                 intent = new Intent(this, Spiel.class);
                 startActivity(intent);
                 this.finish();
                 break;
 
-            case R.id.buttonlvl53:
+            case R.id.buttonlvl64:
                 intent = new Intent(this, Spiel.class);
                 startActivity(intent);
                 this.finish();
                 break;
 
-            case R.id.buttonlvl54:
+            case R.id.buttonlvl65:
                 intent = new Intent(this, Spiel.class);
                 startActivity(intent);
                 this.finish();
                 break;
 
-            case R.id.buttonlvl55:
+            case R.id.buttonlvl66:
                 intent = new Intent(this, Spiel.class);
                 startActivity(intent);
                 this.finish();

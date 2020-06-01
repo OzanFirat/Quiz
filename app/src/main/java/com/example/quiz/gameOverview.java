@@ -74,6 +74,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
         if(doneCounter<11){
 
             topic1.setClickable(true);
+            topic1.setBackground(getDrawable(banner4_schein));
 
 
 
@@ -89,7 +90,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
 
 
         }
-        if(doneCounter>=11 && doneCounter<=22){
+        if(doneCounter>=11 && doneCounter<22){
 
             //topic1.setForeground(done);
             topic1.setBackground(getDrawable(banner4_done));
@@ -104,7 +105,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
             topic8.setAlpha((float) 0.5);
 
         }
-        if(doneCounter>22 && doneCounter<=33){
+        if(doneCounter>=22 && doneCounter<33){
 
             topic1.setBackground(getDrawable(banner4_done));
             topic2.setBackground(getDrawable(banner2_done));
@@ -118,7 +119,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
             topic8.setAlpha((float) 0.5);
 
         }
-        if(doneCounter>33 && doneCounter<=44){
+        if(doneCounter>=33 && doneCounter<=44){
 
 
             topic1.setBackground(getDrawable(banner4_done));
@@ -132,7 +133,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
             topic7.setAlpha((float) 0.5);
             topic8.setAlpha((float) 0.5);
         }
-        if(doneCounter>44 && doneCounter<=55){
+        if(doneCounter>=44 && doneCounter<=55){
 
 
             topic1.setBackground(getDrawable(banner4_done));
@@ -147,7 +148,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
             topic8.setAlpha((float) 0.5);
         }
 
-        if(doneCounter>55 && doneCounter<=66){
+        if(doneCounter>=55 && doneCounter<=66){
 
 
             topic1.setBackground(getDrawable(banner4_done));
@@ -163,7 +164,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
             topic8.setAlpha((float) 0.5);
         }
 
-        if(doneCounter>66 && doneCounter<=77){
+        if(doneCounter>=66 && doneCounter<=77){
 
 
             topic1.setBackground(getDrawable(banner4_done));
@@ -177,7 +178,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
             topic8.setAlpha((float) 0.5);
         }
 
-        if(doneCounter>77 && doneCounter<=88){
+        if(doneCounter>=77 && doneCounter<=88){
 
 
             topic1.setBackground(getDrawable(banner4_done));

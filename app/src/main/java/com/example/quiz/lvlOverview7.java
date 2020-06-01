@@ -50,7 +50,7 @@ public class lvlOverview7 extends AppCompatActivity implements View.OnClickListe
 
         }
 
-        counter=11;
+        counter=66;
 
         //  Toast.makeText(LvlOverview.this, "Data updated"+doneCounter, Toast.LENGTH_LONG).show();
 

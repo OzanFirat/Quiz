@@ -159,7 +159,7 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
     }
 
         private void switchQuestion(int currentLevel) {
-            int switchQuestion=90;
+            int switchQuestion=88;
             if (currentLevel>=0){
                 rightAnswer= questionList.get(switchQuestion).getAnswerNr();
                 textVFrage.setText(questionList.get(switchQuestion).getQuestion());

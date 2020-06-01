@@ -30,7 +30,7 @@ public class lvlOverview4 extends AppCompatActivity implements View.OnClickListe
 
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lvl_overview3);
+        setContentView(R.layout.activity_lvl_overview4);
         QuizDBHelper dbHelper = new QuizDBHelper(this);
         questionList = dbHelper.getAllQuestions();
 
@@ -50,7 +50,7 @@ public class lvlOverview4 extends AppCompatActivity implements View.OnClickListe
 
         }
 
-        counter=11;
+        counter=33;
 
         //  Toast.makeText(LvlOverview.this, "Data updated"+doneCounter, Toast.LENGTH_LONG).show();
 
@@ -160,7 +160,7 @@ public class lvlOverview4 extends AppCompatActivity implements View.OnClickListe
         }
         counter++;
 
-        lvl44 = (Button) findViewById(R.id.buttonlvl22);
+        lvl44 = (Button) findViewById(R.id.buttonlvl44);
         lvl44.setOnClickListener(this);
         if(doneCounter+1==questionList.get(counter).getLevelNr()) {
             lvl44.setClickable(true);
