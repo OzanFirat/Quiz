@@ -175,7 +175,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         //Switch-Question
         Question q89= new Question("Was bedeuted DB ausgesprochen?", "Datenbank", "Die Bulls", "Definitiv bestanden", "Durchbeissen", 1, 89,0, "no",0, 0,0,0);
         Question q90 = new Question("Wann war der Mauerfall in Deutschland?", "1990", "1989", "1993", "1992", 2, 90,0, "no",0, 0,0,0);
-        Question q91 = new Question("Welche der gennanten Programmier Sprachen ist die älteste?", "ASP", "PERL", "C#", "JAVA", 2, 92, 0, "no",0, 0,0,0);
+        Question q91 = new Question("Sokrates starb durch den berühmten Schierlingsbecher, wie heisst das darin enthaltene giftige Alkaloid??", "Coniin", "Chinin", "Gramin", "Antropin", 1, 92, 0, "no",0, 0,0,0);
         Question q92 = new Question("Wie nennt man eine Kreuzung zwischen Löwe und Tiger?", "Tiwe", "Tigerilöw", "Löwger", "Liger", 4, 92,0, "no",0, 0,0,0);
         Question q93 = new Question("Welches der Folgenden Städte hat mehr Winwohner?", "Aarau", "Basel", "Istanbul", "Berlin", 3, 93, 0, "no",0, 0,0,0);
         Question q94 = new Question("Welche Religion hat die meisten Anhänger?", "Christentum", "Buddhismus", "Islam", "Hiduismus", 1, 94, 0, "no",0, 0,0,0);
