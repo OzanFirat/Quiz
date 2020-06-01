@@ -96,7 +96,7 @@
                     android:fontFamily="casual"
                     android:paddingLeft="40dp"
                     android:paddingTop="40dp"
-                    android:paddingRight="10dp"
+                    android:paddingRight="20dp"
                     android:paddingBottom="20dp"
                     android:text="Wie heisst die Hauptstadt von Frankreich?"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"

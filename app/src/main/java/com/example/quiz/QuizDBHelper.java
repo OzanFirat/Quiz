@@ -71,7 +71,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
 
     public void fillQuestionTable(){
         //Computer und IT
-        Question q1 = new Question("Wie schreibt man IP-Adressen (IPv4)?", "8 mit Doppelpunkt getrennte Hexadezimal Zeichen", "32-Bit stellige binäre Zahl ", "10 Stellige dezimale Zahl", "4 durch Punkt getrennte Zahlen", 4, 1, 0, "no", 0, 1, 1, 1);
+        Question q1 = new Question("Wie schreibt man IP-Adressen (IPv4)?", "8 Punkt getrennte Hexadezimal", "32-Bit stellige binäre Zahl ", "10 Stellige dezimale Zahl", "4 durch Punkt getrennte Zahlen", 4, 1, 0, "no", 0, 1, 1, 1);
         Question q2 = new Question("Was bedeutet SMTP?", "simple mother terminal protocol", "Schweizer Militärsteamputze", "scientific mail translocation protocol", "simple mail transfer protocol", 4, 2, 0, "no",0, 0,0,0);
         Question q3 = new Question("Wie nennt man die Anmeldung bei verschiedenen Homepages?", "Logout", "Login", "Lockdown", "Entry", 2, 3, 0, "no",0,0,0,0);
         Question q4 = new Question("Was hat nichts mit einem Server zu tun", "Roxy", "Proxy", "Apache", "Q-Mail", 1, 4,0, "no",0,0,0,0);
