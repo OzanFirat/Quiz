@@ -58,9 +58,9 @@
                     android:background="@drawable/end1_banner"
                     android:freezesText="false"
                     android:lineSpacingExtra="8sp"
-                    android:paddingLeft="155dp"
+                    android:paddingLeft="170dp"
                     android:paddingTop="150dp"
-                    android:text="Victory!"
+                    android:text="Sieg!"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display4"
                     android:textColor="#FFC107"
                     android:textIsSelectable="false"
@@ -86,7 +86,7 @@
                     android:layout_width="220dp"
                     android:layout_height="65dp"
                     android:background="@drawable/topic_button_border"
-                    android:text="Next Level" />
+                    android:text="Nächstes Level" />
             </LinearLayout>
         </TableRow>
 
@@ -116,7 +116,7 @@
                     android:layout_width="220dp"
                     android:layout_height="65dp"
                     android:background="@drawable/topic_button_border"
-                    android:text="Level Overview" />
+                    android:text="Level Übersicht" />
             </LinearLayout>
         </TableRow>
     </TableLayout>

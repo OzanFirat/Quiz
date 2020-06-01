@@ -129,6 +129,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         } else {
             lvl3.setClickable(false);
             if (questionList.get(counter).getLevelNr() <= doneCounter) {
+                questionSetEnd(questionList.get(counter).getRatingStars());
                 if (questionList.get(counter).getRatingStars() == 3) {
                     lvl3.setBackground(getDrawable(drawable.sieges_banner_drei_sterne));
                 }
@@ -148,7 +149,7 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
             lvl4.setClickable(true);
             lvl4.setBackground(getDrawable(drawable.sparta_helm));
         } else {
-            lvl4.setClickable(false);
+            levelIsDone(lvl4, doneCounter,counter);
         }
         counter++;
 
@@ -223,6 +224,10 @@ public class LvlOverview extends AppCompatActivity implements View.OnClickListen
         }
         counter++;
 
+
+    }
+
+    private void questionSetEnd(int ratingStars) {
 
     }
 

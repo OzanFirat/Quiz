@@ -250,8 +250,8 @@ public class Spiel extends AppCompatActivity implements View.OnClickListener {
                 this.switchNew=0;
             }
 
-            this.btnFifty.setClickable(false);
-            this.btnFifty.setAlpha((float) 0.5);
+            this.btnSwitch.setClickable(false);
+            this.btnSwitch.setAlpha((float) 0.5);
         }
 
     private void fiftyFiftyJoker() {
