@@ -149,19 +149,19 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         Question q66 = new Question("Welcher Staat der USA gilt als Heimat der Mormonen?", "Utah", "Texas", "Iowa", "Wisconsin", 1, 66,0, "no",0, 0,0,0);
 
         //Erotik
-        Question q67 = new Question("Wer einer Rumänin oder einem Rumänen seine Zuneigung mitteilen will, sagt: ", "Te Amo", "Te Iubiu", "Ti Amo", "Te iubesc", 4, 67,0, "no",0, 0,0,0);
+        Question q67 = new Question("Wer einer Rumänin oder einem Rumänen seine Zuneigung mitteilen will, sagt: ", "Te Amo", "Te Iubiu", "Ti Amo", "Te iubesc", 4, 67,0, "no",0, 1,1,1);
         Question q68 = new Question("Wie nannten die Römer ihre Göttin der Liebe?", "Juno", "Venus", "Aurora", "Amor", 3, 68,0, "no",0, 0,0,0);
         Question q69 = new Question("Treue: Wie viel Prozent der Frauen gehen häufig fremd?", "25", "20", "30", "35", 1, 69,0, "no",0, 0,0,0);
         Question q70 = new Question("Was ist ein Aphrodisiakum? ", "Französische Liebesgöttin", "Luststeigerungsmittel", "Verhüttungsmittel", "Aphrodites Haare", 2, 70, 0, "no",0, 0,0,0);
         Question q71 = new Question("Was ist ein Diaphragma?", "Verhüttungsmittel für Frauen", "Ein Intimschmuck", "Kondom", "gemoetrische Form mit 7 Kanten und 8 Ecken", 1, 71, 0, "no",0, 0,0,0);
         Question q72 = new Question("Wie hieß der Liebesgott der Griechen?", "Ares", "Amor", "Eros", "Eos", 3, 72, 0, "no",0, 0,0,0);
-        Question q73 = new Question("Wie setzten die alten Chinesen die Pfauenfeder beim Liebesspiel ein?", "Sie legen sie beim Akt unter sich ", "Die Akupunkturpunkte werden stimuliert ", "Haut wurde gestreichelt ", "Damit sorgte man für Kühle Luft ", 2, 73,0, "no",0, 0,0,0);
+        Question q73 = new Question("Wie setzten die alten Chinesen die Pfauenfeder beim Liebesspiel ein?", "Sie legen sie beim Akt unter sich ", "Akupunkturpunkte stimulieren ", "Haut wurde gestreichelt ", "Damit sorgte man für Kühle Luft ", 2, 73,0, "no",0, 0,0,0);
         Question q74 = new Question("Was bezeichnet gesteigerten Geschlechtstrieb bei Frauen?", "Androidie", "Andromanie", "Androphobie", "Androgynie", 2, 74,0, "no",0, 0,0,0);
         Question q75 = new Question("Wann ist für üblich der Tag der Liebe?", "14.02", "21.03", "06.06", "12.06", 1, 75,0, "no",0, 0,0,0);
-        Question q76 = new Question("Welche Blume ist verbildlicht die Liebe?", "Tulpe", "Nelke", "Orchidee", "Rose", 1, 76,0, "no",0, 0,0,0);
+        Question q76 = new Question("Welche Blume verbildlicht die Liebe?", "Tulpe", "Nelke", "Orchidee", "Rose", 4, 76,0, "no",0, 0,0,0);
         Question q77 = new Question("Liebesgedicht der Araber heisst?", "Gazelle", "Gaze", "Gaz", "Gazhel", 4, 77, 0, "no",0, 0,0,0);
         //Sport
-        Question q78= new Question("Zusammen mit welchem Land veranstaltete Österreich die Fußball-Europameisterschaft 2008?", "England", "Deutschland", "Tschechien", "Schweiz", 4, 78,0, "no",0, 0,0,0);
+        Question q78= new Question("Zusammen mit welchem Land veranstaltete Österreich die Fußball-Europameisterschaft 2008?", "England", "Deutschland", "Tschechien", "Schweiz", 4, 78,0, "no",0, 1,1,1);
         Question q79 = new Question("Was wird beim Fußball vom Schiedsrichter als Foul gepfiffen?", "Feuermelder", "Warnblinker", "Alermmelder", "Notbremse", 4, 79,0, "no",0, 0,0,0);
         Question q80 = new Question("Welche dieser Personen ist kein berühmter Sportler?", "Zinedine Zidane", "Usain Bolt", "Bill Gates", "Ronaldo", 3, 80,0, "no",0, 0,0,0);
         Question q81 = new Question("Wie hiess der Olympionike, der Gold bei den Sommerspielen 1920 und bei Winterspielen 1932 gewann?", "Mark Medlock", "Eddie Eagan", "Simon Amman", "Paavo Nurmi", 2, 81, 0, "no",0, 0,0,0);
@@ -177,7 +177,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         Question q90 = new Question("Wann war der Mauerfall in Deutschland?", "1990", "1989", "1993", "1992", 2, 90,0, "no",0, 0,0,0);
         Question q91 = new Question("Sokrates starb durch den berühmten Schierlingsbecher, wie heisst das darin enthaltene giftige Alkaloid??", "Coniin", "Chinin", "Gramin", "Antropin", 1, 92, 0, "no",0, 0,0,0);
         Question q92 = new Question("Wie nennt man eine Kreuzung zwischen Löwe und Tiger?", "Tiwe", "Tigerilöw", "Löwger", "Liger", 4, 92,0, "no",0, 0,0,0);
-        Question q93 = new Question("Welches der Folgenden Städte hat mehr Winwohner?", "Aarau", "Basel", "Istanbul", "Berlin", 3, 93, 0, "no",0, 0,0,0);
+        Question q93 = new Question("Welches der Folgenden Städte hat mehr Einnwohner?", "Aarau", "Basel", "Istanbul", "Berlin", 3, 93, 0, "no",0, 0,0,0);
         Question q94 = new Question("Welche Religion hat die meisten Anhänger?", "Christentum", "Buddhismus", "Islam", "Hiduismus", 1, 94, 0, "no",0, 0,0,0);
         Question q95 = new Question("Was muss man kaufen wenn man einer Frau ein Antrag machen will?", "Ring", "Ball", "Rhabarber", "Designer Kleidung", 1, 95,0, "no",0, 0,0,0);
         Question q96 = new Question("Wo fand die Fußball-EM 2016 statt?", "Andorra", "Belgien", "Italien", "Frankreich", 4, 96,0, "no",0, 0,0,0);
