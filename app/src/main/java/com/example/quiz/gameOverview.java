@@ -90,7 +90,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
 
         }
         if(doneCounter>=11 && doneCounter<=22){
-            topic1.setText("Erobert");
+
             //topic1.setForeground(done);
             topic1.setBackground(getDrawable(banner4_done));
 
@@ -119,9 +119,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
 
         }
         if(doneCounter>33 && doneCounter<=44){
-            topic1.setText("Erobert!");
-            topic2.setText("Erobert!");
-            topic3.setText("Erobert!");
+
 
             topic1.setBackground(getDrawable(banner4_done));
             topic2.setBackground(getDrawable(banner1_done));
@@ -135,10 +133,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
             topic8.setAlpha((float) 0.5);
         }
         if(doneCounter>44 && doneCounter<=55){
-            topic1.setText("Erobert!");
-            topic2.setText("Erobert!");
-            topic3.setText("Erobert!");
-            topic4.setText("Erobert!");
+
 
             topic1.setBackground(getDrawable(banner4_done));
             topic2.setBackground(getDrawable(banner1_done));
@@ -153,11 +148,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
         }
 
         if(doneCounter>55 && doneCounter<=66){
-            topic1.setText("Erobert!");
-            topic2.setText("Erobert!");
-            topic3.setText("Erobert!");
-            topic4.setText("Erobert!");
-            topic5.setText("Erobert!");
+
 
             topic1.setBackground(getDrawable(banner4_done));
             topic2.setBackground(getDrawable(banner1_done));
@@ -173,12 +164,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
         }
 
         if(doneCounter>66 && doneCounter<=77){
-            topic1.setText("Erobert!");
-            topic2.setText("Erobert!");
-            topic3.setText("Erobert!");
-            topic4.setText("Erobert!");
-            topic5.setText("Erobert!");
-            topic6.setText("Erobert!");
+
 
             topic1.setBackground(getDrawable(banner4_done));
             topic2.setBackground(getDrawable(banner1_done));
@@ -192,13 +178,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
         }
 
         if(doneCounter>77 && doneCounter<=88){
-            topic1.setText("Erobert!");
-            topic2.setText("Erobert!");
-            topic3.setText("Erobert!");
-            topic4.setText("Erobert!");
-            topic5.setText("Erobert!");
-            topic6.setText("Erobert!");
-            topic7.setText("Erobert!");
+
 
             topic1.setBackground(getDrawable(banner4_done));
             topic2.setBackground(getDrawable(banner1_done));
