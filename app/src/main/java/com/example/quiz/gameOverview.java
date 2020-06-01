@@ -78,13 +78,13 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
 
 
 
-            topic2.setAlpha((float) 0.5);
-            topic3.setAlpha((float) 0.5);
-            topic4.setAlpha((float) 0.5);
-            topic5.setAlpha((float) 0.5);
-            topic6.setAlpha((float) 0.5);
-            topic7.setAlpha((float) 0.5);
-            topic8.setAlpha((float) 0.5);
+            topic2.setAlpha((float) 0.25);
+            topic3.setAlpha((float) 0.25);
+            topic4.setAlpha((float) 0.25);
+            topic5.setAlpha((float) 0.25);
+            topic6.setAlpha((float) 0.25);
+            topic7.setAlpha((float) 0.25);
+            topic8.setAlpha((float) 0.25);
 
 
 
@@ -97,12 +97,12 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
 
             topic2.setClickable(true);
 
-            topic3.setAlpha((float) 0.5);
-            topic4.setAlpha((float) 0.5);
-            topic5.setAlpha((float) 0.5);
-            topic6.setAlpha((float) 0.5);
-            topic7.setAlpha((float) 0.5);
-            topic8.setAlpha((float) 0.5);
+            topic3.setAlpha((float) 0.25);
+            topic4.setAlpha((float) 0.25);
+            topic5.setAlpha((float) 0.25);
+            topic6.setAlpha((float) 0.25);
+            topic7.setAlpha((float) 0.25);
+            topic8.setAlpha((float) 0.25);
 
         }
         if(doneCounter>=22 && doneCounter<33){
@@ -112,14 +112,14 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
 
             topic3.setClickable(true);
 
-            topic4.setAlpha((float) 0.5);
-            topic5.setAlpha((float) 0.5);
-            topic6.setAlpha((float) 0.5);
-            topic7.setAlpha((float) 0.5);
-            topic8.setAlpha((float) 0.5);
+            topic4.setAlpha((float) 0.25);
+            topic5.setAlpha((float) 0.25);
+            topic6.setAlpha((float) 0.25);
+            topic7.setAlpha((float) 0.25);
+            topic8.setAlpha((float) 0.25);
 
         }
-        if(doneCounter>=33 && doneCounter<=44){
+        if(doneCounter>=33 && doneCounter<44){
 
 
             topic1.setBackground(getDrawable(banner4_done));
@@ -128,12 +128,12 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
 
             topic4.setClickable(true);
 
-            topic5.setAlpha((float) 0.5);
-            topic6.setAlpha((float) 0.5);
-            topic7.setAlpha((float) 0.5);
-            topic8.setAlpha((float) 0.5);
+            topic5.setAlpha((float) 0.25);
+            topic6.setAlpha((float) 0.25);
+            topic7.setAlpha((float) 0.25);
+            topic8.setAlpha((float) 0.25);
         }
-        if(doneCounter>=44 && doneCounter<=55){
+        if(doneCounter>=44 && doneCounter<55){
 
 
             topic1.setBackground(getDrawable(banner4_done));
@@ -143,12 +143,12 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
 
             topic5.setClickable(true);
 
-            topic6.setAlpha((float) 0.5);
-            topic7.setAlpha((float) 0.5);
-            topic8.setAlpha((float) 0.5);
+            topic6.setAlpha((float) 0.25);
+            topic7.setAlpha((float) 0.25);
+            topic8.setAlpha((float) 0.25);
         }
 
-        if(doneCounter>=55 && doneCounter<=66){
+        if(doneCounter>=55 && doneCounter<66){
 
 
             topic1.setBackground(getDrawable(banner4_done));
@@ -160,8 +160,8 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
 
             topic6.setClickable(true);
 
-            topic7.setAlpha((float) 0.5);
-            topic8.setAlpha((float) 0.5);
+            topic7.setAlpha((float) 0.25);
+            topic8.setAlpha((float) 0.25);
         }
 
         if(doneCounter>=66 && doneCounter<=77){
@@ -178,7 +178,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
             topic8.setAlpha((float) 0.5);
         }
 
-        if(doneCounter>=77 && doneCounter<=88){
+        if(doneCounter>=77 && doneCounter<88){
 
 
             topic1.setBackground(getDrawable(banner4_done));
