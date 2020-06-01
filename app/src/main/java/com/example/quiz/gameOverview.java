@@ -76,6 +76,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
             topic1.setClickable(true);
 
 
+
             topic2.setAlpha((float) 0.5);
             topic3.setAlpha((float) 0.5);
             topic4.setAlpha((float) 0.5);
@@ -91,6 +92,7 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
         if(doneCounter>=11 && doneCounter<=22){
             topic1.setText("Erobert");
             //topic1.setForeground(done);
+            topic1.setBackground(getDrawable(banner4_done));
 
             topic2.setClickable(true);
 
@@ -103,8 +105,9 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
 
         }
         if(doneCounter>22 && doneCounter<=33){
-            topic1.setText("Erobert!");
-            topic2.setText("Erobert!");
+
+            topic1.setBackground(getDrawable(banner4_done));
+            topic2.setBackground(getDrawable(banner2_done));
 
             topic3.setClickable(true);
 
@@ -120,6 +123,10 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
             topic2.setText("Erobert!");
             topic3.setText("Erobert!");
 
+            topic1.setBackground(getDrawable(banner4_done));
+            topic2.setBackground(getDrawable(banner1_done));
+            topic3.setBackground(getDrawable(banner7_done));
+
             topic4.setClickable(true);
 
             topic5.setAlpha((float) 0.5);
@@ -132,6 +139,11 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
             topic2.setText("Erobert!");
             topic3.setText("Erobert!");
             topic4.setText("Erobert!");
+
+            topic1.setBackground(getDrawable(banner4_done));
+            topic2.setBackground(getDrawable(banner1_done));
+            topic3.setBackground(getDrawable(banner7_done));
+            topic4.setBackground(getDrawable(banner5_done));
 
             topic5.setClickable(true);
 
@@ -147,6 +159,13 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
             topic4.setText("Erobert!");
             topic5.setText("Erobert!");
 
+            topic1.setBackground(getDrawable(banner4_done));
+            topic2.setBackground(getDrawable(banner1_done));
+            topic3.setBackground(getDrawable(banner7_done));
+            topic4.setBackground(getDrawable(banner5_done));
+            topic5.setBackground(getDrawable(banner3_done));
+
+
             topic6.setClickable(true);
 
             topic7.setAlpha((float) 0.5);
@@ -161,6 +180,13 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
             topic5.setText("Erobert!");
             topic6.setText("Erobert!");
 
+            topic1.setBackground(getDrawable(banner4_done));
+            topic2.setBackground(getDrawable(banner1_done));
+            topic3.setBackground(getDrawable(banner7_done));
+            topic4.setBackground(getDrawable(banner5_done));
+            topic5.setBackground(getDrawable(banner3_done));
+            topic6.setBackground(getDrawable(banner2_done));
+
             topic7.setClickable(true);
             topic8.setAlpha((float) 0.5);
         }
@@ -173,6 +199,14 @@ public class gameOverview extends AppCompatActivity implements View.OnClickListe
             topic5.setText("Erobert!");
             topic6.setText("Erobert!");
             topic7.setText("Erobert!");
+
+            topic1.setBackground(getDrawable(banner4_done));
+            topic2.setBackground(getDrawable(banner1_done));
+            topic3.setBackground(getDrawable(banner7_done));
+            topic4.setBackground(getDrawable(banner5_done));
+            topic5.setBackground(getDrawable(banner3_done));
+            topic6.setBackground(getDrawable(banner2_done));
+            topic7.setBackground(getDrawable(banner6_done));
 
 
             topic8.setClickable(true);
