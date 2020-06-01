@@ -181,9 +181,6 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         Question q94 = new Question("Welche Religion hat die meisten Anhänger?", "Christentum", "Buddhismus", "Islam", "Hiduismus", 1, 13, 0, "no",0, 0,0,0);
         Question q95 = new Question("Was muss man kaufen wenn man einer Frau ein Antrag machen will?", "Ring", "Ball", "Rhabarber", "Designer Kleidung", 1, 14,0, "no",0, 0,0,0);
         Question q96 = new Question("Wo fand die Fußball-EM 2016 statt?", "Andorra", "Belgien", "Italien", "Frankreich", 4, 15,0, "no",0, 0,0,0);
-        Question q97 = new Question("A is correct", "A", "B", "C", "D", 1, 16,0, "no",0, 0,0,0);
-        Question q98 = new Question("A is correct", "A", "B", "C", "D", 1, 17,0, "no",0, 0,0,0);
-        Question q99 = new Question("B is correct", "A", "B", "C", "D", 2, 12, 0, "no",0, 0,0,0);
 
 
 
