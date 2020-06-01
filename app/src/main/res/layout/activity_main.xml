@@ -48,7 +48,7 @@
             android:background="@drawable/rahmen_antik"
             android:drawablePadding="40dp"
             android:padding="15dp"
-            android:text="Start Game"
+            android:text="Starte Spiel"
             android:textColor="#000000"
             android:textSize="36sp" />
     </LinearLayout>
