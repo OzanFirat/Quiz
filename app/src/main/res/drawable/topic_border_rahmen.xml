@@ -7,12 +7,13 @@
     <solid
 
 
-        android:color="#fcfbf8">
+        android:color=" #5c5848">
     </solid>
 
     <stroke
         android:width="10dp"
-        android:color=" #1f1e1b
+        android:color=" # #d7d2c1
+
 ">
 
     </stroke>
