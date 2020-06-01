@@ -49,7 +49,7 @@
                     android:lineSpacingExtra="8sp"
                     android:paddingLeft="150dp"
                     android:paddingTop="170dp"
-                    android:text="Niederlage"
+                    android:text="Defeat"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="#FBFBFB"
                     android:textSize="24sp"

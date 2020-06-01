@@ -19,7 +19,7 @@ public class End2 extends AppCompatActivity implements View.OnClickListener {
 
     private Button btnStartMenu, btnTryAgain;
     private RatingBar rtBar;
-    private TextView txtScore;
+    private TextView txtScore, textViewLostCount;
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +40,12 @@ public class End2 extends AppCompatActivity implements View.OnClickListener {
 
             counter++;  }
 
+        int currentAmountF = questionList.get(doneCounter).getAmountOfFailures();
+        currentAmountF=3-currentAmountF;
+        this.textViewLostCount = (TextView) findViewById(R.id.textViewLostCount);
+
+        textViewLostCount.setText(currentAmountF+" tries left until failure");
+
         this.btnStartMenu = (Button) findViewById(R.id.btnlvlOverview2);
         btnStartMenu.setOnClickListener(this);
 
@@ -50,7 +56,7 @@ public class End2 extends AppCompatActivity implements View.OnClickListener {
 
 
 
-      //  setBanner(doneCounter);
+        setBanner(doneCounter);
 
 
 
