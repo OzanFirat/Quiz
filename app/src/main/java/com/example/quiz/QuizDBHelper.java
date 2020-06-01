@@ -150,7 +150,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
 
         //Erotik
         Question q67 = new Question("Wer einer Rumänin oder einem Rumänen seine Zuneigung mitteilen will, sagt: ", "Te Amo", "Te Iubiu", "Ti Amo", "Te iubesc", 4, 67,0, "no",0, 1,1,1);
-        Question q68 = new Question("Wie nannten die Römer ihre Göttin der Liebe?", "Juno", "Venus", "Aurora", "Amor", 3, 68,0, "no",0, 0,0,0);
+        Question q68 = new Question("Wie nannten die Römer ihre Göttin der Liebe?", "Juno", "Venus", "Aurora", "Amor", 2, 68,0, "no",0, 0,0,0);
         Question q69 = new Question("Treue: Wie viel Prozent der Frauen gehen häufig fremd?", "25", "20", "30", "35", 1, 69,0, "no",0, 0,0,0);
         Question q70 = new Question("Was ist ein Aphrodisiakum? ", "Französische Liebesgöttin", "Luststeigerungsmittel", "Verhüttungsmittel", "Aphrodites Haare", 2, 70, 0, "no",0, 0,0,0);
         Question q71 = new Question("Was ist ein Diaphragma?", "Verhüttungsmittel für Frauen", "Ein Intimschmuck", "Kondom", "gemoetrische Form mit 7 Kanten und 8 Ecken", 1, 71, 0, "no",0, 0,0,0);
